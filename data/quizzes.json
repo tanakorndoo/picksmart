@@ -1,0 +1,3851 @@
+{
+  "quizzes": [
+    {
+      "quiz_id": "skin-persona-beauty-th-001",
+      "version": "2.0.0",
+      "created_at": "2026-04-10T00:00:00+07:00",
+      "metadata": {
+        "title": "ค้นหา Skin Persona ของคุณ ✨",
+        "subtitle": "ตอบ 6 ข้อ รู้เลยว่าผิวคุณต้องการอะไร!",
+        "category": "beauty",
+        "estimated_time": "90 วินาที",
+        "total_questions": 6,
+        "cover_emoji": "✨",
+        "share_text": "{result_title} คือ Skin Persona ของฉัน! คุณล่ะเป็นแบบไหน?",
+        "total_plays": 0,
+        "trending_badge": null
+      },
+      "scoring": {
+        "method": "weighted_category",
+        "categories": [
+          "type_a",
+          "type_b",
+          "type_c",
+          "type_d"
+        ],
+        "result_logic": "highest_score_wins",
+        "tiebreaker": "last_questions_priority"
+      },
+      "anticipation_screen": {
+        "enabled": true,
+        "duration_ms": 2500,
+        "messages": [
+          "กำลังวิเคราะห์ Skin Persona ของคุณ...",
+          "จับคู่ผลิตภัณฑ์ที่เหมาะที่สุด...",
+          "เกือบเสร็จแล้ว! ✨"
+        ]
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "order": 1,
+          "question": "เวลาเห็นผิวหน้าแบบไหน แล้วอยากได้แบบนั้นบ้าง? 😍",
+          "subtitle": "เลือกที่ตรงใจที่สุดเลย!",
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "image_grid",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q1_a",
+              "text": "ผิวฉ่ำๆ อิ่มน้ำ ดูสุขภาพดี",
+              "image_emoji": "💧",
+              "scores": {
+                "type_a": 3,
+                "type_b": 0,
+                "type_c": 1,
+                "type_d": 1
+              }
+            },
+            {
+              "id": "q1_b",
+              "text": "ผิวใสไร้สิว โทนสม่ำเสมอ",
+              "image_emoji": "🌿",
+              "scores": {
+                "type_a": 0,
+                "type_b": 3,
+                "type_c": 1,
+                "type_d": 1
+              }
+            },
+            {
+              "id": "q1_c",
+              "text": "ผิวนุ่มลื่น ไม่แดง ไม่ระคายเคือง",
+              "image_emoji": "🌸",
+              "scores": {
+                "type_a": 1,
+                "type_b": 0,
+                "type_c": 3,
+                "type_d": 0
+              }
+            },
+            {
+              "id": "q1_d",
+              "text": "ผิวกระจ่างใส มีออร่า แลดูอ่อนเยาว์",
+              "image_emoji": "✨",
+              "scores": {
+                "type_a": 1,
+                "type_b": 0,
+                "type_c": 0,
+                "type_d": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "order": 2,
+          "question": "ตอนเช้า หน้าของคุณเป็นยังไงบ้าง? ☀️",
+          "subtitle": null,
+          "why_we_ask": "ช่วยให้แนะนำ Routine ที่เหมาะได้แม่นขึ้นครับ",
+          "type": "single_choice",
+          "display": "image_grid",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q2_a",
+              "text": "หน้าตึง แห้ง บางทีลอกเป็นขุย",
+              "image_emoji": "🏜️",
+              "scores": {
+                "type_a": 3,
+                "type_b": 0,
+                "type_c": 1,
+                "type_d": 0
+              }
+            },
+            {
+              "id": "q2_b",
+              "text": "หน้ามัน โดยเฉพาะโซน T",
+              "image_emoji": "🫧",
+              "scores": {
+                "type_a": 0,
+                "type_b": 3,
+                "type_c": 0,
+                "type_d": 1
+              }
+            },
+            {
+              "id": "q2_c",
+              "text": "หน้าแดง คัน ระคายเคืองง่าย",
+              "image_emoji": "🌡️",
+              "scores": {
+                "type_a": 0,
+                "type_b": 0,
+                "type_c": 3,
+                "type_d": 0
+              }
+            },
+            {
+              "id": "q2_d",
+              "text": "หน้าหมอง ดูไม่มีชีวิตชีวา",
+              "image_emoji": "🌫️",
+              "scores": {
+                "type_a": 1,
+                "type_b": 1,
+                "type_c": 0,
+                "type_d": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "order": 3,
+          "question": "ปัญหาผิวที่รบกวนใจคุณมากที่สุดตอนนี้คืออะไร?",
+          "subtitle": null,
+          "why_we_ask": "จะได้แนะนำตรงจุดที่สุดครับ",
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": "87% ของคนที่ทำ Quiz นี้มีปัญหาข้อนี้เหมือนกัน!",
+          "options": [
+            {
+              "id": "q3_a",
+              "text": "ผิวแห้ง ตึง ขาดความชุ่มชื้น 💧",
+              "image_emoji": null,
+              "scores": {
+                "type_a": 3,
+                "type_b": 0,
+                "type_c": 1,
+                "type_d": 0
+              }
+            },
+            {
+              "id": "q3_b",
+              "text": "สิวอุดตัน สิวอักเสบ ไม่ยอมหาย 😤",
+              "image_emoji": null,
+              "scores": {
+                "type_a": 0,
+                "type_b": 3,
+                "type_c": 1,
+                "type_d": 0
+              }
+            },
+            {
+              "id": "q3_c",
+              "text": "ผิวแพ้ง่าย แดง แสบ ระคายเคือง 😰",
+              "image_emoji": null,
+              "scores": {
+                "type_a": 0,
+                "type_b": 0,
+                "type_c": 3,
+                "type_d": 0
+              }
+            },
+            {
+              "id": "q3_d",
+              "text": "ผิวหมองคล้ำ ฝ้า กระ ริ้วรอย 😔",
+              "image_emoji": null,
+              "scores": {
+                "type_a": 0,
+                "type_b": 0,
+                "type_c": 0,
+                "type_d": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "order": 4,
+          "question": "เวลาเลือก Skincare คุณกังวลเรื่องอะไรมากที่สุด?",
+          "subtitle": null,
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q4_a",
+              "text": "กลัวหน้าแห้ง ขาดน้ำ ไม่ชุ่มชื้น 🥵",
+              "image_emoji": null,
+              "scores": {
+                "type_a": 3,
+                "type_b": 0,
+                "type_c": 1,
+                "type_d": 1
+              }
+            },
+            {
+              "id": "q4_b",
+              "text": "กลัวอุดตัน ทาแล้วเป็นสิวเพิ่ม 😱",
+              "image_emoji": null,
+              "scores": {
+                "type_a": 0,
+                "type_b": 3,
+                "type_c": 1,
+                "type_d": 0
+              }
+            },
+            {
+              "id": "q4_c",
+              "text": "กลัวแพ้ แดง ระคายเคือง 🚨",
+              "image_emoji": null,
+              "scores": {
+                "type_a": 1,
+                "type_b": 1,
+                "type_c": 3,
+                "type_d": 0
+              }
+            },
+            {
+              "id": "q4_d",
+              "text": "กลัวไม่เห็นผล หน้าไม่ใสขึ้นเลย 😞",
+              "image_emoji": null,
+              "scores": {
+                "type_a": 0,
+                "type_b": 0,
+                "type_c": 0,
+                "type_d": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "order": 5,
+          "question": "Skincare ในฝันของคุณต้องเป็นแบบไหน?",
+          "subtitle": null,
+          "why_we_ask": "ช่วยจับคู่สินค้าที่ตรงไลฟ์สไตล์คุณที่สุดครับ",
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q5_a",
+              "text": "เนื้อบางเบา ซึมไว ผิวไม่เหนอะหนะ 🌊",
+              "image_emoji": null,
+              "scores": {
+                "type_a": 2,
+                "type_b": 1,
+                "type_c": 1,
+                "type_d": 2
+              }
+            },
+            {
+              "id": "q5_b",
+              "text": "ออร์แกนิค ธรรมชาติ ไม่มีสารเคมีจัด 🌿",
+              "image_emoji": null,
+              "scores": {
+                "type_a": 1,
+                "type_b": 3,
+                "type_c": 2,
+                "type_d": 0
+              }
+            },
+            {
+              "id": "q5_c",
+              "text": "อ่อนโยน ผ่านการทดสอบจากแพทย์ผิวหนัง 🏥",
+              "image_emoji": null,
+              "scores": {
+                "type_a": 1,
+                "type_b": 1,
+                "type_c": 3,
+                "type_d": 1
+              }
+            },
+            {
+              "id": "q5_d",
+              "text": "มีส่วนผสมที่เห็นผลชัด เช่น วิตามินซี คอลลาเจน 💊",
+              "image_emoji": null,
+              "scores": {
+                "type_a": 1,
+                "type_b": 0,
+                "type_c": 0,
+                "type_d": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "order": 6,
+          "question": "ถ้าผิวคุณดีขึ้นสุดๆ คุณอยากเป็นแบบไหน? 🌟",
+          "subtitle": "ปิดตาแล้วนึกภาพเลย!",
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q6_a",
+              "text": "ผิวฉ่ำวาว ออกงานไม่ต้องแต่งหน้าเยอะ 💧",
+              "image_emoji": null,
+              "scores": {
+                "type_a": 3,
+                "type_b": 1,
+                "type_c": 1,
+                "type_d": 1
+              }
+            },
+            {
+              "id": "q6_b",
+              "text": "ผิวใสไร้สิว กล้าถ่ายรูปแบบไม่มีฟิลเตอร์ 📸",
+              "image_emoji": null,
+              "scores": {
+                "type_a": 0,
+                "type_b": 3,
+                "type_c": 1,
+                "type_d": 1
+              }
+            },
+            {
+              "id": "q6_c",
+              "text": "ผิวแข็งแรง ใช้อะไรก็ไม่แพ้ ไม่ต้องระวัง 🛡️",
+              "image_emoji": null,
+              "scores": {
+                "type_a": 1,
+                "type_b": 1,
+                "type_c": 3,
+                "type_d": 0
+              }
+            },
+            {
+              "id": "q6_d",
+              "text": "ผิวกระจ่างใส ดูอ่อนเยาว์ คนทักว่าหน้าใส ✨",
+              "image_emoji": null,
+              "scores": {
+                "type_a": 1,
+                "type_b": 0,
+                "type_c": 0,
+                "type_d": 3
+              }
+            }
+          ]
+        }
+      ],
+      "results": {
+        "type_a": {
+          "id": "type_a",
+          "identity_label": "สายฉ่ำวาว",
+          "identity_label_en": "Dewy Queen",
+          "emoji": "💧",
+          "color": "#0B6E8F",
+          "bg_color": "#E8F4F8",
+          "headline": "หน้าคุณกำลังร้องขอความชุ่มชื้นอยู่เลย! 💧",
+          "description": "เพราะคุณบอกว่าหน้าตึงและแห้งตอนเช้า แถมยังกังวลเรื่องผิวขาดน้ำมากที่สุด — นั่นคือสัญญาณชัดเจนว่า Skin Barrier ของคุณต้องการความชุ่มชื้นจากลึกถึงลึก ไม่ใช่แค่ทาผิวด้านนอก คนสาย Dewy มักถูกมองว่า 'ผิวดีตั้งแต่เกิด' แต่ความจริงคือพวกเขารู้จักเลือกครีมที่ใช่ต่างหาก! ✨",
+          "routine": [
+            {
+              "step": 1,
+              "title": "ล้างหน้าด้วยโฟมอ่อนโยน",
+              "description": "อย่าใช้สูตรแรงเกินไป จะยิ่งทำให้ผิวแห้งและตึงมากขึ้น"
+            },
+            {
+              "step": 2,
+              "title": "ทาครีมยูเรียขณะผิวยังชื้นอยู่",
+              "description": "Damp Skin Method ช่วยกักความชื้นได้ดีกว่าปกติถึง 2 เท่า"
+            },
+            {
+              "step": 3,
+              "title": "ทาครีมกันแดด Fuji ทับ",
+              "description": "ปกป้องพร้อมล็อคความชุ่มชื้นตลอดวัน PA++++ ไม่ทิ้งคราบ"
+            },
+            {
+              "step": 4,
+              "title": "ดื่มน้ำ 8 แก้วต่อวัน",
+              "description": "ผิวสวยจากภายใน ไม่มีครีมไหนทดแทนได้จริงๆ"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_001",
+              "name": "ครีมยูเรีย 40% COCOSILIYA (150g)",
+              "price": "฿106",
+              "original_price": "฿199",
+              "discount_badge": "ลด 47%",
+              "affiliate_link": "https://s.shopee.co.th/AAD7P8CVYE",
+              "why_recommended": "เพราะคุณบอกว่าผิวแห้งตึงและขาดน้ำ — ยูเรีย 40% ซึมลึกถึงชั้นผิวที่ครีมทั่วไปเข้าไม่ถึง ให้ความชุ่มชื้นยาวนานทั้งวัน",
+              "social_proof": "ขาย 4,000+ ชิ้น | 4.9 ⭐ | 1.6k รีวิว",
+              "match_score": 98,
+              "badge": "Flash Sale!"
+            },
+            {
+              "id": "prod_002",
+              "name": "Fuji Hazel Snow Sunscreen SPF50+ PA++++ (50g)",
+              "price": "฿249",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/3B3N4xlDr5",
+              "why_recommended": "คุณอยากผิวฉ่ำแต่ต้องออกแดด — กันแดด PA++++ พร้อมสารสกัดเฮเซลนัทที่ให้ความชุ่มชื้น ไม่เหนียว ไม่อุดตัน เหมาะ Step สุดท้ายก่อนออกบ้าน",
+              "social_proof": "ขาย 4,000+ ชิ้น | 4.9 ⭐ | 1.6k รีวิว",
+              "match_score": 92,
+              "badge": "Flash Sale!"
+            }
+          ],
+          "pro_tips": [
+            "ทาครีมทับผิวที่ยังชื้นอยู่เล็กน้อย (Damp Skin Method) — ช่วยให้ผิวดูดซึมได้ดีขึ้น 40%",
+            "ลองใช้ Humidifier ในห้องนอน — ช่วยรักษาความชื้นผิวขณะนอนหลับ",
+            "หลีกเลี่ยงน้ำร้อนจัดตอนล้างหน้า — ทำลาย Skin Barrier ทีละนิดโดยไม่รู้ตัว"
+          ],
+          "share_card": {
+            "identity_label": "สายฉ่ำวาว",
+            "emoji": "💧",
+            "subtitle": "Dewy Skin คือสไตล์ของฉัน!",
+            "breakdown": {
+              "ฉ่ำวาว": 75,
+              "คลีนสกิน": 10,
+              "อ่อนโยน": 8,
+              "ผิวแก้ว": 7
+            },
+            "cta_text": "คุณล่ะเป็น Skin Persona ไหน? ลองเลย!"
+          }
+        },
+        "type_b": {
+          "id": "type_b",
+          "identity_label": "สายคลีนสกิน",
+          "identity_label_en": "Clear Skin Hero",
+          "emoji": "🌿",
+          "color": "#2D6A4F",
+          "bg_color": "#E8F5EE",
+          "headline": "คุณไม่ได้มีผิวแย่ — แค่ยังไม่เจอของที่ใช่เท่านั้นเอง! 🌿",
+          "description": "เพราะคุณบอกว่าสิวอุดตันและสิวอักเสบคือปัญหาหลัก และกังวลว่าทาครีมแล้วจะเป็นสิวเพิ่ม — ความรู้สึกนี้คนสายคลีนสกินเข้าใจดีมาก ผิวมันไม่ใช่ศัตรู แต่คือสัญญาณว่าผิวกำลังปกป้องตัวเองอยู่ แค่ต้องหาสมดุลให้เจอด้วยส่วนผสมจากธรรมชาติที่อ่อนโยนพอ ผิวใสไร้สิวไม่ใช่แค่ฝัน ✨",
+          "routine": [
+            {
+              "step": 1,
+              "title": "ล้างหน้าด้วย Gentle Foam เช้า-เย็น",
+              "description": "ไม่ขจัดน้ำมันจนเกินไป เพราะจะทำให้ผิวผลิตน้ำมันมากขึ้นแทน"
+            },
+            {
+              "step": 2,
+              "title": "ทา Perfect Plant บางๆ ทั่วหน้า",
+              "description": "สูตรออร์แกนิค ไม่อุดตัน ทาได้ทุกเช้าและก่อนนอน"
+            },
+            {
+              "step": 3,
+              "title": "ทาซ้ำเฉพาะจุดที่มีสิวอักเสบ",
+              "description": "เน้นบริเวณที่ต้องการมากกว่า เห็นผลรอยแดงเร็วขึ้น"
+            },
+            {
+              "step": 4,
+              "title": "หยุดแตะหน้าโดยไม่จำเป็น",
+              "description": "แบคทีเรียจากมือคือตัวการหลักของสิวใหม่ที่คนมักมองข้าม"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_003",
+              "name": "Perfect Plant Natural Extract Acne Cream",
+              "price": "฿499",
+              "original_price": "฿1,490",
+              "discount_badge": "ลด 67%",
+              "affiliate_link": "https://s.shopee.co.th/4VYkeqQnEV",
+              "why_recommended": "เพราะคุณกังวลเรื่องสิวอักเสบและกลัวสิ่งที่อุดตัน — สูตรออร์แกนิค 20 ชนิด ผ่าน Dermatologist Tested ทาได้ทั้งทั่วหน้าและเฉพาะจุด เห็นผลรอยแดงใน 8 ชั่วโมง",
+              "social_proof": "Rating 5.0 ⭐ | 33 รีวิว | มี อย. รับรอง",
+              "match_score": 97,
+              "badge": "ลด 67%!"
+            }
+          ],
+          "pro_tips": [
+            "เปลี่ยนปลอกหมอนทุก 3-4 วัน — แบคทีเรียสะสมมากกว่าที่คิด",
+            "ใช้ผ้าเช็ดหน้าแยกต่างหาก ไม่ใช้ร่วมกับคนอื่น",
+            "อาหารที่กระตุ้นสิวในคนไทย: นม ช็อกโกแลต อาหารทอด — ลองลดดูสัปดาห์นึง"
+          ],
+          "share_card": {
+            "identity_label": "สายคลีนสกิน",
+            "emoji": "🌿",
+            "subtitle": "ผิวใสไร้สิว คือภารกิจของฉัน!",
+            "breakdown": {
+              "คลีนสกิน": 72,
+              "ฉ่ำวาว": 12,
+              "อ่อนโยน": 10,
+              "ผิวแก้ว": 6
+            },
+            "cta_text": "คุณล่ะเป็น Skin Persona ไหน? ลองเลย!"
+          }
+        },
+        "type_c": {
+          "id": "type_c",
+          "identity_label": "สายอ่อนโยน",
+          "identity_label_en": "Sensitive Soul",
+          "emoji": "🌸",
+          "color": "#8B3A6B",
+          "bg_color": "#FCF0F7",
+          "headline": "ผิวคุณไม่ได้แพ้ง่าย — แค่ต้องการคนที่เข้าใจมันมากกว่านี้! 🌸",
+          "description": "เพราะคุณบอกว่าผิวแดง แสบ ระคายเคืองง่าย และกังวลเรื่องการแพ้ทุกครั้งที่ลองของใหม่ — ความรู้สึกนี้หนักมากเลยนะ ที่จริงผิวแพ้ง่ายไม่ใช่ความอ่อนแอ แต่คือผิวที่ Sensitive พอจะรู้ว่าอะไรดีหรือไม่ดีกับมัน แค่ต้องหาครีมที่ได้รับการพิสูจน์จากแพทย์ผิวหนังจริงๆ เท่านั้น ✨",
+          "routine": [
+            {
+              "step": 1,
+              "title": "ล้างหน้าด้วยน้ำเย็นหรืออุ่น",
+              "description": "น้ำร้อนทำให้เส้นเลือดฝอยขยาย ยิ่งทำให้หน้าแดงมากขึ้น"
+            },
+            {
+              "step": 2,
+              "title": "ซับหน้าเบาๆ ด้วยผ้านุ่ม",
+              "description": "ไม่ถูหน้า เพราะแรงเสียดทานทำให้ผิวอักเสบได้"
+            },
+            {
+              "step": 3,
+              "title": "ทา Bioderma ขณะผิวยังอุ่นอยู่",
+              "description": "ซึมซาบได้ดีที่สุด เสริม Skin Barrier ได้อย่างเต็มประสิทธิภาพ"
+            },
+            {
+              "step": 4,
+              "title": "Patch Test ทุกครั้งก่อนลองของใหม่",
+              "description": "ทาที่คอก่อน รอ 24 ชั่วโมง ปลอดภัยกว่าเสมอ"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_004",
+              "name": "Bioderma Sensibio Defensive (40ml)",
+              "price": "฿889",
+              "original_price": "฿940",
+              "discount_badge": "ลด 5%",
+              "affiliate_link": "https://s.shopee.co.th/8phjowtSgu",
+              "why_recommended": "เพราะคุณบอกว่าผิวแพ้ง่ายและกลัวระคายเคือง — Bioderma คือแบรนด์เดอร์มาที่แพทย์ผิวหนังไว้วางใจ เทคโนโลยี Defensive ปกป้องถึงระดับ PM2.5 ผ่านการทดสอบกับผิวแพ้ง่ายโดยเฉพาะ",
+              "social_proof": "ขาย 7,000+ ชิ้น | 4.9 ⭐ | 1.5k รีวิว",
+              "match_score": 96,
+              "badge": "Dermatologist Recommended"
+            }
+          ],
+          "pro_tips": [
+            "Less is More — ผิวแพ้ง่ายใช้ผลิตภัณฑ์น้อยชิ้น ดีกว่าใช้เยอะ",
+            "หลีกเลี่ยง Fragrance และ Alcohol ในส่วนผสม — สองตัวนี้คือตัวการหลัก",
+            "ถ้าผิวแดงกะทันหัน ประคบเย็น 10 นาที — ช่วยลดการอักเสบได้ทันที"
+          ],
+          "share_card": {
+            "identity_label": "สายอ่อนโยน",
+            "emoji": "🌸",
+            "subtitle": "Sensitive Skin ก็มีความสวยในแบบของตัวเอง!",
+            "breakdown": {
+              "อ่อนโยน": 70,
+              "ฉ่ำวาว": 15,
+              "คลีนสกิน": 10,
+              "ผิวแก้ว": 5
+            },
+            "cta_text": "คุณล่ะเป็น Skin Persona ไหน? ลองเลย!"
+          }
+        },
+        "type_d": {
+          "id": "type_d",
+          "identity_label": "สายผิวแก้ว",
+          "identity_label_en": "Glow Goddess",
+          "emoji": "💎",
+          "color": "#7B5E00",
+          "bg_color": "#FDF8E8",
+          "headline": "ผิวกระจ่างใสมีออร่าไม่ใช่แค่ในฝัน — มันคือ Destination ถัดไปของคุณ! 💎",
+          "description": "เพราะคุณบอกว่าผิวหมองคล้ำดูไม่มีชีวิตชีวา และอยากได้ผิวกระจ่างใส ดูอ่อนเยาว์ คนทัก — ฝ้า กระ และริ้วรอยมันค่อยๆ สะสมโดยที่เราไม่ทันสังเกต สิ่งที่คุณต้องการไม่ใช่แค่ครีมขาว แต่คือครีมที่ยับยั้งกลไกการเกิดความหมองคล้ำตั้งแต่ต้นทาง พร้อมกระตุ้นคอลลาเจนให้ผิวกลับมา Glow จากข้างใน ✨",
+          "routine": [
+            {
+              "step": 1,
+              "title": "ทา EVE'S ครีมเจลหลังล้างหน้าตอนเช้า",
+              "description": "ยับยั้ง 5 กลไกหมองคล้ำตั้งแต่เริ่มต้นวัน"
+            },
+            {
+              "step": 2,
+              "title": "ทา ดร.สมชาย บิวตี้ครีม ทับ",
+              "description": "วิตามินซี 99% กระตุ้นคอลลาเจนตลอดวัน เสริมฤทธิ์กับ EVE'S ได้ดีมาก"
+            },
+            {
+              "step": 3,
+              "title": "กันแดดทุกวัน ไม่มีข้อยกเว้น",
+              "description": "UV คือสาเหตุหลักของฝ้าและริ้วรอย ถ้าไม่กันแดดครีมไหนก็ช่วยได้แค่ครึ่งเดียว"
+            },
+            {
+              "step": 4,
+              "title": "นอนหลับ 7-8 ชั่วโมง",
+              "description": "ผิวซ่อมแซมและสร้างคอลลาเจนตอนหลับเท่านั้น อย่าให้พลาด"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_005",
+              "name": "EVE'S Pro Radiance Brightening Cream Gel (20g)",
+              "price": "฿450",
+              "original_price": "฿590",
+              "discount_badge": "ลด 24%",
+              "affiliate_link": "https://s.shopee.co.th/9Ke0QWNexE",
+              "why_recommended": "เพราะคุณบอกว่าผิวหมองคล้ำและมีฝ้า/กระ — EVE'S Extract สารสกัดญี่ปุ่น 10 ชนิด ยับยั้ง 5 กลไกตั้งแต่การสร้างเม็ดสีจนถึงการขนส่ง ไม่ใช่แค่ปิดผิว แต่แก้ที่ต้นเหตุจริงๆ",
+              "social_proof": "ขาย 20,000+ ชิ้น | 4.9 ⭐ | 8.7k รีวิว",
+              "match_score": 98,
+              "badge": "Best Seller อันดับ 1"
+            },
+            {
+              "id": "prod_006",
+              "name": "ดร.สมชาย บิวตี้ครีม วิตามินซี 99% (15g)",
+              "price": "฿372",
+              "original_price": "฿399",
+              "discount_badge": "ลด 7%",
+              "affiliate_link": "https://s.shopee.co.th/40cU4MOnm0",
+              "why_recommended": "เพราะคุณอยากผิวดูอ่อนเยาว์และลดริ้วรอย — วิตามินซีบริสุทธิ์ 99% กระตุ้นคอลลาเจนได้ดีกว่าวิตามินซีปกติหลายเท่า ใช้คู่กับ EVE'S เสริมฤทธิ์กันได้เลย",
+              "social_proof": "ขาย 1,000+ ชิ้น | 5.0 ⭐ | 341 รีวิว",
+              "match_score": 91,
+              "badge": "Doctor Formula"
+            }
+          ],
+          "pro_tips": [
+            "วิตามินซีทำงานได้ดีที่สุดตอนเช้า — ทาก่อนกันแดดเสมอ",
+            "ฝ้าจากแดดจะจางลงได้ก็ต่อเมื่อหยุดรับแดดด้วย — กันแดดคือ Non-negotiable",
+            "กินวิตามินซีเสริมควบคู่ — ช่วยให้ผิวสว่างจากภายในด้วย"
+          ],
+          "share_card": {
+            "identity_label": "สายผิวแก้ว",
+            "emoji": "💎",
+            "subtitle": "Glow from Within คือ DNA ของฉัน!",
+            "breakdown": {
+              "ผิวแก้ว": 73,
+              "ฉ่ำวาว": 12,
+              "อ่อนโยน": 8,
+              "คลีนสกิน": 7
+            },
+            "cta_text": "คุณล่ะเป็น Skin Persona ไหน? ลองเลย!"
+          }
+        }
+      },
+      "viral_mechanics": {
+        "share_button": true,
+        "challenge_friend": true,
+        "share_platforms": [
+          "line",
+          "instagram_story",
+          "facebook",
+          "tiktok"
+        ],
+        "share_incentive": "แชร์แล้วได้ +5 Coins"
+      },
+      "gamification": {
+        "quiz_coins_reward": 10,
+        "share_coins_reward": 5,
+        "streak_bonus": {
+          "3_days": 50,
+          "7_days": 200,
+          "30_days": 1000
+        },
+        "badges": {
+          "first_quiz": {
+            "name": "นักสำรวจมือใหม่",
+            "emoji": "🏅"
+          },
+          "5_quizzes": {
+            "name": "ผู้เชี่ยวชาญตัวตน",
+            "emoji": "🏆"
+          },
+          "share_result": {
+            "name": "นักแชร์ตัวยง",
+            "emoji": "📢"
+          }
+        }
+      },
+      "app_config": {
+        "progress_bar_start_at": 15,
+        "auto_advance_delay_ms": 500,
+        "one_question_per_screen": true,
+        "show_match_score": true
+      }
+    },
+    {
+      "quiz_id": "cleansing-persona-2026",
+      "version": "2.0.0",
+      "created_at": "2026-04-11T12:00:00+07:00",
+      "metadata": {
+        "title": "ค้นหา Cleansing Persona ของคุณ",
+        "subtitle": "สไตล์ล้างหน้าแบบไหนที่ใช่สำหรับคุณ?",
+        "category": "beauty",
+        "estimated_time": "90 วินาที",
+        "total_questions": 6,
+        "cover_emoji": "🫧",
+        "share_text": "Cleansing Persona ของฉันคือ {result_title}! คุณล่ะเป็นแบบไหน?",
+        "total_plays": 0,
+        "trending_badge": null
+      },
+      "scoring": {
+        "method": "weighted_category",
+        "categories": [
+          "soft_bubble",
+          "milky_glow",
+          "crystal_wipe",
+          "deep_melt"
+        ],
+        "result_logic": "highest_score_wins",
+        "tiebreaker": "last_questions_priority"
+      },
+      "anticipation_screen": {
+        "enabled": true,
+        "duration_ms": 2500,
+        "messages": [
+          "กำลังวิเคราะห์สไตล์การล้างหน้าของคุณ...",
+          "จับคู่ Cleanser ที่เหมาะที่สุด...",
+          "เกือบเสร็จแล้ว! ✨"
+        ]
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "order": 1,
+          "question": "ถ้าผิวหน้าคุณเป็นธาตุ จะเป็นธาตุไหน?",
+          "subtitle": null,
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "image_grid",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q1_a",
+              "text": "ธาตุน้ำ — ไหลลื่น ปรับตัวเก่ง",
+              "image_emoji": "🌊",
+              "scores": {
+                "soft_bubble": 3,
+                "milky_glow": 1,
+                "crystal_wipe": 2,
+                "deep_melt": 0
+              }
+            },
+            {
+              "id": "q1_b",
+              "text": "ธาตุดิน — มั่นคง หนักแน่น",
+              "image_emoji": "🌿",
+              "scores": {
+                "soft_bubble": 1,
+                "milky_glow": 3,
+                "crystal_wipe": 0,
+                "deep_melt": 2
+              }
+            },
+            {
+              "id": "q1_c",
+              "text": "ธาตุลม — เบาสบาย อิสระ",
+              "image_emoji": "💨",
+              "scores": {
+                "soft_bubble": 0,
+                "milky_glow": 0,
+                "crystal_wipe": 3,
+                "deep_melt": 1
+              }
+            },
+            {
+              "id": "q1_d",
+              "text": "ธาตุไฟ — จัดจ้าน เอาจริง",
+              "image_emoji": "🔥",
+              "scores": {
+                "soft_bubble": 2,
+                "milky_glow": 0,
+                "crystal_wipe": 1,
+                "deep_melt": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "order": 2,
+          "question": "เช้าวันหยุด คุณตื่นมาทำอะไรเป็นอย่างแรก?",
+          "subtitle": null,
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "image_grid",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q2_a",
+              "text": "ล้างหน้าแล้วทำสกินแคร์ตามสเต็ป",
+              "image_emoji": "🧖‍♀️",
+              "scores": {
+                "soft_bubble": 3,
+                "milky_glow": 2,
+                "crystal_wipe": 0,
+                "deep_melt": 1
+              }
+            },
+            {
+              "id": "q2_b",
+              "text": "นอนต่ออีกนิด แล้วค่อยๆ ลุกไปอาบน้ำ",
+              "image_emoji": "😴",
+              "scores": {
+                "soft_bubble": 0,
+                "milky_glow": 3,
+                "crystal_wipe": 1,
+                "deep_melt": 0
+              }
+            },
+            {
+              "id": "q2_c",
+              "text": "หยิบสำลีเช็ดหน้าบนเตียงเลย",
+              "image_emoji": "🛏️",
+              "scores": {
+                "soft_bubble": 0,
+                "milky_glow": 0,
+                "crystal_wipe": 3,
+                "deep_melt": 1
+              }
+            },
+            {
+              "id": "q2_d",
+              "text": "อาบน้ำแบบ Full Routine ก่อนทำอย่างอื่น",
+              "image_emoji": "🚿",
+              "scores": {
+                "soft_bubble": 1,
+                "milky_glow": 0,
+                "crystal_wipe": 0,
+                "deep_melt": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "order": 3,
+          "question": "ปัญหาล้างหน้าที่ทนไม่ไหว คือข้อไหน?",
+          "subtitle": null,
+          "why_we_ask": "เพื่อหาตัวช่วยที่แก้ปัญหาตรงจุดให้คุณ",
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": "89% ของคนผิวแพ้ง่ายเลือกข้อ C",
+          "options": [
+            {
+              "id": "q3_a",
+              "text": "ล้างแล้วหน้าแห้งตึง ไม่ชุ่มชื้นเลย 😣",
+              "image_emoji": null,
+              "scores": {
+                "soft_bubble": 2,
+                "milky_glow": 3,
+                "crystal_wipe": 0,
+                "deep_melt": 1
+              }
+            },
+            {
+              "id": "q3_b",
+              "text": "ล้างไม่สะอาด ยังเหลือเมคอัพตกค้าง 😤",
+              "image_emoji": null,
+              "scores": {
+                "soft_bubble": 0,
+                "milky_glow": 0,
+                "crystal_wipe": 1,
+                "deep_melt": 3
+              }
+            },
+            {
+              "id": "q3_c",
+              "text": "ผิวแพ้ง่าย แสบแดงหลังล้างหน้า 😖",
+              "image_emoji": null,
+              "scores": {
+                "soft_bubble": 3,
+                "milky_glow": 2,
+                "crystal_wipe": 1,
+                "deep_melt": 0
+              }
+            },
+            {
+              "id": "q3_d",
+              "text": "ขั้นตอนเยอะเกินไป ไม่มีเวลา 😮‍💨",
+              "image_emoji": null,
+              "scores": {
+                "soft_bubble": 0,
+                "milky_glow": 0,
+                "crystal_wipe": 3,
+                "deep_melt": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "order": 4,
+          "question": "ตอนเลือกซื้อ Cleanser คุณดูอะไรก่อน?",
+          "subtitle": null,
+          "why_we_ask": "เพื่อแมตช์สินค้าที่ตรงกับสิ่งที่คุณให้ความสำคัญ",
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q4_a",
+              "text": "ส่วนผสม / สารสำคัญ ต้องอ่านฉลากก่อน 🔬",
+              "image_emoji": null,
+              "scores": {
+                "soft_bubble": 3,
+                "milky_glow": 1,
+                "crystal_wipe": 0,
+                "deep_melt": 2
+              }
+            },
+            {
+              "id": "q4_b",
+              "text": "รีวิว / ยอดขาย คนใช้เยอะ = ไว้ใจได้ ⭐",
+              "image_emoji": null,
+              "scores": {
+                "soft_bubble": 1,
+                "milky_glow": 2,
+                "crystal_wipe": 2,
+                "deep_melt": 3
+              }
+            },
+            {
+              "id": "q4_c",
+              "text": "ราคา / ความคุ้มค่า ของดีไม่ต้องแพง 💰",
+              "image_emoji": null,
+              "scores": {
+                "soft_bubble": 1,
+                "milky_glow": 3,
+                "crystal_wipe": 2,
+                "deep_melt": 0
+              }
+            },
+            {
+              "id": "q4_d",
+              "text": "ใช้ง่าย / สะดวก ไม่ยุ่งยาก 🎯",
+              "image_emoji": null,
+              "scores": {
+                "soft_bubble": 0,
+                "milky_glow": 0,
+                "crystal_wipe": 3,
+                "deep_melt": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "order": 5,
+          "question": "วันที่แต่งหน้าเต็มหน้า คุณล้างเครื่องสำอางยังไง?",
+          "subtitle": null,
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q5_a",
+              "text": "ใช้โฟม/เจลตัวเดียวจบ ล้างแล้วสะอาดพอ 🫧",
+              "image_emoji": null,
+              "scores": {
+                "soft_bubble": 3,
+                "milky_glow": 1,
+                "crystal_wipe": 0,
+                "deep_melt": 0
+              }
+            },
+            {
+              "id": "q5_b",
+              "text": "เช็ดด้วย Cleansing Water ก่อน แล้วค่อยล้างหน้า 💧",
+              "image_emoji": null,
+              "scores": {
+                "soft_bubble": 0,
+                "milky_glow": 0,
+                "crystal_wipe": 3,
+                "deep_melt": 2
+              }
+            },
+            {
+              "id": "q5_c",
+              "text": "ใช้ Oil/Balm ละลายเมคอัพก่อน แล้วล้างซ้ำ 🫶",
+              "image_emoji": null,
+              "scores": {
+                "soft_bubble": 0,
+                "milky_glow": 0,
+                "crystal_wipe": 1,
+                "deep_melt": 3
+              }
+            },
+            {
+              "id": "q5_d",
+              "text": "ใช้น้ำนมล้างหน้า เนื้อนุ่มๆ ไม่ระคายเคือง 🧴",
+              "image_emoji": null,
+              "scores": {
+                "soft_bubble": 1,
+                "milky_glow": 3,
+                "crystal_wipe": 0,
+                "deep_melt": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "order": 6,
+          "question": "ถ้าล้างหน้าเสร็จแล้วผิวเป็นแบบนี้ได้... จะดีมาก!",
+          "subtitle": null,
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q6_a",
+              "text": "ผิวนุ่ม ชุ่มชื้น แตะแล้วเด้ง เหมือนเด็กทารก 👶",
+              "image_emoji": null,
+              "scores": {
+                "soft_bubble": 3,
+                "milky_glow": 2,
+                "crystal_wipe": 0,
+                "deep_melt": 0
+              }
+            },
+            {
+              "id": "q6_b",
+              "text": "ผิวขาวใส เนียนกระจ่าง ดูมีออร่า ✨",
+              "image_emoji": null,
+              "scores": {
+                "soft_bubble": 0,
+                "milky_glow": 3,
+                "crystal_wipe": 1,
+                "deep_melt": 0
+              }
+            },
+            {
+              "id": "q6_c",
+              "text": "ผิวสะอาดหมดจด เบาสบาย ไม่มีอะไรตกค้าง 🫧",
+              "image_emoji": null,
+              "scores": {
+                "soft_bubble": 1,
+                "milky_glow": 0,
+                "crystal_wipe": 3,
+                "deep_melt": 2
+              }
+            },
+            {
+              "id": "q6_d",
+              "text": "ผิวแข็งแรง เกราะผิวดี ไม่แพ้ง่าย 🛡️",
+              "image_emoji": null,
+              "scores": {
+                "soft_bubble": 2,
+                "milky_glow": 0,
+                "crystal_wipe": 0,
+                "deep_melt": 3
+              }
+            }
+          ]
+        }
+      ],
+      "results": {
+        "soft_bubble": {
+          "id": "soft_bubble",
+          "identity_label": "สายฟองละมุน",
+          "identity_label_en": "Soft Bubble",
+          "emoji": "🫧",
+          "color": "#4A90D9",
+          "bg_color": "#EBF4FF",
+          "headline": "คุณคือคนที่เชื่อว่า ความอ่อนโยน คือพลังที่แท้จริง",
+          "description": "เนื่องจากคุณบอกว่าผิวแพ้ง่าย แสบแดงหลังล้างหน้า และให้ความสำคัญกับส่วนผสมและสารสำคัญมากเป็นพิเศษ — คุณเป็นคนที่ไม่ยอมประนีประนอมกับสิ่งที่สัมผัสผิวหน้า ปัญหาคือ Cleanser ส่วนใหญ่ในท้องตลาดใช้สารทำความสะอาดที่รุนแรงเกินไป ทำให้เกราะผิวพัง ยิ่งล้างยิ่งแพ้ สิ่งที่คุณต้องการคือ Cleanser ที่ pH ต่ำ ใช้กรดอะมิโนหรือเซราไมด์เป็นตัวล้าง — สะอาดได้โดยไม่ทำลายเกราะผิว",
+          "routine": [
+            {
+              "step": 1,
+              "title": "💦 เปียกหน้าด้วยน้ำอุ่น",
+              "description": "น้ำอุ่นช่วยเปิดรูขุมขน ให้ Cleanser ทำงานได้ดีขึ้นโดยไม่ต้องถูแรง"
+            },
+            {
+              "step": 2,
+              "title": "🫧 ตีฟองบนมือก่อน",
+              "description": "อย่าถูเนื้อผลิตภัณฑ์บนหน้าตรงๆ ตีฟองให้ละเอียดก่อนจะอ่อนโยนกว่ามาก"
+            },
+            {
+              "step": 3,
+              "title": "🌀 นวดวนเบาๆ 30 วินาที",
+              "description": "ไม่ต้องถูแรง 30 วินาทีพอ — นานกว่านี้จะดึงความชุ่มชื้นออก"
+            },
+            {
+              "step": 4,
+              "title": "🧊 สแปลชน้ำเย็นปิดท้าย",
+              "description": "น้ำเย็นช่วยกระชับรูขุมขน ผิวรู้สึกสดชื่นทันที"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_001",
+              "name": "ZA Gentle Amino Acid Facial Cleanser 100g",
+              "price": "฿99",
+              "original_price": "฿258",
+              "discount_badge": "ลด 62%",
+              "affiliate_link": "https://s.shopee.co.th/8KlTRjkbJL",
+              "why_recommended": "เหมาะกับคุณเพราะคุณให้ความสำคัญกับส่วนผสม — ตัวนี้ใช้กรดอะมิโน 25% จดสิทธิบัตร + AQUAXYL ที่ล้างสะอาดโดยไม่ทำให้ผิวบอบบางของคุณแห้งตึงเลย",
+              "social_proof": "ขาย 1,000+ | 4.9 ⭐ | แถมฟรี Facial Mask",
+              "match_score": 96,
+              "badge": "💰 คุ้มค่าที่สุด"
+            },
+            {
+              "id": "prod_002",
+              "name": "SKINTIFIC 5X Ceramide Low pH Cleanser 120ml",
+              "price": "฿699",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/60NYfXMoPC",
+              "why_recommended": "เนื่องจากคุณอยากได้ผิวนุ่มชุ่มชื้นหลังล้างหน้า — เซราไมด์ 5 ชนิดในตัวนี้จะเสริมเกราะผิวของคุณไปพร้อมกับการทำความสะอาด ยิ่งล้างผิวยิ่งแข็งแรง",
+              "social_proof": "ขาย 5,000+ | 4.9 ⭐ | VIP Price ฿184",
+              "match_score": 93,
+              "badge": "🏆 Premium Pick"
+            }
+          ],
+          "pro_tips": [
+            "🕐 ล้างหน้าไม่เกิน 60 วินาที — นานกว่านี้ไม่ได้สะอาดขึ้น แต่ผิวจะแห้งขึ้น",
+            "🌡️ เช็คค่า pH ของ Cleanser — ควรอยู่ที่ 4.5-6.5 ถ้าสูงกว่านี้อาจทำลายเกราะผิว",
+            "🧴 ไม่ต้องเปลี่ยน Cleanser บ่อย — ผิวแพ้ง่ายควรใช้ตัวเดิมที่เข้ากันดี อย่าเปลี่ยนตามเทรนด์"
+          ],
+          "share_card": {
+            "identity_label": "สายฟองละมุน",
+            "emoji": "🫧",
+            "subtitle": "ฟองนุ่มๆ อ่อนโยนๆ แต่สะอาดลึกถึงรูขุมขน",
+            "breakdown": {
+              "ฟองละมุน": 65,
+              "นมนุ่ม": 18,
+              "น้ำใสปิ๊ง": 10,
+              "คลีนลึก": 7
+            },
+            "cta_text": "Cleansing Persona ของฉันคือ สายฟองละมุน! คุณล่ะเป็นแบบไหน? 🫧"
+          }
+        },
+        "milky_glow": {
+          "id": "milky_glow",
+          "identity_label": "สายนมนุ่ม",
+          "identity_label_en": "Milky Glow",
+          "emoji": "🧴",
+          "color": "#D4A574",
+          "bg_color": "#FFF8F0",
+          "headline": "คุณคือคนที่เชื่อว่า ล้างหน้าก็ต้องบำรุงไปด้วย ทำไมต้องเลือกแค่อย่างเดียว?",
+          "description": "เนื่องจากคุณบอกว่าล้างแล้วหน้าแห้งตึง ไม่ชุ่มชื้นเลย และมองหาความคุ้มค่า ของดีไม่ต้องแพง — คุณเป็นคนที่รู้ว่าตัวเองต้องการอะไร และไม่ยอมจ่ายเกินจริง ปัญหาคือ Cleanser หลายตัวโฆษณาว่าชุ่มชื้น แต่พอใช้จริงกลับแห้งตึงเหมือนเดิม Milk Cleanser คือคำตอบของคุณ — โปรตีนนมและสารบำรุงจะเคลือบผิวระหว่างล้าง ล้างเสร็จผิวนุ่มเด้ง ไม่ใช่แห้งกร้าน",
+          "routine": [
+            {
+              "step": 1,
+              "title": "💦 สเปรย์น้ำแร่ก่อนล้างหน้า",
+              "description": "เตรียมผิวให้ชุ่มก่อน Cleanser จะซึมเข้าได้ดีขึ้น"
+            },
+            {
+              "step": 2,
+              "title": "🧴 บีบเนื้อน้ำนมบนมือเปียก",
+              "description": "เนื้อน้ำนมไม่ต้องตีฟอง แค่ถูให้กระจายแล้วนวดบนหน้า"
+            },
+            {
+              "step": 3,
+              "title": "🌀 นวดวนขึ้นบน 45 วินาที",
+              "description": "นวดจากคางขึ้นหน้าผาก ช่วยกระตุ้นการไหลเวียนเลือด + ลิฟต์หน้า"
+            },
+            {
+              "step": 4,
+              "title": "🌸 ซับด้วยผ้าขนหนูนุ่มๆ",
+              "description": "อย่าถูหน้า! แค่ซับเบาๆ ผิวจะเก็บความชุ่มชื้นได้ดีกว่า"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_003",
+              "name": "Beauty Buffet Scentio Milk Plus Whitening Q10 Facial Foam 100ml",
+              "price": "฿116",
+              "original_price": "฿155",
+              "discount_badge": "ลด 25%",
+              "affiliate_link": "https://s.shopee.co.th/1BIIuvpSkk",
+              "why_recommended": "เนื่องจากคุณอยากได้ผิวขาวใส เนียนกระจ่าง ดูมีออร่า — ตัวนี้มีสารสกัดน้ำนม + Q10 + Vitamin E ที่บำรุงไปพร้อมกับล้าง ราคาร้อยกว่าบาท คุ้มค่าตรงใจคุณแน่นอน",
+              "social_proof": "ขาย 4,000+ | 4.9 ⭐ (1,300 รีวิว) | Konvy ของแท้ 100%",
+              "match_score": 95,
+              "badge": "💰 คุ้มค่าที่สุด"
+            },
+            {
+              "id": "prod_004",
+              "name": "Riku First Milk Face Cleanser",
+              "price": "฿250",
+              "original_price": "฿750",
+              "discount_badge": "ลด 67%",
+              "affiliate_link": "https://s.shopee.co.th/6L0P4iHRSB",
+              "why_recommended": "เนื่องจากคุณมีผิวที่ต้องการความอ่อนโยนเป็นพิเศษ — ตัวนี้ใช้น้ำนมแรก Colostrum ที่บำรุงเข้มข้นกว่านมทั่วไปหลายเท่า + มี Peptide ที่ช่วยลดริ้วรอย ตั้งครรภ์ก็ใช้ได้",
+              "social_proof": "ขาย 4,000+ | 4.9 ⭐ (1,100 รีวิว) | Shopee Mall ของแท้",
+              "match_score": 92,
+              "badge": "🏆 Premium Pick"
+            }
+          ],
+          "pro_tips": [
+            "🥛 Milk Cleanser ใช้ได้ทั้งเช้าและเย็น — เช้าล้างเบาๆ ไม่ต้องตีฟอง เย็นนวดนานขึ้นนิดเพื่อล้างสิ่งสกปรก",
+            "💧 ทาครีมบำรุงภายใน 60 วินาทีหลังล้างหน้า — ผิวดูดซับดีที่สุดตอนยังชื้นอยู่",
+            "🍯 ผสมน้ำผึ้ง 1 หยดกับ Cleanser — เคล็ดลับเสริมความชุ่มชื้น ผิวนุ่มขึ้นอีกระดับ"
+          ],
+          "share_card": {
+            "identity_label": "สายนมนุ่ม",
+            "emoji": "🧴",
+            "subtitle": "ล้างหน้าก็บำรุงไปด้วย ผิวนุ่มเด้งตั้งแต่ขั้นตอนแรก",
+            "breakdown": {
+              "นมนุ่ม": 62,
+              "ฟองละมุน": 20,
+              "คลีนลึก": 12,
+              "น้ำใสปิ๊ง": 6
+            },
+            "cta_text": "Cleansing Persona ของฉันคือ สายนมนุ่ม! คุณล่ะเป็นแบบไหน? 🧴"
+          }
+        },
+        "crystal_wipe": {
+          "id": "crystal_wipe",
+          "identity_label": "สายน้ำใสปิ๊ง",
+          "identity_label_en": "Crystal Wipe",
+          "emoji": "💧",
+          "color": "#00B4D8",
+          "bg_color": "#E8FAFE",
+          "headline": "คุณคือคนที่พิสูจน์ว่า ดูแลตัวเองดีได้ โดยไม่ต้องยุ่งยาก",
+          "description": "เนื่องจากคุณบอกว่าขั้นตอนเยอะเกินไป ไม่มีเวลา และชอบความสะดวก ใช้ง่าย ไม่ยุ่งยาก — คุณเป็นคนที่รู้จักจัดลำดับความสำคัญในชีวิต ปัญหาคือหลายคนคิดว่า สะดวก = ไม่สะอาด แต่จริงๆ แล้ว Micellar Water ยุคใหม่ทำความสะอาดได้ลึกกว่าที่คิด ปาดเดียวจบ ไม่ต้องล้างน้ำซ้ำ Micellar Water ที่ดีต้องไม่ทิ้งความเหนอะหนะ ไม่ระคายเคือง และมีสารบำรุงเสริมไปในตัว",
+          "routine": [
+            {
+              "step": 1,
+              "title": "💧 ชุบสำลีให้ชุ่ม",
+              "description": "ใช้สำลีแผ่นบาง ชุบให้เปียกทั่ว อย่าใช้สำลีแห้งเช็ดจะดึงผิว"
+            },
+            {
+              "step": 2,
+              "title": "🫶 ปาดเบาๆ จากในออกนอก",
+              "description": "อย่าถูไปมา! ปาดทิศทางเดียว จากกลางหน้าออกด้านข้าง"
+            },
+            {
+              "step": 3,
+              "title": "✨ ไม่ต้องล้างน้ำซ้ำ",
+              "description": "Micellar Water สูตรดี ไม่ต้องล้างออก ทาครีมบำรุงต่อได้เลย"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_005",
+              "name": "Boots Vitamin C Brightening Micellar Water 400ml",
+              "price": "฿145",
+              "original_price": "฿289",
+              "discount_badge": "ลด 50%",
+              "affiliate_link": "https://s.shopee.co.th/9UxQqgiNBw",
+              "why_recommended": "เหมาะกับคุณที่อยากผิวสะอาดเบาสบายแบบไม่ยุ่งยาก — ตัวนี้มี 2x Vitamin C + ส้ม Yuzu ที่ทำความสะอาดพร้อมเพิ่มความกระจ่างใสในปาดเดียว ไม่มีแอลกอฮอล์ ไม่มีน้ำหอม อ่อนโยนสุดๆ",
+              "social_proof": "ขาย 20,000+ | 4.9 ⭐ (7,900 รีวิว)",
+              "match_score": 97,
+              "badge": "🔥 Best Seller"
+            },
+            {
+              "id": "prod_006",
+              "name": "Pond's Micellar Miracle Cleansing Water 400ml",
+              "price": "฿269",
+              "original_price": "฿279",
+              "discount_badge": "ลด 4%",
+              "affiliate_link": "https://s.shopee.co.th/6VJpHLt8DY",
+              "why_recommended": "เนื่องจากคุณชอบอะไรที่จบในขั้นตอนเดียว — ตัวนี้รวม 3-in-1 ไมเซลล่า + โทนเนอร์ + เอสเซนส์ ในขวดเดียว เช็ดสะอาด 99% พร้อมกระชับรูขุมขน ยอดขายอันดับ 1 ในเกาหลี 3 ปีซ้อน",
+              "social_proof": "ขาย 6,000+ | 4.9 ⭐ (2,300 รีวิว) | #1 Korea 3 ปีซ้อน",
+              "match_score": 91,
+              "badge": "🇰🇷 #1 Korea"
+            }
+          ],
+          "pro_tips": [
+            "🧹 ปาดจนสำลีสะอาด — ถ้าปาดแล้วสำลียังมีสี ปาดซ้ำอีกรอบจนใส แปลว่าสะอาดจริง",
+            "👁️ รอบดวงตาต้องอ่อนโยนเป็นพิเศษ — วางสำลีทาบ 5 วินาทีก่อนค่อยเช็ด อย่าถูแรงเด็ดขาด",
+            "🧊 เก็บ Micellar Water ในตู้เย็น — เช็ดหน้าเย็นๆ ช่วยกระชับรูขุมขน + รู้สึกสดชื่นมาก"
+          ],
+          "share_card": {
+            "identity_label": "สายน้ำใสปิ๊ง",
+            "emoji": "💧",
+            "subtitle": "ปาดเดียวจบ สะอาดใส ไม่ต้องยุ่งยาก",
+            "breakdown": {
+              "น้ำใสปิ๊ง": 60,
+              "คลีนลึก": 18,
+              "ฟองละมุน": 14,
+              "นมนุ่ม": 8
+            },
+            "cta_text": "Cleansing Persona ของฉันคือ สายน้ำใสปิ๊ง! คุณล่ะเป็นแบบไหน? 💧"
+          }
+        },
+        "deep_melt": {
+          "id": "deep_melt",
+          "identity_label": "สายคลีนลึก",
+          "identity_label_en": "Deep Melt",
+          "emoji": "🫶",
+          "color": "#8B5CF6",
+          "bg_color": "#F3EEFF",
+          "headline": "คุณคือคนที่เชื่อว่า ล้างหน้าสะอาดหมดจด คือจุดเริ่มต้นของผิวสวย",
+          "description": "เนื่องจากคุณบอกว่าล้างไม่สะอาด ยังเหลือเมคอัพตกค้าง เป็นสิ่งที่ทนไม่ไหว และคุณชอบอาบน้ำแบบ Full Routine เป็นอย่างแรก — คุณเป็นคนที่จริงจังกับการดูแลตัวเอง ปัญหาคือ Cleanser ธรรมดาไม่สามารถละลายเมคอัพกันน้ำ กันแดด SPF50 หรือรองพื้นเนื้อหนาได้หมด Oil Cleanser / Cleansing Balm คือ First Step ที่ต้องมี — ใช้หลักการ Oil dissolves Oil ละลายเมคอัพและสิ่งสกปรกออกจากผิวโดยไม่ต้องถูแรง",
+          "routine": [
+            {
+              "step": 1,
+              "title": "🫶 ทา Oil/Balm บนหน้าแห้ง",
+              "description": "ต้องหน้าแห้ง! ถ้ามือหรือหน้าเปียก ประสิทธิภาพจะลดลง (ยกเว้น AMT ที่ใช้มือเปียกได้)"
+            },
+            {
+              "step": 2,
+              "title": "🌀 นวดวน 30-60 วินาที",
+              "description": "จะเห็นเมคอัพละลายออกมา อย่ารีบ! นี่คือช่วงเวลา Self-care"
+            },
+            {
+              "step": 3,
+              "title": "💦 เติมน้ำให้ขุ่นขาว (Emulsify)",
+              "description": "เติมน้ำนิดหน่อย นวดจนเนื้อเปลี่ยนเป็นสีขาวขุ่น แล้วล้างออก"
+            },
+            {
+              "step": 4,
+              "title": "🫧 ล้างซ้ำด้วย Cleanser ตัวที่ 2",
+              "description": "Double Cleanse! ใช้โฟม/เจลล้างซ้ำเพื่อให้สะอาด 100%"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_007",
+              "name": "AMT Purifying & Moisturizing Cleansing Oil 120ml",
+              "price": "฿200",
+              "original_price": "฿750",
+              "discount_badge": "ลด 73%",
+              "affiliate_link": "https://s.shopee.co.th/LjBwC47YB",
+              "why_recommended": "เหมาะกับคุณที่ต้องการผิวสะอาดหมดจดและเกราะผิวแข็งแรง — ตัวนี้ใช้เทคโนโลยี Bicontinuous Phase ที่ละลายเมคอัพได้หมดจดโดยไม่ทำลายผิว pH 5.5 + Rose Geranium ต้านแบคทีเรีย ใช้มือเปียกได้ด้วย!",
+              "social_proof": "ขาย 20,000+ | 5.0 ⭐ (6,300 รีวิว)",
+              "match_score": 98,
+              "badge": "🔥 Best Seller + ⚡ Flash Deal"
+            },
+            {
+              "id": "prod_008",
+              "name": "Banila Co Clean It Zero Cleansing Balm",
+              "price": "฿228",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/5fkiIVC86U",
+              "why_recommended": "เนื่องจากคุณชอบความรู้สึกละลายเมคอัพหลุดหมดจด — ตัวนี้คือ #1 Cleansing Balm ของเกาหลี ขายทั่วโลก 60 ล้านชิ้น ละลายใน 5 วินาที มี 6 สูตรให้เลือกตรงปัญหาผิวของคุณ Vegan + ไม่มีพาราเบน",
+              "social_proof": "ขาย 2,000+ | 5.0 ⭐ | #1 Balm Cleanser เกาหลี | ขาย 60 ล้านชิ้นทั่วโลก",
+              "match_score": 94,
+              "badge": "🇰🇷 #1 Korea · 🌱 Vegan"
+            }
+          ],
+          "pro_tips": [
+            "🫶 Double Cleanse แค่ตอนเย็น — ตอนเช้าไม่ต้อง Double Cleanse ใช้ Cleanser เบาๆ ตัวเดียวพอ",
+            "🧴 Cleansing Oil ≠ หน้ามัน — Oil Cleanser ออกแบบมาให้ล้างออกหมด ไม่ทำให้หน้ามันเพิ่ม",
+            "🪞 ทดสอบความสะอาด — หลัง Double Cleanse ใช้โทนเนอร์เช็ดด้วยสำลี ถ้าสำลียังสะอาดอยู่ = ล้างหมดจดแล้ว"
+          ],
+          "share_card": {
+            "identity_label": "สายคลีนลึก",
+            "emoji": "🫶",
+            "subtitle": "ละลายทุกอย่าง สะอาดหมดจด ผิวพร้อมรับการบำรุง",
+            "breakdown": {
+              "คลีนลึก": 63,
+              "ฟองละมุน": 17,
+              "น้ำใสปิ๊ง": 13,
+              "นมนุ่ม": 7
+            },
+            "cta_text": "Cleansing Persona ของฉันคือ สายคลีนลึก! คุณล่ะเป็นแบบไหน? 🫶"
+          }
+        }
+      },
+      "viral_mechanics": {
+        "share_button": true,
+        "challenge_friend": true,
+        "share_platforms": [
+          "line",
+          "instagram_story",
+          "facebook",
+          "tiktok"
+        ],
+        "share_incentive": "แชร์แล้วได้ +5 Coins"
+      },
+      "gamification": {
+        "quiz_coins_reward": 10,
+        "share_coins_reward": 5,
+        "streak_bonus": {
+          "3_days": 50,
+          "7_days": 200,
+          "30_days": 1000
+        },
+        "badges": {
+          "first_quiz": {
+            "name": "นักสำรวจมือใหม่",
+            "emoji": "🏅"
+          },
+          "5_quizzes": {
+            "name": "ผู้เชี่ยวชาญตัวตน",
+            "emoji": "🏆"
+          },
+          "share_result": {
+            "name": "นักแชร์ตัวยง",
+            "emoji": "📢"
+          }
+        }
+      },
+      "app_config": {
+        "progress_bar_start_at": 15,
+        "auto_advance_delay_ms": 500,
+        "one_question_per_screen": true,
+        "show_match_score": true
+      }
+    },
+    {
+      "quiz_id": "workout-style-finder-2026",
+      "version": "2.0.0",
+      "created_at": "2026-04-11T12:00:00Z",
+      "metadata": {
+        "title": "ค้นหา Workout Style ที่ใช่สำหรับคุณ",
+        "subtitle": "ตอบ 6 ข้อ รู้เลยว่าคุณเป็นสายไหน!",
+        "category": "health",
+        "estimated_time": "90 วินาที",
+        "total_questions": 6,
+        "cover_emoji": "🏋️",
+        "share_text": "ผลลัพธ์ของฉันคือ {result_title}! คุณล่ะเป็นสายไหน?",
+        "total_plays": 0,
+        "trending_badge": null
+      },
+      "scoring": {
+        "method": "weighted_category",
+        "categories": [
+          "speed_demon",
+          "iron_soul",
+          "zen_flow",
+          "home_beast"
+        ],
+        "result_logic": "highest_score_wins",
+        "tiebreaker": "last_questions_priority"
+      },
+      "anticipation_screen": {
+        "enabled": true,
+        "duration_ms": 2500,
+        "messages": [
+          "กำลังวิเคราะห์สไตล์ของคุณ...",
+          "จับคู่อุปกรณ์ที่เหมาะที่สุด...",
+          "เกือบเสร็จแล้ว!"
+        ]
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "order": 1,
+          "question": "ถ้าวันหยุดว่างๆ คุณอยากทำอะไรมากที่สุด?",
+          "subtitle": null,
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "image_grid",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q1_a",
+              "text": "วิ่งรอบสวน ฟังเพลงชิลๆ",
+              "image_emoji": "🏃‍♀️",
+              "scores": {
+                "speed_demon": 3,
+                "iron_soul": 0,
+                "zen_flow": 1,
+                "home_beast": 1
+              }
+            },
+            {
+              "id": "q1_b",
+              "text": "ยกเหล็ก ปั๊มกล้ามที่ยิม",
+              "image_emoji": "🏋️",
+              "scores": {
+                "speed_demon": 0,
+                "iron_soul": 3,
+                "zen_flow": 0,
+                "home_beast": 1
+              }
+            },
+            {
+              "id": "q1_c",
+              "text": "โยคะที่บ้าน จิบชาอุ่นๆ",
+              "image_emoji": "🧘",
+              "scores": {
+                "speed_demon": 0,
+                "iron_soul": 0,
+                "zen_flow": 3,
+                "home_beast": 1
+              }
+            },
+            {
+              "id": "q1_d",
+              "text": "ปั่นจักรยาน ดูซีรีส์ไปด้วย",
+              "image_emoji": "🚴",
+              "scores": {
+                "speed_demon": 1,
+                "iron_soul": 0,
+                "zen_flow": 1,
+                "home_beast": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "order": 2,
+          "question": "IG Story ออกกำลังกายของคุณ จะเป็นแบบไหน?",
+          "subtitle": null,
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "image_grid",
+          "social_proof_hint": "89% บอกว่าตรงเป๊ะ!",
+          "options": [
+            {
+              "id": "q2_a",
+              "text": "เซลฟี่หน้าเหงื่อหลังวิ่ง + สถิติวิ่ง",
+              "image_emoji": "🤳",
+              "scores": {
+                "speed_demon": 3,
+                "iron_soul": 1,
+                "zen_flow": 0,
+                "home_beast": 0
+              }
+            },
+            {
+              "id": "q2_b",
+              "text": "ถ่าย Before-After กล้ามแขน",
+              "image_emoji": "💪",
+              "scores": {
+                "speed_demon": 0,
+                "iron_soul": 3,
+                "zen_flow": 0,
+                "home_beast": 1
+              }
+            },
+            {
+              "id": "q2_c",
+              "text": "รูปเสื่อโยคะ มุมสวยๆ แสงธรรมชาติ",
+              "image_emoji": "🌿",
+              "scores": {
+                "speed_demon": 0,
+                "iron_soul": 0,
+                "zen_flow": 3,
+                "home_beast": 1
+              }
+            },
+            {
+              "id": "q2_d",
+              "text": "มุมออกกำลังกายที่บ้าน \"Home Gym จัดไป\"",
+              "image_emoji": "🏠",
+              "scores": {
+                "speed_demon": 0,
+                "iron_soul": 1,
+                "zen_flow": 0,
+                "home_beast": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "order": 3,
+          "question": "อะไรที่ทำให้คุณ 'ขี้เกียจ' ออกกำลังกายบ่อยที่สุด?",
+          "subtitle": null,
+          "why_we_ask": "เพื่อหาวิธีที่เหมาะกับไลฟ์สไตล์คุณจริงๆ",
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q3_a",
+              "text": "ไม่มีเวลา ชีวิตยุ่งมาก 😩",
+              "image_emoji": null,
+              "scores": {
+                "speed_demon": 1,
+                "iron_soul": 0,
+                "zen_flow": 1,
+                "home_beast": 3
+              }
+            },
+            {
+              "id": "q3_b",
+              "text": "ไม่เห็นผลสักที ท้อก่อน 😮‍💨",
+              "image_emoji": null,
+              "scores": {
+                "speed_demon": 1,
+                "iron_soul": 3,
+                "zen_flow": 0,
+                "home_beast": 0
+              }
+            },
+            {
+              "id": "q3_c",
+              "text": "ออกหนักไปแล้วปวดเมื่อย 🤕",
+              "image_emoji": null,
+              "scores": {
+                "speed_demon": 0,
+                "iron_soul": 1,
+                "zen_flow": 3,
+                "home_beast": 1
+              }
+            },
+            {
+              "id": "q3_d",
+              "text": "ไม่รู้จะเริ่มยังไง อุปกรณ์ก็ไม่มี 🤔",
+              "image_emoji": null,
+              "scores": {
+                "speed_demon": 2,
+                "iron_soul": 1,
+                "zen_flow": 1,
+                "home_beast": 2
+              }
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "order": 4,
+          "question": "ถ้าออกกำลังกายแล้วได้แค่อย่างเดียว คุณอยากได้อะไร?",
+          "subtitle": null,
+          "why_we_ask": "คำตอบนี้จะช่วยจับคู่สไตล์ที่ใช่ให้คุณ",
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q4_a",
+              "text": "สุขภาพหัวใจแข็งแรง อึดขึ้น 🫀",
+              "image_emoji": null,
+              "scores": {
+                "speed_demon": 3,
+                "iron_soul": 0,
+                "zen_flow": 1,
+                "home_beast": 1
+              }
+            },
+            {
+              "id": "q4_b",
+              "text": "หุ่นดี กล้ามชัด มั่นใจ 🔥",
+              "image_emoji": null,
+              "scores": {
+                "speed_demon": 0,
+                "iron_soul": 3,
+                "zen_flow": 0,
+                "home_beast": 1
+              }
+            },
+            {
+              "id": "q4_c",
+              "text": "ร่างกายผ่อนคลาย ไม่ปวดเมื่อย ☁️",
+              "image_emoji": null,
+              "scores": {
+                "speed_demon": 0,
+                "iron_soul": 0,
+                "zen_flow": 3,
+                "home_beast": 1
+              }
+            },
+            {
+              "id": "q4_d",
+              "text": "ออกกำลังกายสม่ำเสมอ เป็น Routine 📅",
+              "image_emoji": null,
+              "scores": {
+                "speed_demon": 1,
+                "iron_soul": 1,
+                "zen_flow": 1,
+                "home_beast": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "order": 5,
+          "question": "ถ้าได้งบ 2,000 บาท ซื้ออุปกรณ์ออกกำลังกาย คุณจะเลือกอะไร?",
+          "subtitle": null,
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q5_a",
+              "text": "เสื้อผ้ากีฬาดีๆ + Gadget วัดผล ⌚",
+              "image_emoji": null,
+              "scores": {
+                "speed_demon": 3,
+                "iron_soul": 0,
+                "zen_flow": 0,
+                "home_beast": 0
+              }
+            },
+            {
+              "id": "q5_b",
+              "text": "ดัมเบล + เวย์โปรตีน 1 กระปุก 🥤",
+              "image_emoji": null,
+              "scores": {
+                "speed_demon": 0,
+                "iron_soul": 3,
+                "zen_flow": 0,
+                "home_beast": 0
+              }
+            },
+            {
+              "id": "q5_c",
+              "text": "เสื่อโยคะ + โฟมนวดกล้ามเนื้อ 🧘",
+              "image_emoji": null,
+              "scores": {
+                "speed_demon": 0,
+                "iron_soul": 0,
+                "zen_flow": 3,
+                "home_beast": 0
+              }
+            },
+            {
+              "id": "q5_d",
+              "text": "เครื่องออกกำลังกาย ตั้งที่บ้าน 🏠",
+              "image_emoji": null,
+              "scores": {
+                "speed_demon": 0,
+                "iron_soul": 0,
+                "zen_flow": 0,
+                "home_beast": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "order": 6,
+          "question": "อีก 3 เดือนข้างหน้า คุณอยากเห็นตัวเองเป็นแบบไหน?",
+          "subtitle": null,
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q6_a",
+              "text": "วิ่ง 10K ได้สบายๆ ไม่หอบ 🏅",
+              "image_emoji": null,
+              "scores": {
+                "speed_demon": 3,
+                "iron_soul": 0,
+                "zen_flow": 1,
+                "home_beast": 0
+              }
+            },
+            {
+              "id": "q6_b",
+              "text": "ใส่เสื้อยืดแล้วกล้ามแขนเต็ม 💪",
+              "image_emoji": null,
+              "scores": {
+                "speed_demon": 0,
+                "iron_soul": 3,
+                "zen_flow": 0,
+                "home_beast": 0
+              }
+            },
+            {
+              "id": "q6_c",
+              "text": "ตื่นมาไม่ปวดหลัง ร่างกายเบาสบาย 🌈",
+              "image_emoji": null,
+              "scores": {
+                "speed_demon": 0,
+                "iron_soul": 0,
+                "zen_flow": 3,
+                "home_beast": 1
+              }
+            },
+            {
+              "id": "q6_d",
+              "text": "มี Routine ออกกำลังกายทุกวัน ไม่ต้องคิดเยอะ ✅",
+              "image_emoji": null,
+              "scores": {
+                "speed_demon": 1,
+                "iron_soul": 0,
+                "zen_flow": 0,
+                "home_beast": 3
+              }
+            }
+          ]
+        }
+      ],
+      "results": {
+        "speed_demon": {
+          "id": "speed_demon",
+          "identity_label": "สายลมกรด",
+          "identity_label_en": "Speed Demon",
+          "emoji": "💨",
+          "color": "#E63946",
+          "bg_color": "#FFF0F0",
+          "headline": "คุณเกิดมาเพื่อความเร็ว — ยิ่งวิ่ง ยิ่งมีพลัง!",
+          "description": "เนื่องจากคุณบอกว่า **อยากวิ่ง 10K ได้สบายๆ** และ **ชอบวัดสถิติตัวเอง** คุณเป็นคนที่มีเป้าหมายชัดเจนและขับเคลื่อนด้วย Data 🎯 ปัญหาคือ — ถ้าไม่มีอุปกรณ์ที่ใช่ คุณอาจวิ่งแบบไร้ทิศทาง ไม่เห็นพัฒนาการ แล้วก็หมดไฟ สิ่งที่คุณต้องการคืออุปกรณ์ที่ **ช่วยให้วิ่งสบายขึ้น + วัดผลได้จริง** เพื่อให้ทุกก้าวมีความหมาย",
+          "routine": [
+            {
+              "step": 1,
+              "title": "Warm-up 5 นาที",
+              "description": "เดินเร็วหรือจ็อกเบาๆ ให้หัวใจพร้อม อย่าข้ามขั้นตอนนี้เด็ดขาด"
+            },
+            {
+              "step": 2,
+              "title": "วิ่ง Interval 20-30 นาที",
+              "description": "สลับวิ่งเร็ว 1 นาที + จ็อก 2 นาที — วิธีเบิร์นแคลที่ดีที่สุดสำหรับสายลมกรด"
+            },
+            {
+              "step": 3,
+              "title": "Cool Down + ยืดเหยียด 5 นาที",
+              "description": "ลดความเร็วค่อยๆ แล้วยืดขา สะโพก น่อง ป้องกันบาดเจ็บ"
+            },
+            {
+              "step": 4,
+              "title": "เช็คสถิติ + วางแผนวันถัดไป",
+              "description": "ดู Data ชีพจร ระยะทาง แคลอรี่ แล้วตั้งเป้าวันพรุ่งนี้"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_001",
+              "name": "GQ Everyday Running & Training Lightning Shorts กางเกงวิ่งผ้าเบา",
+              "price": "฿185",
+              "original_price": "฿590",
+              "discount_badge": "ลด 69%",
+              "affiliate_link": "https://s.shopee.co.th/7VCMWSbJSA",
+              "why_recommended": "เนื่องจากคุณเป็นสายลมกรดที่ชอบวิ่งรอบสวน กางเกงตัวนี้ผ้าเบาพิเศษ แห้งเร็ว มีกระเป๋าเก็บโทรศัพท์ + แถบสะท้อนแสงสำหรับวิ่งตอนเย็น เหมาะกับคุณที่สุด",
+              "social_proof": "ขาย 20,000+ | 4.9 ⭐ (7.3K รีวิว)",
+              "match_score": 96,
+              "badge": "Best Seller"
+            },
+            {
+              "id": "prod_002",
+              "name": "WHOOP 5.0 ONE สายรัดข้อมือวัดชีพจร 24 ชม.",
+              "price": "฿10,590",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/50V1Y5s1vF",
+              "why_recommended": "คุณบอกว่าอยากเห็นสถิติตัวเอง WHOOP วัดชีพจร การนอน การฟื้นตัว 24 ชม. เซ็นเซอร์ 26 ครั้ง/วินาที จะช่วยให้ทุกรอบวิ่งของคุณมี Data ที่ใช้พัฒนาได้จริง",
+              "social_proof": "5.0 ⭐ (220 รีวิว) | ประกัน 1 ปี + 12-Month Membership",
+              "match_score": 92,
+              "badge": "Premium Pick"
+            }
+          ],
+          "pro_tips": [
+            "กฎ 10% Rule — เพิ่มระยะวิ่งไม่เกิน 10% ต่อสัปดาห์ ลดเสี่ยงบาดเจ็บได้มาก",
+            "วิ่งตอนเช้า 6-7 โมง — อากาศเย็น ร่างกายเบิร์นไขมันได้ดีกว่าตอนบ่าย 20%",
+            "ดื่มน้ำก่อนวิ่ง 30 นาที — 300-500 ml ช่วยให้ร่างกายพร้อม ไม่เหนื่อยเร็ว"
+          ],
+          "share_card": {
+            "identity_label": "สายลมกรด",
+            "emoji": "💨",
+            "subtitle": "เกิดมาเพื่อความเร็ว ยิ่งวิ่ง ยิ่งมีพลัง!",
+            "breakdown": {
+              "สายลมกรด": 65,
+              "สายแกร่ง": 15,
+              "สายบาลานซ์": 12,
+              "สายฟิตบ้าน": 8
+            },
+            "cta_text": "คุณล่ะเป็นสายไหน? ลองเลย!"
+          }
+        },
+        "iron_soul": {
+          "id": "iron_soul",
+          "identity_label": "สายแกร่ง",
+          "identity_label_en": "Iron Soul",
+          "emoji": "💪",
+          "color": "#1D3557",
+          "bg_color": "#EDF2F9",
+          "headline": "เหล็กหลอมเหล็ก — คุณคือคนที่แข็งแกร่งจากข้างใน!",
+          "description": "เนื่องจากคุณบอกว่า **อยากหุ่นดี กล้ามชัด มั่นใจ** และ **รู้สึกท้อเพราะไม่เห็นผล** คุณเป็นคนที่มีวินัยสูง แต่ต้องการเครื่องมือที่ช่วยให้เห็นผลลัพธ์เร็วขึ้น 🔥 ปัญหาคือ — ยกเวทแบบไม่มีแผน + ไม่เสริมโปรตีน ทำให้กล้ามเนื้อฟื้นตัวช้า ยิ่งเทรนยิ่งไม่เห็นผล สิ่งที่คุณต้องการคือ **อุปกรณ์ยกเวทที่ปรับได้ + โปรตีนคุณภาพ** เพื่อให้ทุก Rep มีค่า",
+          "routine": [
+            {
+              "step": 1,
+              "title": "Warm-up + Dynamic Stretch 5 นาที",
+              "description": "วอร์มข้อต่อ หมุนไหล่ บิดตัว เตรียมกล้ามเนื้อให้พร้อมรับน้ำหนัก"
+            },
+            {
+              "step": 2,
+              "title": "ยกเวท Compound Moves 30 นาที",
+              "description": "เน้น Squat, Deadlift, Press — ท่าที่ใช้กล้ามเนื้อหลายส่วนพร้อมกัน"
+            },
+            {
+              "step": 3,
+              "title": "เสริมโปรตีนภายใน 30 นาทีหลังเวท",
+              "description": "ช่วงเวลาทอง! ร่างกายดูดซึมโปรตีนได้ดีที่สุดตอนนี้"
+            },
+            {
+              "step": 4,
+              "title": "บันทึกน้ำหนัก + Reps ทุกครั้ง",
+              "description": "ติดตามพัฒนาการ เพิ่มน้ำหนักทุก 1-2 สัปดาห์ตามที่ร่างกายพร้อม"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_003",
+              "name": "Koraman ชุดดัมเบล 10-40KG ปรับน้ำหนักได้ พร้อมแกนบาร์เบล",
+              "price": "฿209-฿669",
+              "original_price": "฿418-฿1,338",
+              "discount_badge": "ลด 50%",
+              "affiliate_link": "https://s.shopee.co.th/4qBbM4xDYi",
+              "why_recommended": "เนื่องจากคุณเป็นสายแกร่งที่อยากเห็นผลชัดเจน ชุดดัมเบลนี้ปรับน้ำหนักได้ 10-40KG + ใช้เป็นบาร์เบลได้ด้วย เพิ่มน้ำหนักค่อยๆ ตามพัฒนาการของคุณ",
+              "social_proof": "ขาย 10,000+ | 4.9 ⭐ (2K รีวิว)",
+              "match_score": 95,
+              "badge": "Best Seller"
+            },
+            {
+              "id": "prod_004",
+              "name": "biovitt Whey Protein Isolate เวย์โปรตีน ไอโซเลท 907.2g",
+              "price": "฿1,350",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/6L0P93W2Zm",
+              "why_recommended": "คุณบอกว่าอยากได้ดัมเบล + เวย์โปรตีน พอดีเลย! ตัวนี้โปรตีน 36g/serving ละลายง่าย มี อย. ดื่มหลังเวทภายใน 30 นาที ช่วยให้กล้ามฟื้นตัวเร็วขึ้น",
+              "social_proof": "ขาย 90,000+ 🔥🔥 | 4.9 ⭐ (29.2K รีวิว)",
+              "match_score": 93,
+              "badge": "Mega Best Seller"
+            }
+          ],
+          "pro_tips": [
+            "Progressive Overload — เพิ่มน้ำหนัก 2.5-5% ทุก 2 สัปดาห์ จะเห็นผลชัดกว่าเพิ่มทีเดียวเยอะ",
+            "นอนให้ครบ 7-8 ชม. — กล้ามเนื้อเติบโตตอนนอน ไม่ใช่ตอนยก! นี่คือเคล็ดลับที่คนส่วนใหญ่มองข้าม",
+            "โปรตีน 1.6-2.2g ต่อ kg น้ำหนักตัว/วัน — ไม่ใช่แค่หลังเวท กระจายทั้งวัน 3-4 มื้อ"
+          ],
+          "share_card": {
+            "identity_label": "สายแกร่ง",
+            "emoji": "💪",
+            "subtitle": "เหล็กหลอมเหล็ก แข็งแกร่งจากข้างใน!",
+            "breakdown": {
+              "สายแกร่ง": 62,
+              "สายฟิตบ้าน": 20,
+              "สายลมกรด": 10,
+              "สายบาลานซ์": 8
+            },
+            "cta_text": "คุณล่ะเป็นสายไหน? ลองเลย!"
+          }
+        },
+        "zen_flow": {
+          "id": "zen_flow",
+          "identity_label": "สายบาลานซ์",
+          "identity_label_en": "Zen Flow",
+          "emoji": "🧘",
+          "color": "#6B4C9A",
+          "bg_color": "#F3EFFA",
+          "headline": "สมดุลคือพลัง — คุณดูแลทั้งกายและใจไปพร้อมกัน",
+          "description": "เนื่องจากคุณบอกว่า **อยากตื่นมาไม่ปวดหลัง ร่างกายเบาสบาย** และ **เคยออกหนักไปแล้วปวดเมื่อย** คุณเป็นคนที่เข้าใจร่างกายตัวเองดี และเลือกดูแลแบบไม่หักโหม 🌿 ปัญหาคือ — หลายคนคิดว่าโยคะไม่ได้ผล แต่จริงๆ แล้วการยืดเหยียดสม่ำเสมอ ช่วยลดปวด ลดเครียด และทำให้ร่างกายยืดหยุ่นกว่าคนที่ออกหนักอย่างเดียวมาก สิ่งที่คุณต้องการคือ **อุปกรณ์ที่ช่วยให้ยืดเหยียดได้ลึกขึ้น + ฟื้นฟูร่างกายได้ดีขึ้น**",
+          "routine": [
+            {
+              "step": 1,
+              "title": "หายใจลึก 3 นาที",
+              "description": "นั่งสบาย หลับตา หายใจเข้า 4 วิ หายใจออก 6 วิ เตรียมใจให้สงบ"
+            },
+            {
+              "step": 2,
+              "title": "โยคะ / ยืดเหยียด 20 นาที",
+              "description": "เน้นท่าที่เปิดสะโพก หลัง ไหล่ — จุดที่ปวดบ่อยที่สุดของคนทำงาน"
+            },
+            {
+              "step": 3,
+              "title": "Foam Rolling 10 นาที",
+              "description": "กลิ้งคลายกล้ามเนื้อที่ตึง โดยเฉพาะน่อง ต้นขา หลังส่วนล่าง"
+            },
+            {
+              "step": 4,
+              "title": "จบด้วย Savasana 3 นาที",
+              "description": "นอนหงาย ผ่อนคลายทุกส่วน ปล่อยให้ร่างกายดูดซับประโยชน์จากการฝึก"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_005",
+              "name": "TRAILTOP เสื่อโยคะ หนาพิเศษ 8/10 mm. Yoga mat กันลื่น NBR",
+              "price": "฿98",
+              "original_price": null,
+              "discount_badge": "Flash Sale",
+              "affiliate_link": "https://s.shopee.co.th/2qQWz2hSIC",
+              "why_recommended": "เนื่องจากคุณเป็นสายบาลานซ์ที่ชอบโยคะที่บ้าน เสื่อตัวนี้หนา 8-10mm กันลื่นสองด้าน ลดเสียงรบกวน เล่นที่คอนโดก็ไม่โดนต่อว่า + มีกระเป๋าพกพาไปเล่นที่ไหนก็ได้",
+              "social_proof": "ขาย 100,000+ 🔥🔥🔥 | 4.9 ⭐ (43.2K รีวิว)",
+              "match_score": 97,
+              "badge": "Mega Best Seller"
+            },
+            {
+              "id": "prod_006",
+              "name": "BG Yoga Foam Roller Massage โฟมโรลเลอร์ นวดกล้ามเนื้อ",
+              "price": "฿77-฿109",
+              "original_price": "฿159-฿209",
+              "discount_badge": "ลด 52%",
+              "affiliate_link": "https://s.shopee.co.th/901AKhb3rN",
+              "why_recommended": "คุณบอกว่าเคยปวดเมื่อยจากออกกำลังกาย Foam Roller ตัวนี้ช่วยคลายกล้ามเนื้อที่ตึง ลดปมพังผืด ใช้ Warm-up ก่อนโยคะ หรือ Recovery หลังออกกำลังกายได้ทุกแบบ",
+              "social_proof": "ขาย 6,000+ | 4.8 ⭐ (2.3K รีวิว)",
+              "match_score": 94,
+              "badge": "Value Pick"
+            }
+          ],
+          "pro_tips": [
+            "ยืดเหยียดตอนเช้าหลังตื่น 5 นาที — ร่างกายตึงที่สุดตอนเช้า ยืดแค่ 5 นาทีจะรู้สึกต่างมาก",
+            "Foam Roll ก่อนนอน — ช่วยให้กล้ามเนื้อคลาย นอนหลับลึกขึ้น ตื่นมาสดชื่น",
+            "ดื่มน้ำอุ่นผสมมะนาว — ตอนเช้าก่อนโยคะ ช่วยกระตุ้นระบบย่อย ร่างกายเบาสบาย"
+          ],
+          "share_card": {
+            "identity_label": "สายบาลานซ์",
+            "emoji": "🧘",
+            "subtitle": "สมดุลคือพลัง ดูแลทั้งกายและใจ",
+            "breakdown": {
+              "สายบาลานซ์": 70,
+              "สายฟิตบ้าน": 17,
+              "สายลมกรด": 8,
+              "สายแกร่ง": 5
+            },
+            "cta_text": "คุณล่ะเป็นสายไหน? ลองเลย!"
+          }
+        },
+        "home_beast": {
+          "id": "home_beast",
+          "identity_label": "สายฟิตบ้าน",
+          "identity_label_en": "Home Beast",
+          "emoji": "🏠",
+          "color": "#E9A820",
+          "bg_color": "#FFF8E8",
+          "headline": "บ้านก็เป็นยิมได้ — คุณคือคนที่ฟิตได้ทุกที่ ทุกเวลา!",
+          "description": "เนื่องจากคุณบอกว่า **ไม่มีเวลา ชีวิตยุ่งมาก** และ **อยากมี Routine ออกกำลังกายทุกวัน** คุณเป็นคนที่ Serious เรื่องสุขภาพ แต่ต้องการความสะดวกเป็นอันดับหนึ่ง 🏠 ปัญหาคือ — การต้องเดินทางไปยิม + รอคิวเครื่อง + เสียเวลาแต่งตัว ทำให้วันดีๆ กลายเป็นวันขี้เกียจง่ายมาก สิ่งที่คุณต้องการคือ **เครื่องออกกำลังกายที่ตั้งที่บ้าน** ตื่นมาก็เล่นได้เลย ไม่ต้องคิดเยอะ",
+          "routine": [
+            {
+              "step": 1,
+              "title": "ตื่นมา ใส่ชุดกีฬา ไม่ต้องคิด",
+              "description": "เตรียมชุดไว้ข้างเตียง ตื่นมาใส่เลย — ลด Decision Fatigue"
+            },
+            {
+              "step": 2,
+              "title": "Cardio 20-30 นาที",
+              "description": "สลับวันลู่วิ่ง กับ Spin Bike เพื่อไม่ให้เบื่อ + ดูซีรีส์ไปด้วยได้"
+            },
+            {
+              "step": 3,
+              "title": "Bodyweight 10 นาที",
+              "description": "เสริมด้วยแพลงก์ วิดพื้น สควอท — ไม่ต้องมีอุปกรณ์เพิ่ม"
+            },
+            {
+              "step": 4,
+              "title": "ยืดเหยียด + บันทึกผล 5 นาที",
+              "description": "จดว่าวันนี้ทำอะไร กี่นาที รู้สึกยังไง สร้าง Streak ให้ตัวเอง"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_007",
+              "name": "ลู่วิ่งไฟฟ้าพับได้ Mini Treadmill พร้อมจอ LCD + รีโมท",
+              "price": "฿2,839",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/70G5xOQaK9",
+              "why_recommended": "เนื่องจากคุณเป็นสายฟิตบ้านที่ไม่มีเวลาไปยิม ลู่วิ่งตัวนี้พับเก็บได้ เสียงเงียบ 50dB ใช้ในคอนโดได้สบาย มีหลายรุ่นตั้งแต่เดินจนถึงวิ่ง 14 km/h",
+              "social_proof": "ขาย 7,000+ | 4.9 ⭐ (2.7K รีวิว)",
+              "match_score": 96,
+              "badge": "Best Seller"
+            },
+            {
+              "id": "prod_008",
+              "name": "จักรยานออกกำลังกาย Spinning Spin Bike หน้าจอ LCD",
+              "price": "฿1,928",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/4AvuaQI73T",
+              "why_recommended": "คุณบอกว่าชอบปั่นจักรยาน ดูซีรีส์ไปด้วย Spin Bike ตัวนี้เงียบมาก ไม่กระแทกข้อต่อ ปรับแรงต้านได้หลายระดับ วัดชีพจรได้ที่แฮนด์ ปั่นไปดูซีรีส์ไป 30 นาทีผ่านไปไม่รู้ตัว",
+              "social_proof": "ขาย 3,000+ | 4.8 ⭐ (1.1K รีวิว)",
+              "match_score": 93,
+              "badge": "Value Pick"
+            }
+          ],
+          "pro_tips": [
+            "กฎ 2 นาที — บอกตัวเองว่าแค่ 2 นาที พอเริ่มแล้ว 90% จะทำต่อจนจบ ชนะความขี้เกียจทุกครั้ง",
+            "สลับเครื่อง ไม่ให้เบื่อ — จันทร์-พุธ-ศุกร์ ลู่วิ่ง / อังคาร-พฤหัส Spin Bike / เสาร์-อาทิตย์ Bodyweight",
+            "ตั้งเครื่องไว้ที่เห็น — อย่าเก็บมุมห้อง ตั้งไว้หน้า TV หรือหน้าต่าง จะอยากเล่นมากขึ้น 3 เท่า"
+          ],
+          "share_card": {
+            "identity_label": "สายฟิตบ้าน",
+            "emoji": "🏠",
+            "subtitle": "บ้านก็เป็นยิมได้ ฟิตทุกที่ ทุกเวลา!",
+            "breakdown": {
+              "สายฟิตบ้าน": 68,
+              "สายลมกรด": 12,
+              "สายแกร่ง": 10,
+              "สายบาลานซ์": 10
+            },
+            "cta_text": "คุณล่ะเป็นสายไหน? ลองเลย!"
+          }
+        }
+      },
+      "viral_mechanics": {
+        "share_button": true,
+        "challenge_friend": true,
+        "share_platforms": [
+          "line",
+          "instagram_story",
+          "facebook",
+          "tiktok"
+        ],
+        "share_incentive": "แชร์แล้วได้ +5 Coins"
+      },
+      "gamification": {
+        "quiz_coins_reward": 10,
+        "share_coins_reward": 5,
+        "streak_bonus": {
+          "3_days": 50,
+          "7_days": 200,
+          "30_days": 1000
+        },
+        "badges": {
+          "first_quiz": {
+            "name": "นักสำรวจมือใหม่",
+            "emoji": "🏅"
+          },
+          "5_quizzes": {
+            "name": "ผู้เชี่ยวชาญตัวตน",
+            "emoji": "🏆"
+          },
+          "share_result": {
+            "name": "นักแชร์ตัวยง",
+            "emoji": "📢"
+          }
+        }
+      },
+      "app_config": {
+        "progress_bar_start_at": 15,
+        "auto_advance_delay_ms": 500,
+        "one_question_per_screen": true,
+        "show_match_score": true
+      }
+    },
+    {
+      "quiz_id": "thai-5-elements-crystal-quiz",
+      "version": "2.0.0",
+      "created_at": "2026-04-12T12:00:00Z",
+      "metadata": {
+        "title": "หินมงคลไหนที่เสริมพลังให้คุณ?",
+        "subtitle": "ตอบ 7 ข้อ จับคู่หินมงคลที่เข้ากับพลังงานและบุคลิกของคุณ ตามศาสตร์ 5 ธาตุจีน",
+        "category": "spiritual",
+        "estimated_time": "90 วินาที",
+        "total_questions": 7,
+        "cover_emoji": "🔮",
+        "share_text": "ฉันได้ {result_title}! คุณล่ะเหมาะกับหินอะไร?",
+        "total_plays": 0,
+        "trending_badge": null
+      },
+      "scoring": {
+        "method": "weighted_category",
+        "categories": [
+          "fire",
+          "water",
+          "earth",
+          "wind",
+          "gold"
+        ],
+        "result_logic": "highest_score_wins",
+        "tiebreaker": "last_questions_priority"
+      },
+      "anticipation_screen": {
+        "enabled": true,
+        "duration_ms": 2500,
+        "messages": [
+          "กำลังอ่านพลังงานของคุณ...",
+          "จับคู่ธาตุที่ซ่อนอยู่ในตัวคุณ...",
+          "เกือบเสร็จแล้ว! ✨"
+        ]
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "order": 1,
+          "question": "ถ้าเลือกได้ 1 ที่ สำหรับชาร์จพลังวันหยุด คุณจะไปไหน?",
+          "subtitle": null,
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "image_grid",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q1_a",
+              "text": "ปีนเขาชมพระอาทิตย์ขึ้น",
+              "image_emoji": "🌄",
+              "scores": {
+                "fire": 3,
+                "water": 0,
+                "earth": 1,
+                "wind": 1,
+                "gold": 1
+              }
+            },
+            {
+              "id": "q1_b",
+              "text": "นั่งริมทะเล ฟังเสียงคลื่น",
+              "image_emoji": "🏖️",
+              "scores": {
+                "fire": 0,
+                "water": 3,
+                "earth": 1,
+                "wind": 1,
+                "gold": 0
+              }
+            },
+            {
+              "id": "q1_c",
+              "text": "ไปวัดทำบุญ นั่งสมาธิในป่า",
+              "image_emoji": "🌳",
+              "scores": {
+                "fire": 0,
+                "water": 1,
+                "earth": 3,
+                "wind": 1,
+                "gold": 0
+              }
+            },
+            {
+              "id": "q1_d",
+              "text": "เที่ยวพิพิธภัณฑ์ ดูดาว ทำกิจกรรมแปลกใหม่",
+              "image_emoji": "🔭",
+              "scores": {
+                "fire": 0,
+                "water": 0,
+                "earth": 0,
+                "wind": 3,
+                "gold": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "order": 2,
+          "question": "มุมโปรดในบ้านคุณ เป็นแบบไหน?",
+          "subtitle": null,
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "image_grid",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q2_a",
+              "text": "โต๊ะทำงานเต็มไปด้วยโปรเจกต์และแพลน",
+              "image_emoji": "💼",
+              "scores": {
+                "fire": 2,
+                "water": 0,
+                "earth": 0,
+                "wind": 0,
+                "gold": 3
+              }
+            },
+            {
+              "id": "q2_b",
+              "text": "มุมโซฟาอุ่นๆ มีผ้าห่มกับเทียนหอม",
+              "image_emoji": "🕯️",
+              "scores": {
+                "fire": 0,
+                "water": 3,
+                "earth": 2,
+                "wind": 0,
+                "gold": 0
+              }
+            },
+            {
+              "id": "q2_c",
+              "text": "มุมหินมงคลกับต้นไม้เล็กๆ จัดอย่างดี",
+              "image_emoji": "🪴",
+              "scores": {
+                "fire": 0,
+                "water": 1,
+                "earth": 3,
+                "wind": 1,
+                "gold": 1
+              }
+            },
+            {
+              "id": "q2_d",
+              "text": "มุมอ่านหนังสือ มีคริสตัลกับกระดิ่งลม",
+              "image_emoji": "🔮",
+              "scores": {
+                "fire": 0,
+                "water": 0,
+                "earth": 0,
+                "wind": 3,
+                "gold": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "order": 3,
+          "question": "ช่วงนี้ อะไรที่ทำให้คุณรู้สึก 'ขาด' มากที่สุด?",
+          "subtitle": null,
+          "why_we_ask": "คำตอบนี้จะช่วยให้เราจับคู่หินที่ช่วยเติมเต็มพลังงานที่คุณต้องการมากที่สุด",
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q3_a",
+              "text": "🔥 ขาดไฟ ขาดแรงจูงใจ รู้สึกหมดพลัง",
+              "image_emoji": null,
+              "scores": {
+                "fire": 3,
+                "water": 0,
+                "earth": 0,
+                "wind": 0,
+                "gold": 1
+              }
+            },
+            {
+              "id": "q3_b",
+              "text": "💙 ขาดคนเข้าใจ อยากมีคนรับฟัง",
+              "image_emoji": null,
+              "scores": {
+                "fire": 0,
+                "water": 3,
+                "earth": 1,
+                "wind": 0,
+                "gold": 0
+              }
+            },
+            {
+              "id": "q3_c",
+              "text": "🛡️ ขาดความมั่นคง รู้สึกไม่ปลอดภัย",
+              "image_emoji": null,
+              "scores": {
+                "fire": 0,
+                "water": 0,
+                "earth": 3,
+                "wind": 0,
+                "gold": 1
+              }
+            },
+            {
+              "id": "q3_d",
+              "text": "✨ ขาดแรงบันดาลใจ ชีวิตจำเจ ไม่มีอะไรตื่นเต้น",
+              "image_emoji": null,
+              "scores": {
+                "fire": 1,
+                "water": 0,
+                "earth": 0,
+                "wind": 3,
+                "gold": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "order": 4,
+          "question": "เวลาเจอปัญหาหนักๆ คุณจัดการยังไง?",
+          "subtitle": null,
+          "why_we_ask": "วิธีรับมือปัญหาบอกได้ว่าพลังงานแบบไหนที่ซ่อนอยู่ในตัวคุณ",
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": "89% ของคนทำ Quiz นี้ บอกว่าผลลัพธ์ตรงมาก!",
+          "options": [
+            {
+              "id": "q4_a",
+              "text": "ลุยเลย! ยิ่งยาก ยิ่งสู้ ไม่ถอย",
+              "image_emoji": null,
+              "scores": {
+                "fire": 3,
+                "water": 0,
+                "earth": 0,
+                "wind": 0,
+                "gold": 2
+              }
+            },
+            {
+              "id": "q4_b",
+              "text": "หายใจลึกๆ ปล่อยวาง แล้วค่อยคิด",
+              "image_emoji": null,
+              "scores": {
+                "fire": 0,
+                "water": 3,
+                "earth": 1,
+                "wind": 1,
+                "gold": 0
+              }
+            },
+            {
+              "id": "q4_c",
+              "text": "วางแผนรอบคอบก่อน แล้วค่อยลงมือ",
+              "image_emoji": null,
+              "scores": {
+                "fire": 0,
+                "water": 0,
+                "earth": 3,
+                "wind": 0,
+                "gold": 2
+              }
+            },
+            {
+              "id": "q4_d",
+              "text": "มองหามุมใหม่ หาทางที่ไม่มีใครคิด",
+              "image_emoji": null,
+              "scores": {
+                "fire": 1,
+                "water": 0,
+                "earth": 0,
+                "wind": 3,
+                "gold": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "order": 5,
+          "question": "ถ้าหินมงคล 1 ก้อน ช่วยเปลี่ยนชีวิตคุณได้ คุณอยากให้ช่วยเรื่องไหนมากที่สุด?",
+          "subtitle": null,
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q5_a",
+              "text": "💪 เสริมพลังชีวิต ความกล้า ความมั่นใจ",
+              "image_emoji": null,
+              "scores": {
+                "fire": 3,
+                "water": 0,
+                "earth": 0,
+                "wind": 0,
+                "gold": 1
+              }
+            },
+            {
+              "id": "q5_b",
+              "text": "💕 ความรัก ความสัมพันธ์ เมตตามหานิยม",
+              "image_emoji": null,
+              "scores": {
+                "fire": 1,
+                "water": 3,
+                "earth": 0,
+                "wind": 0,
+                "gold": 0
+              }
+            },
+            {
+              "id": "q5_c",
+              "text": "🛡️ ปกป้องคุ้มครอง สุขภาพ ความมั่นคง",
+              "image_emoji": null,
+              "scores": {
+                "fire": 0,
+                "water": 0,
+                "earth": 3,
+                "wind": 0,
+                "gold": 1
+              }
+            },
+            {
+              "id": "q5_d",
+              "text": "🔮 ญาณทัศนะ สมาธิ พัฒนาจิต",
+              "image_emoji": null,
+              "scores": {
+                "fire": 0,
+                "water": 1,
+                "earth": 0,
+                "wind": 3,
+                "gold": 0
+              }
+            },
+            {
+              "id": "q5_e",
+              "text": "💰 โชคลาภ การเงิน ดึงดูดความมั่งคั่ง",
+              "image_emoji": null,
+              "scores": {
+                "fire": 0,
+                "water": 0,
+                "earth": 1,
+                "wind": 0,
+                "gold": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "order": 6,
+          "question": "สีไหนที่คุณรู้สึกดึงดูดมากที่สุดตอนนี้? (เชื่อสัญชาตญาณตัวเอง!)",
+          "subtitle": null,
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q6_a",
+              "text": "🔴 แดง / ส้มแดง",
+              "image_emoji": null,
+              "scores": {
+                "fire": 3,
+                "water": 0,
+                "earth": 0,
+                "wind": 0,
+                "gold": 0
+              }
+            },
+            {
+              "id": "q6_b",
+              "text": "🔵 น้ำเงิน / ม่วง",
+              "image_emoji": null,
+              "scores": {
+                "fire": 0,
+                "water": 3,
+                "earth": 0,
+                "wind": 1,
+                "gold": 0
+              }
+            },
+            {
+              "id": "q6_c",
+              "text": "🟢 เขียว / ดำ",
+              "image_emoji": null,
+              "scores": {
+                "fire": 0,
+                "water": 0,
+                "earth": 3,
+                "wind": 0,
+                "gold": 0
+              }
+            },
+            {
+              "id": "q6_d",
+              "text": "🟣 ม่วงอ่อน / ฟ้า",
+              "image_emoji": null,
+              "scores": {
+                "fire": 0,
+                "water": 1,
+                "earth": 0,
+                "wind": 3,
+                "gold": 0
+              }
+            },
+            {
+              "id": "q6_e",
+              "text": "🟡 ทอง / เงิน",
+              "image_emoji": null,
+              "scores": {
+                "fire": 0,
+                "water": 0,
+                "earth": 0,
+                "wind": 0,
+                "gold": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q7",
+          "order": 7,
+          "question": "อีก 1 ปีข้างหน้า คุณอยากเป็นคนแบบไหนมากที่สุด?",
+          "subtitle": null,
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q7_a",
+              "text": "🌟 คนที่มีพลัง กล้าทำในสิ่งที่ฝัน ไม่ยอมแพ้",
+              "image_emoji": null,
+              "scores": {
+                "fire": 3,
+                "water": 0,
+                "earth": 0,
+                "wind": 1,
+                "gold": 1
+              }
+            },
+            {
+              "id": "q7_b",
+              "text": "💗 คนที่มีความรักดีๆ รายล้อมด้วยคนที่เข้าใจ",
+              "image_emoji": null,
+              "scores": {
+                "fire": 0,
+                "water": 3,
+                "earth": 1,
+                "wind": 0,
+                "gold": 0
+              }
+            },
+            {
+              "id": "q7_c",
+              "text": "🏡 คนที่มีชีวิตมั่นคง สุขภาพดี ครอบครัวอบอุ่น",
+              "image_emoji": null,
+              "scores": {
+                "fire": 0,
+                "water": 0,
+                "earth": 3,
+                "wind": 0,
+                "gold": 1
+              }
+            },
+            {
+              "id": "q7_d",
+              "text": "🦋 คนที่เป็นตัวเอง อิสระ มีแรงบันดาลใจไม่หมด",
+              "image_emoji": null,
+              "scores": {
+                "fire": 0,
+                "water": 0,
+                "earth": 0,
+                "wind": 3,
+                "gold": 0
+              }
+            },
+            {
+              "id": "q7_e",
+              "text": "👑 คนที่ประสบความสำเร็จ มั่งคั่ง เป็นที่ยอมรับ",
+              "image_emoji": null,
+              "scores": {
+                "fire": 1,
+                "water": 0,
+                "earth": 0,
+                "wind": 0,
+                "gold": 3
+              }
+            }
+          ]
+        }
+      ],
+      "results": {
+        "fire": {
+          "id": "fire",
+          "identity_label": "สายเปลวเพลิง — จิตวิญญาณนักสู้",
+          "identity_label_en": "Fire Spirit",
+          "emoji": "🔥",
+          "color": "#E53935",
+          "bg_color": "#FFF3F0",
+          "headline": "คุณคือไฟที่ไม่เคยมอด ยิ่งโดนลม ยิ่งลุกโชน!",
+          "description": "เนื่องจากคุณบอกว่า 'ขาดไฟ ขาดแรงจูงใจ' และเลือก 'ลุยเลย ยิ่งยาก ยิ่งสู้' — นี่คือสัญญาณชัดเจนว่าภายในตัวคุณมีพลังธาตุไฟที่รอปลดปล่อย แต่ช่วงนี้อาจถูกกดไว้จนรู้สึกหมดแรง คนธาตุไฟไม่ได้กลัวปัญหา แต่กลัว 'ชีวิตที่ไม่มีเป้าหมาย' ต่างหาก สิ่งที่คุณต้องการคือหินที่จุดประกายไฟภายในให้กลับมาลุกอีกครั้ง ตามความเชื่อโบราณ หินสีแดงเข้มจะช่วยกระตุ้นมูลธารจักระ ซึ่งเป็นฐานพลังชีวิตของคุณ",
+          "routine": [
+            {
+              "step": 1,
+              "title": "ตื่นมาจับหินก่อนลุกจากเตียง",
+              "description": "ถือหินโกเมนหรือทับทิมไว้ในมือ 1 นาที ตั้งเจตนาว่าวันนี้จะทำอะไรให้สำเร็จ — ตามความเชื่อ จะช่วยจุดพลังมูลธารจักระตั้งแต่เช้า"
+            },
+            {
+              "step": 2,
+              "title": "สวมกำไลหินแดงข้อมือขวา",
+              "description": "ข้อมือขวา = ด้านส่งพลังออก ตามความเชื่อจะช่วยให้คุณแผ่พลังความมั่นใจออกไปตลอดวัน"
+            },
+            {
+              "step": 3,
+              "title": "พกหินก้อนเล็กในกระเป๋า",
+              "description": "ไว้จับเวลาเครียดหรือต้องตัดสินใจสำคัญ สัมผัสหินแล้วหายใจลึก 3 ครั้ง"
+            },
+            {
+              "step": 4,
+              "title": "ชาร์จหินทุกสัปดาห์",
+              "description": "วางหินกลางแดดอ่อนๆ ตอนเช้า 15-30 นาที ธาตุไฟรับพลังจากแสงอาทิตย์"
+            },
+            {
+              "step": 5,
+              "title": "ก่อนนอน ขอบคุณ 3 สิ่ง",
+              "description": "ถือหินไว้แล้วนึกถึง 3 สิ่งที่สำเร็จวันนี้ — เล็กน้อยก็ได้ เพื่อเติมไฟให้พร้อมลุยต่อพรุ่งนี้"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_001",
+              "name": "หินก้อน Tumbled Garnet (โกเมน)",
+              "price": "฿109",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/AADAKUsxYj",
+              "why_recommended": "เหมาะกับคุณเพราะคุณบอกว่าขาดไฟและแรงจูงใจ โกเมนเป็นหินแห่งพลังชีวิตโดยเฉพาะ ช่วยกระตุ้นมูลธารจักระ เสริมความกระตือรือร้นและความกล้าหาญ — ตรงกับที่คุณต้องการมากที่สุดตอนนี้",
+              "social_proof": "5.0 ⭐ | เป็นหนึ่งในแก้ว 9 ประการ (นพรัตน์)",
+              "match_score": 96,
+              "badge": "หินนพรัตน์"
+            },
+            {
+              "id": "prod_002",
+              "name": "กำไลหินทับทิมแดง RED RUBY",
+              "price": "฿168",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/6L0RleNBxX",
+              "why_recommended": "เนื่องจากคุณเลือกสีแดงเป็นสีที่ดึงดูด และอยากเป็นคนที่มีพลังกล้าทำในสิ่งที่ฝัน ทับทิมเป็นราชินีแห่งหินที่เสริมทั้งพลังใจ ความกล้า และความรักในเวลาเดียวกัน — สวมใส่ได้ทุกวัน",
+              "social_proof": "4.9 ⭐ | ขาย 186+ ชิ้น",
+              "match_score": 92,
+              "badge": "ราชินีแห่งหิน"
+            },
+            {
+              "id": "prod_003",
+              "name": "กำไลหิน 4mm. Black-White",
+              "price": "฿177-218",
+              "original_price": "฿230",
+              "discount_badge": "ลด 23%",
+              "affiliate_link": "https://s.shopee.co.th/60NbNHADkK",
+              "why_recommended": "คุณเป็นคนลุยแต่บางทีก็ใช้พลังงานเยอะเกินไป กำไลตัวนี้มี Onyx + ไหมดำ ช่วยป้องกันพลังงานลบ + Pyrite ช่วยดึงดูดเงินทอง ใส่คู่กับกำไลทับทิมเพื่อ Balance ธาตุไฟของคุณ",
+              "social_proof": "4.9 ⭐ | ขาย 2,000+ ชิ้น 🔥",
+              "match_score": 82,
+              "badge": "Best Seller"
+            }
+          ],
+          "pro_tips": [
+            "คนธาตุไฟควรหลีกเลี่ยงการใส่หินเย็นเกินไป (เช่น Selenite) เพราะอาจดับไฟภายในได้ — ตามความเชื่อ ควรเลือกหินโทนแดง ส้ม หรือทอง",
+            "ชาร์จหินด้วยแสงอาทิตย์ตอนเช้า ไม่ใช่แสงจันทร์ — ธาตุไฟรับพลังจากดวงอาทิตย์โดยตรง",
+            "ใส่กำไลข้อมือขวาเวลาออกงาน ข้อมือซ้ายเวลาอยู่บ้าน — เพื่อส่งและรับพลังตามจังหวะชีวิต"
+          ],
+          "share_card": {
+            "identity_label": "สายเปลวเพลิง — จิตวิญญาณนักสู้",
+            "emoji": "🔥",
+            "subtitle": "ยิ่งโดนลม ยิ่งลุกโชน!",
+            "breakdown": {
+              "เปลวเพลิง": 65,
+              "รากแก้ว": 15,
+              "เพชรหน้าทั่ง": 10,
+              "สายน้ำ": 5,
+              "ลมจักรวาล": 5
+            },
+            "cta_text": "คุณล่ะเป็นธาตุอะไร? ลองเลย!"
+          }
+        },
+        "water": {
+          "id": "water",
+          "identity_label": "สายสายน้ำ — หัวใจผู้เยียวยา",
+          "identity_label_en": "Healing Wave",
+          "emoji": "🌊",
+          "color": "#1565C0",
+          "bg_color": "#E8F0FE",
+          "headline": "คุณคือสายน้ำที่ไหลเข้าหาทุกรอยแตก แล้วเยียวยามันอย่างเงียบๆ",
+          "description": "เนื่องจากคุณบอกว่า 'ขาดคนเข้าใจ อยากมีคนรับฟัง' และเลือก 'หายใจลึกๆ ปล่อยวาง แล้วค่อยคิด' — คุณเป็นคนที่ให้ความสำคัญกับอารมณ์และความสัมพันธ์มากเป็นพิเศษ คนธาตุน้ำมักเป็นคนที่คนรอบข้างมาหาเวลาเจอปัญหา เพราะคุณรับฟังเก่งและเข้าใจความรู้สึกคนอื่นได้แม่นยำ แต่บางทีคุณก็ลืมดูแลตัวเอง หินที่เหมาะกับคุณคือหินที่ช่วยปลอบประโลมใจและเติมพลังให้ตัวคุณเองบ้าง",
+          "routine": [
+            {
+              "step": 1,
+              "title": "เช้า: วางอเมทิสต์บนหน้าผาก 1 นาที",
+              "description": "ตามความเชื่อ อเมทิสต์ช่วยเปิด Third Eye ให้สัญชาตญาณแม่นยำขึ้น เริ่มต้นวันด้วยความสงบ"
+            },
+            {
+              "step": 2,
+              "title": "สวมกำไลลาริมาร์ข้อมือซ้าย",
+              "description": "ข้อมือซ้าย = ด้านรับพลัง ลาริมาร์จะช่วยดึงดูดพลังงานดีๆ ด้านความรักและความสัมพันธ์เข้ามา"
+            },
+            {
+              "step": 3,
+              "title": "พกอเมทิสต์เวลาเจอคนเยอะ",
+              "description": "ช่วยป้องกันไม่ให้รับพลังงานลบจากคนรอบข้างมากเกินไป — สำคัญมากสำหรับคนธาตุน้ำที่อ่อนไหว"
+            },
+            {
+              "step": 4,
+              "title": "ชาร์จหินด้วยแสงจันทร์",
+              "description": "วางหินริมหน้าต่างคืนพระจันทร์เต็มดวง ธาตุน้ำรับพลังจากดวงจันทร์"
+            },
+            {
+              "step": 5,
+              "title": "ก่อนนอน: ถือหินแล้วบอกตัวเองว่า 'วันนี้ฉันดีพอแล้ว'",
+              "description": "ฝึกให้พลังกลับมาหาตัวเอง ไม่ใช่แค่ให้คนอื่น"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_004",
+              "name": "สร้อยข้อมืออเมทิสต์ Amethyst หินแท้ 100%",
+              "price": "฿81-92",
+              "original_price": "฿148-168",
+              "discount_badge": "ลด 45%",
+              "affiliate_link": "https://s.shopee.co.th/9fGtkIL5Qg",
+              "why_recommended": "เพราะคุณบอกว่าอยากมีคนรับฟังและเลือกปล่อยวางเวลาเจอปัญหา อเมทิสต์เป็นหินแห่งการบำบัดอารมณ์โดยเฉพาะ ช่วยลดความเครียด ป้องกันฝันร้าย และเสริมสมาธิ — หินแท้ 100% ราคาลดเกือบครึ่ง!",
+              "social_proof": "4.9 ⭐ | หินแท้ 100% หายาก ธรรมชาติ",
+              "match_score": 95,
+              "badge": "ลด 45%"
+            },
+            {
+              "id": "prod_008",
+              "name": "กำไลข้อมือ ลาริมาร์ Larimar",
+              "price": "฿315",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/3VgGPj6GgP",
+              "why_recommended": "คุณเลือกความรักและความสัมพันธ์เป็นสิ่งที่อยากให้หินช่วยมากที่สุด ลาริมาร์เป็นหินแห่งการพัฒนาความสัมพันธ์โดยตรง เสริมเสน่ห์ มหานิยม ความรัก — Rating เต็ม 5.0!",
+              "social_proof": "5.0 ⭐ เต็ม! | ขาย 128 ชิ้น",
+              "match_score": 93,
+              "badge": "Rating เต็ม 5.0"
+            },
+            {
+              "id": "prod_003b",
+              "name": "กำไลหิน 4mm. Black-White",
+              "price": "฿177-218",
+              "original_price": "฿230",
+              "discount_badge": "ลด 23%",
+              "affiliate_link": "https://s.shopee.co.th/60NbNHADkK",
+              "why_recommended": "คนธาตุน้ำมักรับพลังงานจากคนอื่นง่าย กำไลตัวนี้มี Onyx ช่วยป้องกันพลังงานลบ + Labradorite ช่วยเสริมสมาธิ ใส่คู่กับลาริมาร์เพื่อ Balance",
+              "social_proof": "4.9 ⭐ | ขาย 2,000+ ชิ้น 🔥",
+              "match_score": 80,
+              "badge": "Best Seller"
+            }
+          ],
+          "pro_tips": [
+            "คนธาตุน้ำควร 'ล้างหิน' บ่อยกว่าธาตุอื่น เพราะหินจะดูดซับพลังงานลบจากคนรอบข้างเยอะ — แช่น้ำเกลือ 30 นาทีทุกสัปดาห์",
+            "หลีกเลี่ยงการใส่หินสีแดงเข้มเกินไป เช่น Garnet เพราะอาจทำให้อารมณ์รุนแรงเกินไป — เลือกโทนม่วง ฟ้า ชมพูอ่อน",
+            "ลอง 'อาบน้ำชาร์จหิน' — วางหินไว้ข้างอ่างอาบน้ำ (อย่าแช่ลงน้ำ!) แล้วนึกถึงสิ่งที่อยากปล่อยวาง"
+          ],
+          "share_card": {
+            "identity_label": "สายสายน้ำ — หัวใจผู้เยียวยา",
+            "emoji": "🌊",
+            "subtitle": "ไหลเข้าหาทุกรอยแตก แล้วเยียวยาอย่างเงียบๆ",
+            "breakdown": {
+              "สายน้ำ": 62,
+              "ลมจักรวาล": 15,
+              "รากแก้ว": 12,
+              "เปลวเพลิง": 6,
+              "เพชรหน้าทั่ง": 5
+            },
+            "cta_text": "คุณล่ะเป็นธาตุอะไร? ลองเลย!"
+          }
+        },
+        "earth": {
+          "id": "earth",
+          "identity_label": "สายรากแก้ว — ขุนเขาไม่สั่นคลอน",
+          "identity_label_en": "Mountain Soul",
+          "emoji": "🌿",
+          "color": "#2E7D32",
+          "bg_color": "#E8F5E9",
+          "headline": "คุณคือภูเขาที่ทุกคนอยากพิง เพราะรู้ว่าคุณไม่มีวันล้ม",
+          "description": "เนื่องจากคุณบอกว่า 'ขาดความมั่นคง รู้สึกไม่ปลอดภัย' และเลือก 'วางแผนรอบคอบก่อน แล้วค่อยลงมือ' — คุณเป็นคนที่ให้ความสำคัญกับรากฐานและความมั่นคงมากเป็นพิเศษ คนธาตุดินไม่ได้ช้า แต่ 'แม่นยำ' ทุกก้าวที่คุณเดินคือก้าวที่คิดมาแล้วอย่างดี สิ่งที่คุณต้องการตอนนี้คือหินที่ช่วยเสริมความมั่นคงและปกป้องพลังงานของคุณ ให้คุณรู้สึกปลอดภัยและพร้อมเดินหน้าต่อ",
+          "routine": [
+            {
+              "step": 1,
+              "title": "เช้า: สวมกำไลหยกก่อนออกจากบ้าน",
+              "description": "หยกเป็นหินแห่งความอุดมสมบูรณ์ สวมใส่ทุกวันจะช่วยเสริมพลังความมั่นคงให้ชีวิต"
+            },
+            {
+              "step": 2,
+              "title": "วาง Black-White บนโต๊ะทำงาน",
+              "description": "ช่วยปกป้องพลังงานลบจากสภาพแวดล้อม และดึงดูดโชคลาภด้านการเงิน"
+            },
+            {
+              "step": 3,
+              "title": "สัมผัสหยกเวลาต้องตัดสินใจสำคัญ",
+              "description": "ตามความเชื่อ หยกช่วยให้ใจนิ่งและเลือกทางที่ดีที่สุดได้"
+            },
+            {
+              "step": 4,
+              "title": "ชาร์จหินด้วยดิน",
+              "description": "ฝังหินลงในดินสะอาด (เช่น กระถางต้นไม้) 24 ชั่วโมง ธาตุดินรับพลังจากแผ่นดิน"
+            },
+            {
+              "step": 5,
+              "title": "ก่อนนอน: วางหินไว้ใต้หมอน",
+              "description": "ช่วยให้นอนหลับสนิท รู้สึกปลอดภัย ตื่นมาพร้อมพลัง"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_007",
+              "name": "สร้อยข้อมือหยก BOON สีโทนเขียว",
+              "price": "฿41-95",
+              "original_price": "฿56-119",
+              "discount_badge": "ลด 27%",
+              "affiliate_link": "https://s.shopee.co.th/W2eq28j81",
+              "why_recommended": "คุณเลือกความมั่นคงและปกป้องคุ้มครองเป็นสิ่งที่ต้องการมากที่สุด หยกเป็นหินแห่งความอุดมสมบูรณ์ที่คนจีนใช้มานับพันปี เสริมดวงทุกด้าน — ขายดีที่สุดในลิสต์!",
+              "social_proof": "4.8 ⭐ | ขาย 6,000+ ชิ้น 🔥🔥🔥 | 1,200 รีวิว",
+              "match_score": 97,
+              "badge": "🏆 Best Seller อันดับ 1"
+            },
+            {
+              "id": "prod_003c",
+              "name": "กำไลหิน 4mm. Black-White",
+              "price": "฿177-218",
+              "original_price": "฿230",
+              "discount_badge": "ลด 23%",
+              "affiliate_link": "https://s.shopee.co.th/60NbNHADkK",
+              "why_recommended": "เนื่องจากคุณอยากรู้สึกปลอดภัยมากขึ้น กำไลตัวนี้รวม Onyx + ไหมดำ + Pyrite + ทรายเงิน ปกป้องคุ้มครอง สมาธิจิตใจ ดึงดูดเงินทอง ครบในเส้นเดียว!",
+              "social_proof": "4.9 ⭐ | ขาย 2,000+ ชิ้น 🔥",
+              "match_score": 94,
+              "badge": "ครบจบในเส้นเดียว"
+            },
+            {
+              "id": "prod_006b",
+              "name": "ไพไรต์ PYRITE เพชรหน้าทั่ง หินแท้",
+              "price": "฿390",
+              "original_price": null,
+              "discount_badge": "Flash Sale 🔥",
+              "affiliate_link": "https://s.shopee.co.th/3B3Q0fj2WK",
+              "why_recommended": "คุณให้ความสำคัญกับความมั่นคง ไพไรต์จะช่วยเสริมอีกมิติคือดึงดูดโอกาสทางการเงินเข้ามา ตั้งไว้บนโต๊ะทำงานเพื่อเสริมดวงทรัพย์สิน",
+              "social_proof": "4.9 ⭐ | ขาย 1,000+ ชิ้น | 881 รีวิว",
+              "match_score": 85,
+              "badge": "Flash Sale"
+            }
+          ],
+          "pro_tips": [
+            "คนธาตุดินควรหลีกเลี่ยงการเปลี่ยนหินบ่อยเกินไป — เลือก 1-2 เส้นแล้วใส่ประจำ ยิ่งใส่นาน หินยิ่งปรับพลังงานเข้ากับคุณ",
+            "จุดเสริมดวงในบ้าน: วางหยกหรือ Pyrite ไว้มุมตะวันออกเฉียงใต้ของบ้าน ตามฮวงจุ้ยช่วยเสริมทรัพย์",
+            "ดูแลหินด้วยน้ำมันเบบี้ออยล์ เช็ดเบาๆ ทุก 2 สัปดาห์ โดยเฉพาะหยก จะช่วยให้หินเงางามและรักษาพลังงาน"
+          ],
+          "share_card": {
+            "identity_label": "สายรากแก้ว — ขุนเขาไม่สั่นคลอน",
+            "emoji": "🌿",
+            "subtitle": "ภูเขาที่ทุกคนอยากพิง เพราะรู้ว่าไม่มีวันล้ม",
+            "breakdown": {
+              "รากแก้ว": 60,
+              "เพชรหน้าทั่ง": 18,
+              "สายน้ำ": 10,
+              "เปลวเพลิง": 7,
+              "ลมจักรวาล": 5
+            },
+            "cta_text": "คุณล่ะเป็นธาตุอะไร? ลองเลย!"
+          }
+        },
+        "wind": {
+          "id": "wind",
+          "identity_label": "สายลมจักรวาล — นักสำรวจมิติที่ 6",
+          "identity_label_en": "Cosmic Wind",
+          "emoji": "💨",
+          "color": "#7E57C2",
+          "bg_color": "#F3E5F5",
+          "headline": "คุณคือลมที่พัดผ่านทุกขอบเขต มองเห็นในสิ่งที่คนอื่นมองไม่เห็น",
+          "description": "เนื่องจากคุณบอกว่า 'ขาดแรงบันดาลใจ ชีวิตจำเจ' และเลือก 'มองหามุมใหม่ หาทางที่ไม่มีใครคิด' — คุณไม่ใช่คนธรรมดา คุณเป็นคนที่มี 'ดวงตาที่สาม' มองเห็นโลกในมุมที่คนอื่นมองไม่เห็น คนธาตุลมต้องการอิสระและแรงบันดาลใจเหมือนอากาศที่ต้องหายใจ ถ้าชีวิตจำเจ จิตวิญญาณคุณจะร้องขอการเปลี่ยนแปลง หินที่เหมาะกับคุณคือหินที่เปิดจักระตาที่สามและกระตุ้นจินตนาการ",
+          "routine": [
+            {
+              "step": 1,
+              "title": "เช้า: วาง Labradorite กลางหน้าผาก",
+              "description": "ตามความเชื่อ ช่วยเปิด Third Eye Chakra กระตุ้นญาณทัศนะและจินตนาการตั้งแต่เช้า"
+            },
+            {
+              "step": 2,
+              "title": "สวม Blue Angelite ข้อมือซ้าย",
+              "description": "หินเทวดาช่วยเชื่อมโยงพลังงานที่สูงขึ้น เสริมการสื่อสารและความคิดสร้างสรรค์"
+            },
+            {
+              "step": 3,
+              "title": "ทำสมาธิกับหินก่อนเริ่มงานสร้างสรรค์",
+              "description": "ถือหินแล้วหายใจลึก 5 ครั้ง ตั้งเจตนาว่าอยากได้แรงบันดาลใจเรื่องอะไร"
+            },
+            {
+              "step": 4,
+              "title": "ชาร์จหินด้วยเสียงหรือควัน",
+              "description": "ใช้ singing bowl ธูปเสจ หรือไม้หอม ผ่านควันรอบหิน — ธาตุลมรับพลังจากการสั่นสะเทือน"
+            },
+            {
+              "step": 5,
+              "title": "ก่อนนอน: ตั้งเจตนาก่อนฝัน",
+              "description": "วางหินใต้หมอน ตั้งใจว่าอยากฝันเห็นอะไร ตามความเชื่อ Labradorite ช่วยให้ฝันชัดเจนและจำฝันได้"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_005",
+              "name": "หินก้อน Tumbled Labradorite (ลาบราดอไรต์) หินพ่อมด",
+              "price": "฿89-209",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/16OEiXvbq",
+              "why_recommended": "คุณเลือกญาณทัศนะและสมาธิเป็นสิ่งที่อยากให้หินช่วย ลาบราดอไรต์เป็นหินแห่งเวทมนตร์โดยแท้ เปิด Third Eye + Crown Chakra ช่วยตัดสินใจ กระตุ้นจินตนาการ — ตรงกับตัวตนของคุณมากที่สุด",
+              "social_proof": "4.9 ⭐ | ขาย 209 ชิ้น | 73 รีวิว",
+              "match_score": 96,
+              "badge": "หินแห่งเวทมนตร์"
+            },
+            {
+              "id": "prod_009",
+              "name": "สร้อยข้อมือ Blue Angelite หินเทวดา หินแท้ 100%",
+              "price": "฿297",
+              "original_price": "฿350",
+              "discount_badge": "ลด 15%",
+              "affiliate_link": "https://s.shopee.co.th/30jzp1pJis",
+              "why_recommended": "เนื่องจากคุณอยากเป็นตัวเอง อิสระ มีแรงบันดาลใจ หินเทวดาเสริมการสื่อสารกับ Higher Self เชื่อมโยงพลังงานศักดิ์สิทธิ์ ช่วยให้คุณแสดงออกตัวตนที่แท้จริงได้ — หินแท้ 100%",
+              "social_proof": "5.0 ⭐ เต็ม! | หินแท้ 100%",
+              "match_score": 93,
+              "badge": "หินเทวดา"
+            },
+            {
+              "id": "prod_004b",
+              "name": "สร้อยข้อมืออเมทิสต์ Amethyst หินแท้ 100%",
+              "price": "฿81-92",
+              "original_price": "฿148-168",
+              "discount_badge": "ลด 45%",
+              "affiliate_link": "https://s.shopee.co.th/9fGtkIL5Qg",
+              "why_recommended": "คนธาตุลมมักคิดเยอะจนนอนไม่หลับ อเมทิสต์ช่วยให้สมาธิดีขึ้นและป้องกันฝันร้าย เป็นตัวช่วย Balance ให้จิตใจสงบขณะที่จินตนาการยังคงเฉียบคม",
+              "social_proof": "4.9 ⭐ | ลด 45% 🔥",
+              "match_score": 82,
+              "badge": "ลด 45%"
+            }
+          ],
+          "pro_tips": [
+            "คนธาตุลมควรมีหินอย่างน้อย 2 ก้อน — 1 ก้อนสำหรับ 'เปิด' (Labradorite) และ 1 ก้อนสำหรับ 'ปิด' (Amethyst) สลับใช้ตามจังหวะชีวิต",
+            "ชาร์จหิน Labradorite คืนพระจันทร์เต็มดวง — ตามความเชื่อ จะเพิ่มพลังญาณทัศนะเป็นสองเท่า",
+            "เขียน Dream Journal ข้างเตียง — คนธาตุลมมักได้ไอเดียดีๆ จากความฝัน ถือ Labradorite ก่อนนอนแล้วจดฝันตอนตื่น"
+          ],
+          "share_card": {
+            "identity_label": "สายลมจักรวาล — นักสำรวจมิติที่ 6",
+            "emoji": "💨",
+            "subtitle": "พัดผ่านทุกขอบเขต เห็นในสิ่งที่คนอื่นมองไม่เห็น",
+            "breakdown": {
+              "ลมจักรวาล": 63,
+              "สายน้ำ": 16,
+              "เปลวเพลิง": 10,
+              "รากแก้ว": 6,
+              "เพชรหน้าทั่ง": 5
+            },
+            "cta_text": "คุณล่ะเป็นธาตุอะไร? ลองเลย!"
+          }
+        },
+        "gold": {
+          "id": "gold",
+          "identity_label": "สายเพชรหน้าทั่ง — แม่เหล็กดูดทรัพย์",
+          "identity_label_en": "Golden Magnet",
+          "emoji": "⚡",
+          "color": "#F9A825",
+          "bg_color": "#FFF8E1",
+          "headline": "คุณคือแม่เหล็กที่ดึงดูดความสำเร็จ ทุกอย่างที่ตั้งใจ ต้องทำให้ได้!",
+          "description": "เนื่องจากคุณเลือก 'โชคลาภ การเงิน ดึงดูดความมั่งคั่ง' และเป้าหมาย 1 ปีข้างหน้าคือ 'ประสบความสำเร็จ มั่งคั่ง เป็นที่ยอมรับ' — คุณมีเป้าหมายชัดเจนและไม่ยอมหยุดจนกว่าจะถึง คนธาตุทองไม่ใช่แค่ 'อยากรวย' แต่มีวินัยและความมุ่งมั่นในการทำให้เกิดขึ้นจริง ไพไรต์หรือ 'เพชรหน้าทั่ง' เป็นหินที่สะท้อนตัวตนของคุณที่สุด — มีทั้งความแข็งแกร่งภายนอกและความเปล่งประกายภายใน",
+          "routine": [
+            {
+              "step": 1,
+              "title": "เช้า: ถือไพไรต์แล้วพูดเป้าหมายวันนี้ออกมาดังๆ",
+              "description": "ตามความเชื่อ ไพไรต์ช่วยขยาย Intention ที่พูดออกมาเป็นคำ ยิ่งชัดเจน ยิ่งดึงดูด"
+            },
+            {
+              "step": 2,
+              "title": "ตั้งไพไรต์บนโต๊ะทำงาน ด้านซ้ายของจอ",
+              "description": "ตามฮวงจุ้ย ด้านซ้ายคือตำแหน่งเสริมทรัพย์ ช่วยดึงดูดโอกาสและรายได้"
+            },
+            {
+              "step": 3,
+              "title": "สวมกำไลหินทองหรือดำทอง",
+              "description": "เสริมพลังดึงดูดตลอดวัน โดยเฉพาะเวลาประชุมหรือเจรจาธุรกิจ"
+            },
+            {
+              "step": 4,
+              "title": "ชาร์จหินด้วยแสงอาทิตย์",
+              "description": "ไพไรต์รับพลังจากแสงแดด วางกลางแดด 15 นาทีจะเปล่งประกายระยิบระยับ"
+            },
+            {
+              "step": 5,
+              "title": "ก่อนนอน: จด 'บัญชีความสำเร็จวันนี้'",
+              "description": "ถือไพไรต์แล้วเขียนสิ่งที่ทำสำเร็จ 3 ข้อ — คนธาตุทองยิ่งจด ยิ่งดึงดูดสำเร็จเพิ่ม"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_006",
+              "name": "ไพไรต์ PYRITE เพชรหน้าทั่ง หินแท้",
+              "price": "฿390",
+              "original_price": null,
+              "discount_badge": "Flash Sale 🔥",
+              "affiliate_link": "https://s.shopee.co.th/3B3Q0fj2WK",
+              "why_recommended": "คุณเลือกความมั่งคั่งและความสำเร็จเป็นเป้าหมายหลัก ไพไรต์คือ 'เพชรหน้าทั่ง' ที่คนไทยเรียกกันมาแต่โบราณ เรียกเงินเรียกทอง ดึงดูดกระแสการเงิน — ยอดขาย 1,000+ ชิ้นการันตี!",
+              "social_proof": "4.9 ⭐ | ขาย 1,000+ ชิ้น | 881 รีวิว 🔥",
+              "match_score": 98,
+              "badge": "🔥 Flash Sale + Best Seller"
+            },
+            {
+              "id": "prod_003d",
+              "name": "กำไลหิน 4mm. Black-White",
+              "price": "฿177-218",
+              "original_price": "฿230",
+              "discount_badge": "ลด 23%",
+              "affiliate_link": "https://s.shopee.co.th/60NbNHADkK",
+              "why_recommended": "กำไลตัวนี้มี Pyrite ผสมอยู่แล้ว! บวกกับ Onyx ป้องกันพลังงานลบ + ทรายเงิน เสริมดวงเงิน ใส่ประจำวันเสริมพลังดึงดูดทรัพย์ตลอดเวลา",
+              "social_proof": "4.9 ⭐ | ขาย 2,000+ ชิ้น 🔥",
+              "match_score": 88,
+              "badge": "Best Seller"
+            },
+            {
+              "id": "prod_007b",
+              "name": "สร้อยข้อมือหยก BOON สีโทนเขียว",
+              "price": "฿41-95",
+              "original_price": "฿56-119",
+              "discount_badge": "ลด 27%",
+              "affiliate_link": "https://s.shopee.co.th/W2eq28j81",
+              "why_recommended": "หยกเป็นหินแห่งความอุดมสมบูรณ์ที่เศรษฐีจีนสวมใส่มานับพันปี ใส่คู่กับไพไรต์เพื่อเสริมทั้งดึงดูดทรัพย์ (ไพไรต์) + รักษาทรัพย์ (หยก) — ราคาเริ่มต้นแค่ 41 บาท!",
+              "social_proof": "4.8 ⭐ | ขาย 6,000+ ชิ้น 🔥🔥🔥",
+              "match_score": 82,
+              "badge": "🏆 ขายดีที่สุด"
+            }
+          ],
+          "pro_tips": [
+            "ตั้งไพไรต์บนโต๊ะทำงาน อย่าเก็บในลิ้นชัก — ตามความเชื่อ ไพไรต์ต้องรับแสงถึงจะเปล่งพลังเรียกทรัพย์",
+            "คนธาตุทองควรมีหิน 2 ประเภท — หิน 'ดึงดูด' (ไพไรต์, ซิทริน) และหิน 'รักษา' (หยก, Onyx) เพื่อให้ทั้งรวยขึ้นและไม่ใช้จ่ายฟุ่มเฟือย",
+            "ทำความสะอาดไพไรต์ด้วยผ้าแห้งเท่านั้น ห้ามแช่น้ำ! ไพไรต์เป็นแร่เหล็กจะเกิดสนิมได้"
+          ],
+          "share_card": {
+            "identity_label": "สายเพชรหน้าทั่ง — แม่เหล็กดูดทรัพย์",
+            "emoji": "⚡",
+            "subtitle": "ทุกอย่างที่ตั้งใจ ต้องทำให้ได้!",
+            "breakdown": {
+              "เพชรหน้าทั่ง": 64,
+              "เปลวเพลิง": 15,
+              "รากแก้ว": 12,
+              "สายน้ำ": 5,
+              "ลมจักรวาล": 4
+            },
+            "cta_text": "คุณล่ะเป็นธาตุอะไร? ลองเลย!"
+          }
+        }
+      },
+      "viral_mechanics": {
+        "share_button": true,
+        "challenge_friend": true,
+        "share_platforms": [
+          "line",
+          "instagram_story",
+          "facebook",
+          "tiktok"
+        ],
+        "share_incentive": "แชร์แล้วได้ +5 Coins"
+      },
+      "gamification": {
+        "quiz_coins_reward": 10,
+        "share_coins_reward": 5,
+        "streak_bonus": {
+          "3_days": 50,
+          "7_days": 200,
+          "30_days": 1000
+        },
+        "badges": {
+          "first_quiz": {
+            "name": "นักสำรวจมือใหม่",
+            "emoji": "🏅"
+          },
+          "5_quizzes": {
+            "name": "ผู้เชี่ยวชาญตัวตน",
+            "emoji": "🏆"
+          },
+          "share_result": {
+            "name": "นักแชร์ตัวยง",
+            "emoji": "📢"
+          }
+        }
+      },
+      "app_config": {
+        "progress_bar_start_at": 15,
+        "auto_advance_delay_ms": 500,
+        "one_question_per_screen": true,
+        "show_match_score": true
+      }
+    },
+    {
+      "quiz_id": "decode-your-cat-personality-th-001",
+      "version": "2.0.0",
+      "created_at": "2026-04-12T00:00:00+07:00",
+      "metadata": {
+        "title": "น้องแมวของคุณเป็นสายไหน? 🐱",
+        "subtitle": "ทดสอบ 6 ข้อ รู้จักนิสัยน้องลึกกว่าที่คิด!",
+        "category": "pet",
+        "estimated_time": "90 วินาที",
+        "total_questions": 6,
+        "cover_emoji": "🐾",
+        "share_text": "น้องแมวของฉันเป็น {result_title} — แล้วน้องของคุณล่ะเป็นสายไหน?",
+        "total_plays": 0,
+        "trending_badge": null
+      },
+      "scoring": {
+        "method": "weighted_category",
+        "categories": [
+          "hunter",
+          "ruler",
+          "sensitive",
+          "gourmet"
+        ],
+        "result_logic": "highest_score_wins",
+        "tiebreaker": "last_questions_priority"
+      },
+      "anticipation_screen": {
+        "enabled": true,
+        "duration_ms": 2500,
+        "messages": [
+          "กำลังวิเคราะห์นิสัยน้อง... 🐾",
+          "จับคู่ Personality Type...",
+          "เกือบเสร็จแล้ว! 🐱"
+        ]
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "order": 1,
+          "question": "ดูรูปนี้แล้ว น้องแมวของคุณเป็นแบบไหนมากที่สุด?",
+          "subtitle": "เลือกที่ตรงที่สุดเลยครับ ไม่ต้องคิดนาน!",
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "image_grid",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q1_a",
+              "text": "วิ่งไล่ทุกอย่างที่ขยับ ไม่หยุดเลย",
+              "image_emoji": "🏃",
+              "scores": {
+                "hunter": 3,
+                "ruler": 1,
+                "sensitive": 0,
+                "gourmet": 0
+              }
+            },
+            {
+              "id": "q1_b",
+              "text": "นั่งสง่าบนที่สูง มองลงมาแบบเจ้าของบ้าน",
+              "image_emoji": "👑",
+              "scores": {
+                "hunter": 1,
+                "ruler": 3,
+                "sensitive": 0,
+                "gourmet": 0
+              }
+            },
+            {
+              "id": "q1_c",
+              "text": "ซ่อนอยู่ใต้ผ้าห่ม ไม่อยากเจอใคร",
+              "image_emoji": "🫣",
+              "scores": {
+                "hunter": 0,
+                "ruler": 0,
+                "sensitive": 3,
+                "gourmet": 1
+              }
+            },
+            {
+              "id": "q1_d",
+              "text": "นอนหลับข้างชามอาหาร รอกินอยู่ตลอด",
+              "image_emoji": "😴",
+              "scores": {
+                "hunter": 0,
+                "ruler": 0,
+                "sensitive": 1,
+                "gourmet": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "order": 2,
+          "question": "ช่วงบ่ายวันหยุด น้องมักทำอะไรอยู่?",
+          "subtitle": "เลือกที่ตรงที่สุดเลยครับ",
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "image_grid",
+          "social_proof_hint": "73% ของแมวไทยชอบนั่งจ้องหน้าต่าง 🐾",
+          "options": [
+            {
+              "id": "q2_a",
+              "text": "วิ่งพุ่งใส่ทุกอย่างที่ขยับ ไม่หยุดสักที",
+              "image_emoji": "🎯",
+              "scores": {
+                "hunter": 3,
+                "ruler": 1,
+                "sensitive": 0,
+                "gourmet": 0
+              }
+            },
+            {
+              "id": "q2_b",
+              "text": "นั่งจ้องออกหน้าต่างอย่างสง่างาม",
+              "image_emoji": "🪟",
+              "scores": {
+                "hunter": 1,
+                "ruler": 3,
+                "sensitive": 0,
+                "gourmet": 0
+              }
+            },
+            {
+              "id": "q2_c",
+              "text": "หลบอยู่ในกล่องหรือมุมเงียบคนเดียว",
+              "image_emoji": "📦",
+              "scores": {
+                "hunter": 0,
+                "ruler": 0,
+                "sensitive": 3,
+                "gourmet": 1
+              }
+            },
+            {
+              "id": "q2_d",
+              "text": "วนเวียนอยู่แถวชามอาหารตลอด รอกินรอบหน้า",
+              "image_emoji": "🍽️",
+              "scores": {
+                "hunter": 0,
+                "ruler": 0,
+                "sensitive": 1,
+                "gourmet": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "order": 3,
+          "question": "พฤติกรรมไหนที่ทำให้คุณปวดหัวที่สุด?",
+          "subtitle": null,
+          "why_we_ask": "เพื่อวิเคราะห์ความต้องการที่แท้จริงของน้องครับ",
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q3_a",
+              "text": "🛋️ ข่วนโซฟา/เฟอร์นิเจอร์ไม่หยุดเลย",
+              "image_emoji": null,
+              "scores": {
+                "hunter": 2,
+                "ruler": 3,
+                "sensitive": 0,
+                "gourmet": 0
+              }
+            },
+            {
+              "id": "q3_b",
+              "text": "😰 ตกใจง่าย ซ่อนตัวทุกครั้งที่มีเสียงดัง",
+              "image_emoji": null,
+              "scores": {
+                "hunter": 0,
+                "ruler": 0,
+                "sensitive": 3,
+                "gourmet": 1
+              }
+            },
+            {
+              "id": "q3_c",
+              "text": "🍜 กินเร็วมาก แล้วอาเจียนหลังกินเสร็จ",
+              "image_emoji": null,
+              "scores": {
+                "hunter": 1,
+                "ruler": 0,
+                "sensitive": 0,
+                "gourmet": 3
+              }
+            },
+            {
+              "id": "q3_d",
+              "text": "🌙 วิ่งซนตอนดึก ทำของตก ปล่อยไม่ได้เลย",
+              "image_emoji": null,
+              "scores": {
+                "hunter": 3,
+                "ruler": 1,
+                "sensitive": 0,
+                "gourmet": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "order": 4,
+          "question": "ตอนคุณไม่อยู่บ้าน น้องเป็นยังไงบ้าง?",
+          "subtitle": null,
+          "why_we_ask": "พฤติกรรมตอนอยู่คนเดียวบอก Personality ของน้องได้ชัดมากครับ",
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": "89% ของเจ้าของแมวบอกว่าไม่รู้ว่าน้องทำอะไรตอนอยู่คนเดียว 😅",
+          "options": [
+            {
+              "id": "q4_a",
+              "text": "🏠 ทำลายข้าวของ กัดสาย ข่วนประตูรอเจ้าของ",
+              "image_emoji": null,
+              "scores": {
+                "hunter": 3,
+                "ruler": 1,
+                "sensitive": 0,
+                "gourmet": 0
+              }
+            },
+            {
+              "id": "q4_b",
+              "text": "👁️ นั่งเฝ้าประตูรอ ไม่ยอมไปไหนเลย",
+              "image_emoji": null,
+              "scores": {
+                "hunter": 0,
+                "ruler": 0,
+                "sensitive": 3,
+                "gourmet": 1
+              }
+            },
+            {
+              "id": "q4_c",
+              "text": "😴 นอนหลับทั้งวัน ไม่ขยับเลยสักนิด",
+              "image_emoji": null,
+              "scores": {
+                "hunter": 0,
+                "ruler": 1,
+                "sensitive": 0,
+                "gourmet": 3
+              }
+            },
+            {
+              "id": "q4_d",
+              "text": "🔍 ลาดตระเวนทั่วบ้าน ตรวจอาณาเขตตลอด",
+              "image_emoji": null,
+              "scores": {
+                "hunter": 2,
+                "ruler": 3,
+                "sensitive": 0,
+                "gourmet": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "order": 5,
+          "question": "ถ้าให้เลือกของขวัญให้น้องสักชิ้น คุณจะเลือกอะไร?",
+          "subtitle": null,
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q5_a",
+              "text": "🎮 ของเล่นไฮเทค ให้เล่นได้ทั้งวันไม่เบื่อ",
+              "image_emoji": null,
+              "scores": {
+                "hunter": 3,
+                "ruler": 1,
+                "sensitive": 0,
+                "gourmet": 0
+              }
+            },
+            {
+              "id": "q5_b",
+              "text": "🏰 คอนโดหรูที่นั่งแล้วรู้สึกเป็นราชา",
+              "image_emoji": null,
+              "scores": {
+                "hunter": 0,
+                "ruler": 3,
+                "sensitive": 1,
+                "gourmet": 0
+              }
+            },
+            {
+              "id": "q5_c",
+              "text": "🫂 มุมสงบส่วนตัว เงียบ ปลอดภัย ไม่มีใครรบกวน",
+              "image_emoji": null,
+              "scores": {
+                "hunter": 0,
+                "ruler": 0,
+                "sensitive": 3,
+                "gourmet": 1
+              }
+            },
+            {
+              "id": "q5_d",
+              "text": "🍱 อาหารพรีเมียมอร่อยๆ กินได้ทั้งวัน",
+              "image_emoji": null,
+              "scores": {
+                "hunter": 1,
+                "ruler": 0,
+                "sensitive": 0,
+                "gourmet": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "order": 6,
+          "question": "คุณอยากให้ชีวิตน้องแมวเป็นยังไงมากที่สุด?",
+          "subtitle": "ปิดท้ายด้วยคำถามนี้ครับ 🐾",
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q6_a",
+              "text": "⚡ มีพลังงาน สนุกทุกวัน ไม่เบื่อ",
+              "image_emoji": null,
+              "scores": {
+                "hunter": 3,
+                "ruler": 1,
+                "sensitive": 0,
+                "gourmet": 0
+              }
+            },
+            {
+              "id": "q6_b",
+              "text": "👑 มีพื้นที่เป็นของตัวเอง ใช้ชีวิตอย่างสง่า",
+              "image_emoji": null,
+              "scores": {
+                "hunter": 0,
+                "ruler": 3,
+                "sensitive": 1,
+                "gourmet": 0
+              }
+            },
+            {
+              "id": "q6_c",
+              "text": "🕊️ สงบ ไม่เครียด มีความสุขในแบบของตัวเอง",
+              "image_emoji": null,
+              "scores": {
+                "hunter": 0,
+                "ruler": 0,
+                "sensitive": 3,
+                "gourmet": 2
+              }
+            },
+            {
+              "id": "q6_d",
+              "text": "🌟 แข็งแรง สุขภาพดี กินดีอยู่ดีทุกวัน",
+              "image_emoji": null,
+              "scores": {
+                "hunter": 1,
+                "ruler": 0,
+                "sensitive": 0,
+                "gourmet": 3
+              }
+            }
+          ]
+        }
+      ],
+      "results": {
+        "hunter": {
+          "id": "hunter",
+          "identity_label": "สายจ้าวป่านักล่า",
+          "identity_label_en": "The Little Hunter",
+          "emoji": "⚡",
+          "color": "#E65100",
+          "bg_color": "#FFF3E0",
+          "headline": "น้องของคุณคือนักล่าตัวจริง — เกิดมาเพื่อวิ่ง กระโดด และพิชิตทุกสิ่งที่ขยับ!",
+          "description": "น้องของคุณมีสัญชาตญาณนักล่าสูงมากครับ งานวิจัยจาก University of Helsinki (2021) พบว่าแมวกลุ่ม Activity/Playfulness สูงต้องการ Mental Stimulation อย่างน้อย 2-3 ครั้ง/วัน ถ้าไม่ได้ระบาย พลังงานจะแปรเป็นพฤติกรรมทำลาย เช่น ข่วนโซฟา หรือวิ่งตอนดึก ไม่ใช่เพราะซน แต่เพราะน้องต้องการล่า!",
+          "routine": [
+            {
+              "step": 1,
+              "title": "🌅 เช้า — ปล่อยนักล่าออกมา",
+              "description": "เปิดลูกบอลอัตโนมัติก่อนไปทำงาน ให้น้องล่าคนเดียวได้ตลอดวัน ไม่เบื่อ ไม่ทำลายข้าวของ"
+            },
+            {
+              "step": 2,
+              "title": "🍽️ มื้อกลางวัน — ฝึกสมองไปด้วย",
+              "description": "ใส่ขนมใน Puzzle Feeder แทนชามปกติ กระตุ้น Foraging Behavior ตามธรรมชาติของแมว"
+            },
+            {
+              "step": 3,
+              "title": "🌙 เย็น — ระบายพลังงานก่อนนอน",
+              "description": "เล่นกับน้องอย่างน้อย 10-15 นาทีก่อนนอน ช่วยลดการวิ่งตอนดึกได้เห็นผลใน 1 สัปดาห์"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_001",
+              "name": "ลูกบอลกลิ้งไฟฟ้าอัตโนมัติ พร้อมสายชาร์จ",
+              "price": "฿34",
+              "original_price": "฿104",
+              "discount_badge": "ลด 67%",
+              "affiliate_link": "https://s.shopee.co.th/3VgGgOmLf7",
+              "why_recommended": "เนื่องจากน้องมีพลังงานสูงและซนตอนคุณไม่อยู่ — ลูกบอลนี้มี Auto-Sleep Mode ทำงานเองได้ตลอดวัน ตอบสนองสัญชาตญาณล่าเหยื่อได้แบบที่งานวิจัยแนะนำ",
+              "social_proof": "ขาย 20,000+ ชิ้น | ⭐ 4.9 (3.3k รีวิว)",
+              "match_score": 98,
+              "badge": "🔥 Best Seller"
+            },
+            {
+              "id": "prod_002",
+              "name": "Puzzle Feeder ลูกเป็ดเหลือง กดของเล่นปริศนา",
+              "price": "฿55",
+              "original_price": "฿98",
+              "discount_badge": "ลด 44%",
+              "affiliate_link": "https://s.shopee.co.th/2VnjUosHkq",
+              "why_recommended": "แมวสายนักล่าต้องการ Foraging Behavior — การหาอาหารเองจาก Puzzle Feeder ลดความเบื่อและพฤติกรรมทำลายข้าวของได้จริง ตามหลัก Environmental Enrichment",
+              "social_proof": "⭐ 4.9 | ขาย 285 ชิ้น",
+              "match_score": 92,
+              "badge": "🧠 Brain Booster"
+            }
+          ],
+          "pro_tips": [
+            "เปลี่ยนของเล่นทุก 3-4 วัน — แมวเบื่อเร็ว การหมุนเวียนของเล่นทำให้น้องตื่นเต้นเหมือนเจอของใหม่ทุกครั้ง",
+            "ลอง Catnip เล็กน้อยบนของเล่น — กระตุ้น Predatory Instinct ได้ดีมาก ใช้ไม่เกิน 2-3 ครั้ง/สัปดาห์",
+            "เล่นกับน้องก่อนนอนอย่างน้อย 10 นาที — ช่วยลดการวิ่งตอนดึกได้อย่างเห็นผลใน 1 สัปดาห์"
+          ],
+          "share_card": {
+            "identity_label": "สายจ้าวป่านักล่า",
+            "emoji": "⚡",
+            "subtitle": "น้องเกิดมาเพื่อวิ่ง กระโดด และพิชิตทุกสิ่งที่ขยับ!",
+            "breakdown": {
+              "นักล่า": 72,
+              "เจ้าอาณาจักร": 18,
+              "อื่นๆ": 10
+            },
+            "cta_text": "น้องแมวของคุณเป็นสายไหน? มาลองดูกัน!"
+          }
+        },
+        "ruler": {
+          "id": "ruler",
+          "identity_label": "สายเจ้าอาณาจักร",
+          "identity_label_en": "The Velvet Ruler",
+          "emoji": "👑",
+          "color": "#1565C0",
+          "bg_color": "#E3F2FD",
+          "headline": "น้องของคุณรู้ดีว่าตัวเองเป็นใหญ่ในบ้าน — และก็ถูกต้องแล้ว!",
+          "description": "แมวสาย Dominance สูงต้องการ Vertical Territory ครับ งานวิจัย Feline Five (2017) พบว่าแมวกลุ่มนี้มีความสุขสูงสุดเมื่อมีพื้นที่สูงที่มองเห็นทุกอย่างในบ้านได้ การข่วนเฟอร์นิเจอร์ไม่ใช่ความซน แต่คือการประกาศอาณาเขต — น้องแค่ต้องการพื้นที่ที่ใช่!",
+          "routine": [
+            {
+              "step": 1,
+              "title": "🏰 จัดพื้นที่สูงให้น้อง",
+              "description": "วางคอนโดใกล้หน้าต่างให้น้องมองเห็นทั่วห้องและโลกภายนอก เป็น Mental Enrichment ฟรีที่ดีที่สุด"
+            },
+            {
+              "step": 2,
+              "title": "💅 ที่ลับเล็บต้องมี",
+              "description": "วางให้เข้าถึงง่าย ลดการข่วนเฟอร์นิเจอร์ได้ทันที ลับเล็บให้น้องทุก 2 สัปดาห์เพิ่มเติม"
+            },
+            {
+              "step": 3,
+              "title": "👑 เคารพอาณาเขตน้อง",
+              "description": "ให้น้องเข้าหาคุณเอง อย่าบังคับอุ้ม จะสร้าง Bond ที่แข็งแกร่งและความไว้ใจได้ดีกว่ามาก"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_003",
+              "name": "คอนโดแมวไม้ บ้านแมว สูง 170CM เสาลับเล็บ",
+              "price": "฿525",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/4qBeHQ9pES",
+              "why_recommended": "เนื่องจากน้องชอบนั่งที่สูงและลาดตระเวนอาณาเขต — คอนโด 170CM ให้ Vertical Territory ที่น้องต้องการ พร้อมเสาลับเล็บที่ช่วยลดการข่วนเฟอร์นิเจอร์ได้จริง",
+              "social_proof": "ขาย 6,000+ ชิ้น | ⭐ 4.7 (2.3k รีวิว)",
+              "match_score": 97,
+              "badge": "👑 Top Pick"
+            },
+            {
+              "id": "prod_004",
+              "name": "MAO โดมอะคริลิคแมว เตียงแคปซูลพร้อมโครงปีน",
+              "price": "฿219",
+              "original_price": "฿462",
+              "discount_badge": "ลด 53%",
+              "affiliate_link": "https://s.shopee.co.th/4LFNgow5VS",
+              "why_recommended": "แมวสายเจ้าอาณาจักรชอบมองทุกอย่างโดยไม่มีใครรบกวน — โดมใสให้น้องเห็น 360° แต่ยังรู้สึกมีพื้นที่ส่วนตัว สไตล์มินิมอลเข้ากับบ้านได้ทุกแบบ",
+              "social_proof": "ขาย 5,000+ ชิ้น | ⭐ 4.9 (509 รีวิว)",
+              "match_score": 89,
+              "badge": "✨ Best Design"
+            }
+          ],
+          "pro_tips": [
+            "ให้น้องเลือกที่นั่งเอง อย่าบังคับย้าย — แมว Dominant จะ Bond กับเจ้าของได้ดีกว่าเมื่อรู้สึกว่าตัวเองมีอำนาจ",
+            "วางคอนโดใกล้หน้าต่าง — แมวสายนี้ชอบดูโลกภายนอก เป็น Mental Enrichment ฟรีที่ดีที่สุด",
+            "ลับเล็บน้องทุก 2 สัปดาห์ — ลดการข่วนเฟอร์นิเจอร์ได้มากถึง 60%"
+          ],
+          "share_card": {
+            "identity_label": "สายเจ้าอาณาจักร",
+            "emoji": "👑",
+            "subtitle": "น้องรู้ดีว่าตัวเองเป็นใหญ่ในบ้าน — และก็ถูกต้องแล้ว!",
+            "breakdown": {
+              "เจ้าอาณาจักร": 68,
+              "นักล่า": 20,
+              "อื่นๆ": 12
+            },
+            "cta_text": "น้องแมวของคุณเป็นสายไหน? มาลองดูกัน!"
+          }
+        },
+        "sensitive": {
+          "id": "sensitive",
+          "identity_label": "สายจิตใจละเอียดอ่อน",
+          "identity_label_en": "The Sensitive Soul",
+          "emoji": "🫧",
+          "color": "#6A1B9A",
+          "bg_color": "#F3E5F5",
+          "headline": "น้องของคุณไม่ได้ขี้กลัว — แค่รับรู้โลกได้ลึกกว่าแมวตัวอื่น และนั่นคือสิ่งพิเศษมากครับ",
+          "description": "แมวสาย Neuroticism/Fearfulness สูงมีระบบประสาทที่ไวมากครับ งานวิจัย Tools for Fear, Anxiety and Stress (2025) พบว่าแมวกลุ่มนี้ตอบสนองต่อ Synthetic Pheromone ได้ดีที่สุด การเปลี่ยนแปลงเล็กน้อยในสิ่งแวดล้อม เช่น เฟอร์นิเจอร์ใหม่ หรือแขกมาเยือน อาจทำให้น้องเครียดได้โดยที่คุณไม่รู้ตัว",
+          "routine": [
+            {
+              "step": 1,
+              "title": "🏠 สร้าง Safe Zone ให้น้อง",
+              "description": "กำหนดมุมเงียบเป็นพื้นที่ส่วนตัวของน้อง ห้ามใครรบกวน วางที่นอนปิดหรือกล่องให้น้องซ่อนตัวได้"
+            },
+            {
+              "step": 2,
+              "title": "🌸 ใช้ Calming Spray",
+              "description": "ฉีดที่นอนและมุมพักก่อนมีแขกมา หรือก่อนเหตุการณ์ที่น้องกังวล เช่น พาไปหาหมอ หรือมีเสียงดัง"
+            },
+            {
+              "step": 3,
+              "title": "🔌 เสียบ Feliway ทิ้งไว้",
+              "description": "ในห้องที่น้องอยู่บ่อยที่สุด เปิดทิ้งไว้ 24 ชั่วโมง เห็นผลใน 7-15 วัน ใช้ต่อเนื่องอย่างน้อย 1 เดือน"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_005",
+              "name": "Feliway ฟีโรโมนปรับพฤติกรรมแมว เสียบปลั๊ก 48ml",
+              "price": "฿574",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/gM5Ke3Oy0",
+              "why_recommended": "เนื่องจากน้องตกใจง่ายและเครียดเมื่อสิ่งแวดล้อมเปลี่ยน — Feliway ใช้ฟีโรโมนสังเคราะห์เลียนแบบ Happy Pheromone ของแมว งานวิจัยด้าน Feline Stress รองรับว่าช่วยลดพฤติกรรมเครียดได้จริงใน 7-15 วัน",
+              "social_proof": "⭐ 5.0 | ขาย 39 ชิ้น",
+              "match_score": 98,
+              "badge": "🔬 Research-Backed"
+            },
+            {
+              "id": "prod_006",
+              "name": "Bioline Calming Spray สเปรย์คลายเครียด 120ml",
+              "price": "฿185",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/W2f8AiqVl",
+              "why_recommended": "ใช้คู่กับ Feliway ได้เลยครับ — ฉีดที่นอนและที่พักก่อนมีแขกมา หรือก่อนพาไปหาหมอ ช่วยให้น้องรู้สึกปลอดภัยแม้ในสถานการณ์ที่คาดเดาไม่ได้",
+              "social_proof": "ขาย 1,000+ ชิ้น | ⭐ 4.8 (372 รีวิว)",
+              "match_score": 91,
+              "badge": "🌿 Natural Formula"
+            }
+          ],
+          "pro_tips": [
+            "อย่าบังคับให้น้องเข้าสังคม — ให้น้องเลือกเวลาเข้าหาเจ้าของเอง จะสร้างความไว้ใจได้เร็วกว่ามาก",
+            "วางกล่องกระดาษหรือถุงกระดาษไว้ในห้อง — แมวสายนี้ชอบซ่อนตัวในพื้นที่ปิด ช่วยลดความเครียดได้ฟรีๆ",
+            "เปิดเพลง Classical หรือเสียงธรรมชาติเบาๆ ตอนไม่อยู่บ้าน — งานวิจัยพบว่าช่วยลด Anxiety ในแมวได้"
+          ],
+          "share_card": {
+            "identity_label": "สายจิตใจละเอียดอ่อน",
+            "emoji": "🫧",
+            "subtitle": "น้องไม่ได้ขี้กลัว แค่รับรู้โลกได้ลึกกว่าแมวตัวอื่น!",
+            "breakdown": {
+              "ละเอียดอ่อน": 71,
+              "กูร์เมต์": 16,
+              "อื่นๆ": 13
+            },
+            "cta_text": "น้องแมวของคุณเป็นสายไหน? มาลองดูกัน!"
+          }
+        },
+        "gourmet": {
+          "id": "gourmet",
+          "identity_label": "สายกูร์เมต์นักชิม",
+          "identity_label_en": "The Gourmet Lounger",
+          "emoji": "🍽️",
+          "color": "#2E7D32",
+          "bg_color": "#E8F5E9",
+          "headline": "น้องของคุณรู้จักใช้ชีวิต — กินดี นอนดี มีความสุขแบบที่ใครก็อิจฉา!",
+          "description": "แมวสาย Agreeableness สูงเป็นเพื่อนที่ดีที่สุดในโลกครับ อ่อนโยน ไม่ก้าวร้าว รักสงบ แต่มีความเสี่ยงด้านสุขภาพที่ต้องระวัง งานวิจัย Feline Obesity Studies พบว่าแมวที่กินเร็วและเคลื่อนไหวน้อยเสี่ยงปัญหาทางเดินอาหารมากกว่าแมวกลุ่มอื่น แต่แก้ได้ง่ายมากด้วยการปรับวิธีให้อาหารครับ!",
+          "routine": [
+            {
+              "step": 1,
+              "title": "🐢 เปลี่ยนเป็น Slow Feeder ทันที",
+              "description": "ลดการสำลักและช่วยให้น้องอิ่มนานขึ้น คุมน้ำหนักแบบเนียนที่สุด ไม่ต้องลดปริมาณอาหาร"
+            },
+            {
+              "step": 2,
+              "title": "🥩 เลือกอาหารคุณภาพดี",
+              "description": "เน้น High Protein, Low Carb ตามธรรมชาติของแมวที่เป็น Obligate Carnivore เพิ่ม Wet Food เพื่อให้ได้น้ำเพียงพอ"
+            },
+            {
+              "step": 3,
+              "title": "⚖️ ติดตามน้ำหนักทุกเดือน",
+              "description": "ชั่งน้ำหนักน้องทุกเดือน ถ้าเพิ่มเดือนละ 100g+ ควรปรึกษาสัตวแพทย์เรื่องปริมาณอาหาร"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_007",
+              "name": "CleverPet Slow Feeder Bowl ชามซิลิโคนกินช้า",
+              "price": "฿148",
+              "original_price": "฿199",
+              "discount_badge": "ลด 26%",
+              "affiliate_link": "https://s.shopee.co.th/6L0S5K7KgT",
+              "why_recommended": "เนื่องจากน้องกินเร็วและชอบวนแถวชามอาหาร — Slow Feeder ช่วยชะลอความเร็วในการกิน ลดการสำลัก และทำให้น้องรู้สึกอิ่มนานขึ้น ช่วยคุมน้ำหนักแบบเนียนที่สุด",
+              "social_proof": "ขาย 919 ชิ้น | ⭐ 5.0 (202 รีวิว)",
+              "match_score": 97,
+              "badge": "🏆 Best Value"
+            },
+            {
+              "id": "prod_008",
+              "name": "LIFEMATE Cat Wet Food อาหารเปียกแมว 1 กล่อง (12ซอง)",
+              "price": "฿199",
+              "original_price": "฿276",
+              "discount_badge": "ลด 28%",
+              "affiliate_link": "https://s.shopee.co.th/50V4VEoKzn",
+              "why_recommended": "แมวสายกูร์เมต์ต้องการอาหารที่ดีจริงๆ — LIFEMATE ใช้เนื้อ Human Grade ควบคุมโซเดียม และมี Prebiotic ดูแลระบบย่อยอาหาร เหมาะกับน้องที่ชอบกินแต่ต้องดูแลสุขภาพด้วย",
+              "social_proof": "ขาย 20,000+ ชิ้น | ⭐ 4.9 (4.7k รีวิว)",
+              "match_score": 94,
+              "badge": "🥇 Premium Choice"
+            }
+          ],
+          "pro_tips": [
+            "แมวเป็น Obligate Carnivore — ต้องการ Protein จากเนื้อสัตว์เป็นหลัก ลดอาหารที่มี Corn หรือ Wheat สูงจะช่วยสุขภาพได้มากครับ",
+            "น้องสายนี้มักดื่มน้ำน้อย — ลองเพิ่ม Wet Food หรือน้ำพุแมวเพื่อป้องกัน UTI และนิ่วในไต",
+            "ชั่งน้ำหนักน้องทุกเดือน — ถ้าเพิ่มเดือนละ 100g+ ควรปรึกษาสัตวแพทย์เรื่องปริมาณอาหารครับ"
+          ],
+          "share_card": {
+            "identity_label": "สายกูร์เมต์นักชิม",
+            "emoji": "🍽️",
+            "subtitle": "น้องรู้จักใช้ชีวิต กินดี นอนดี มีความสุขแบบที่ใครก็อิจฉา!",
+            "breakdown": {
+              "กูร์เมต์": 74,
+              "ละเอียดอ่อน": 15,
+              "อื่นๆ": 11
+            },
+            "cta_text": "น้องแมวของคุณเป็นสายไหน? มาลองดูกัน!"
+          }
+        }
+      },
+      "viral_mechanics": {
+        "share_button": true,
+        "challenge_friend": true,
+        "share_platforms": [
+          "line",
+          "instagram_story",
+          "facebook",
+          "tiktok"
+        ],
+        "share_incentive": "แชร์แล้วได้ +5 Coins 🪙"
+      },
+      "gamification": {
+        "quiz_coins_reward": 10,
+        "share_coins_reward": 5,
+        "streak_bonus": {
+          "3_days": 50,
+          "7_days": 200,
+          "30_days": 1000
+        },
+        "badges": {
+          "first_quiz": {
+            "name": "นักสำรวจมือใหม่",
+            "emoji": "🏅"
+          },
+          "5_quizzes": {
+            "name": "ผู้เชี่ยวชาญตัวตน",
+            "emoji": "🏆"
+          },
+          "share_result": {
+            "name": "นักแชร์ตัวยง",
+            "emoji": "📢"
+          }
+        }
+      },
+      "app_config": {
+        "progress_bar_start_at": 15,
+        "auto_advance_delay_ms": 500,
+        "one_question_per_screen": true,
+        "show_match_score": true
+      }
+    }
+  ],
+  "app_settings": {
+    "app_name": "PickSmart",
+    "tagline": "ค้นหาสิ่งที่ใช่สำหรับคุณ",
+    "daily_themes": {
+      "monday": {
+        "label": "มูเตลู Monday 🔮",
+        "category": "spiritual"
+      },
+      "tuesday": {
+        "label": "Beauty Tuesday 💄",
+        "category": "beauty"
+      },
+      "wednesday": {
+        "label": "Wellness Wednesday 🏋️",
+        "category": "health"
+      },
+      "thursday": {
+        "label": "Home Thursday 🏠",
+        "category": "home"
+      },
+      "friday": {
+        "label": "Fashion Friday 👗",
+        "category": "fashion"
+      },
+      "saturday": {
+        "label": "Pet Saturday 🐾",
+        "category": "pet"
+      },
+      "sunday": {
+        "label": "Lazy Sunday ☕",
+        "category": "lifestyle"
+      }
+    }
+  }
+}
