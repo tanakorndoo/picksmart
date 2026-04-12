@@ -159,15 +159,24 @@ export default function HomeScreen({ quizzes, appSettings }) {
               </div>
               <p className="text-xs text-gray-500 truncate mt-0.5">{authEmail}</p>
               {/* Badges */}
-              <div className="flex items-center gap-2 mt-1">
+              <button
+                onClick={() => setShowBadges(true)}
+                className="flex items-center gap-2 mt-1 active:opacity-70 transition-opacity"
+              >
                 <span className="text-[10px] text-gray-400 font-medium">เหรียญตรา:</span>
-                {recentBadges.map((b) => (
-                  <span key={b.key} className="text-sm" title={b.name}>{b.emoji}</span>
-                ))}
-                {user.badges.length > 3 && (
-                  <span className="text-[10px] text-gray-400">+{user.badges.length - 3}</span>
+                {recentBadges.length > 0 ? (
+                  <>
+                    {recentBadges.map((b) => (
+                      <span key={b.key} className="text-sm" title={b.name}>{b.emoji}</span>
+                    ))}
+                    {user.badges.length > 3 && (
+                      <span className="text-[10px] text-gray-400">+{user.badges.length - 3}</span>
+                    )}
+                  </>
+                ) : (
+                  <span className="text-[10px] text-gray-400">กดดู →</span>
                 )}
-              </div>
+              </button>
             </div>
             <button
               onClick={() => setShowShop(true)}
