@@ -7,7 +7,8 @@ import DailyThemeBanner from "./DailyThemeBanner";
 import CoinShop from "./CoinShop";
 import BadgeShowcase from "./BadgeShowcase";
 import AuthModal from "./AuthModal";
-import { getUser, setAuthUserId, loadFromSupabase, isLoggedIn, clearAuth } from "@/lib/store";
+import SavedProducts from "./SavedProducts";
+import { getUser, setAuthUserId, loadFromSupabase, isLoggedIn, clearAuth, hasCompletedQuiz } from "@/lib/store";
 import { getSession, onAuthStateChange, signOut } from "@/lib/supabase";
 import { getDailyTheme, formatNumber } from "@/lib/utils";
 import { THEMES, FRAMES, DAILY_FORTUNES, LUCKY_STONES } from "@/lib/shopItems";
@@ -49,6 +50,7 @@ export default function HomeScreen({ quizzes, appSettings }) {
   const [authEmail, setAuthEmail] = useState(null);
   const [dailyFortune, setDailyFortune] = useState(null);
   const [luckyStone, setLuckyStone] = useState(null);
+  const [showSavedProducts, setShowSavedProducts] = useState(false);
 
   function applyThemeFromUser(u) {
     if (u.activeTheme && u.activeTheme !== "default") {
@@ -178,12 +180,20 @@ export default function HomeScreen({ quizzes, appSettings }) {
                 )}
               </button>
             </div>
-            <button
-              onClick={() => setShowShop(true)}
-              className="bg-amber-50 text-amber-600 text-[10px] font-bold px-2.5 py-1.5 rounded-lg active:scale-95 transition-transform shrink-0"
-            >
-              🛍️ ร้านค้า
-            </button>
+            <div className="flex flex-col gap-1.5 shrink-0">
+              <button
+                onClick={() => setShowShop(true)}
+                className="bg-amber-50 text-amber-600 text-[10px] font-bold px-2.5 py-1.5 rounded-lg active:scale-95 transition-transform"
+              >
+                🛍️ ร้านค้า
+              </button>
+              <button
+                onClick={() => setShowSavedProducts(true)}
+                className="bg-blue-50 text-blue-600 text-[10px] font-bold px-2.5 py-1.5 rounded-lg active:scale-95 transition-transform"
+              >
+                🔖 บันทึก {(user.savedProducts || []).length > 0 ? `(${user.savedProducts.length})` : ""}
+              </button>
+            </div>
           </div>
           {/* Logout button */}
           <button
@@ -382,32 +392,43 @@ export default function HomeScreen({ quizzes, appSettings }) {
             })()}
 
             <div className="flex flex-col gap-2.5">
-              {(groupedQuizzes[selectedCategory] || []).map((quiz) => (
-                <Link key={quiz.quiz_id} href={`/quiz/${quiz.quiz_id}`}>
-                  <div className="bg-white rounded-2xl p-3.5 border border-border active:scale-[0.97] transition-transform cursor-pointer shadow-sm">
-                    <div className="flex items-center gap-2.5 mb-1.5">
-                      <span className="text-2xl">{quiz.metadata.cover_emoji}</span>
-                      <div className="flex-1 min-w-0">
-                        <h3 className="text-[13px] font-bold text-text leading-tight line-clamp-2">
-                          {quiz.metadata.title}
-                        </h3>
+              {(groupedQuizzes[selectedCategory] || []).map((quiz) => {
+                const done = hasCompletedQuiz(quiz.quiz_id);
+                return (
+                  <Link key={quiz.quiz_id} href={`/quiz/${quiz.quiz_id}`}>
+                    <div className={`rounded-2xl p-3.5 border active:scale-[0.97] transition-transform cursor-pointer shadow-sm ${
+                      done
+                        ? "bg-primary-light border-primary/30"
+                        : "bg-white border-border"
+                    }`}>
+                      <div className="flex items-center gap-2.5 mb-1.5">
+                        <span className="text-2xl">{quiz.metadata.cover_emoji}</span>
+                        <div className="flex-1 min-w-0">
+                          <h3 className="text-[13px] font-bold text-text leading-tight line-clamp-2">
+                            {quiz.metadata.title}
+                          </h3>
+                        </div>
+                        {done ? (
+                          <span className="text-[10px] font-bold px-2 py-0.5 bg-primary/10 text-primary rounded-full whitespace-nowrap shrink-0">
+                            ✅ ทำแล้ว
+                          </span>
+                        ) : quiz.metadata.trending_badge ? (
+                          <span className="text-[10px] font-medium px-2 py-0.5 bg-accent-light text-accent rounded-full whitespace-nowrap shrink-0">
+                            {quiz.metadata.trending_badge}
+                          </span>
+                        ) : null}
                       </div>
-                      {quiz.metadata.trending_badge && (
-                        <span className="text-[10px] font-medium px-2 py-0.5 bg-accent-light text-accent rounded-full whitespace-nowrap shrink-0">
-                          {quiz.metadata.trending_badge}
-                        </span>
-                      )}
+                      <p className="text-[11px] text-muted mb-2 line-clamp-1 pl-9">
+                        {quiz.metadata.subtitle}
+                      </p>
+                      <div className="flex items-center gap-3 text-[11px] text-muted pl-9">
+                        <span>⏱ {quiz.metadata.estimated_time}</span>
+                        <span>👥 {formatNumber(quiz.metadata.total_plays)} คน</span>
+                      </div>
                     </div>
-                    <p className="text-[11px] text-muted mb-2 line-clamp-1 pl-9">
-                      {quiz.metadata.subtitle}
-                    </p>
-                    <div className="flex items-center gap-3 text-[11px] text-muted pl-9">
-                      <span>⏱ {quiz.metadata.estimated_time}</span>
-                      <span>👥 {formatNumber(quiz.metadata.total_plays)} คน</span>
-                    </div>
-                  </div>
-                </Link>
-              ))}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         )}
@@ -440,6 +461,13 @@ export default function HomeScreen({ quizzes, appSettings }) {
         <BadgeShowcase
           user={user}
           onClose={() => setShowBadges(false)}
+        />
+      )}
+      {showSavedProducts && (
+        <SavedProducts
+          user={user}
+          onUpdate={(u) => setUser(u)}
+          onClose={() => setShowSavedProducts(false)}
         />
       )}
 

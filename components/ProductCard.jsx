@@ -1,6 +1,17 @@
 "use client";
 
+import { useState } from "react";
+import { saveProduct, isProductSaved, isLoggedIn } from "@/lib/store";
+
 export default function ProductCard({ product, showMatchScore }) {
+  const [saved, setSaved] = useState(() => isProductSaved(product));
+
+  function handleSave() {
+    if (!isLoggedIn()) return;
+    const result = saveProduct(product);
+    if (result.saved) setSaved(true);
+  }
+
   return (
     <div className="bg-white rounded-2xl border border-border p-4 animate-fade-in-up">
       {/* Header: Match Score + Badge */}
@@ -49,15 +60,30 @@ export default function ProductCard({ product, showMatchScore }) {
         </div>
       )}
 
-      {/* CTA Button */}
-      <a
-        href={product.affiliate_link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block w-full py-3 bg-accent text-white text-sm font-bold text-center rounded-xl active:scale-[0.97] transition-transform"
-      >
-        ดูสินค้าใน Shopee 🛒
-      </a>
+      {/* Buttons */}
+      <div className="flex gap-2">
+        <a
+          href={product.affiliate_link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-1 py-3 bg-accent text-white text-sm font-bold text-center rounded-xl active:scale-[0.97] transition-transform"
+        >
+          ดูสินค้าใน Shopee 🛒
+        </a>
+        {isLoggedIn() && (
+          <button
+            onClick={handleSave}
+            disabled={saved}
+            className={`px-3 py-3 rounded-xl text-sm font-bold active:scale-95 transition-transform shrink-0 ${
+              saved
+                ? "bg-green-50 text-green-600 border border-green-200"
+                : "bg-gray-50 text-gray-500 border border-gray-200"
+            }`}
+          >
+            {saved ? "✅" : "🔖"}
+          </button>
+        )}
+      </div>
     </div>
   );
 }
