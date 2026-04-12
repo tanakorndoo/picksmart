@@ -3,7 +3,7 @@
 import { useState, useMemo, useRef } from "react";
 import quizData from "@/data/quizzes.json";
 import { calculateResult } from "@/lib/quizEngine";
-import { getUser, recordQuizResult } from "@/lib/store";
+import { getUser, recordQuizResult, isLoggedIn } from "@/lib/store";
 import QuizCover from "@/components/QuizCover";
 import ProgressBar from "@/components/ProgressBar";
 import QuizQuestion from "@/components/QuizQuestion";
@@ -82,7 +82,7 @@ export default function QuizClient({ quizId }) {
       setNewBadge(earnedBadges[0]);
     }
 
-    setCoinsEarned(quiz.gamification?.quiz_coins_reward || 10);
+    setCoinsEarned(isLoggedIn() ? (quiz.gamification?.quiz_coins_reward || 10) : 0);
     setResultData({
       result: quiz.results[result.winner],
       breakdown: result.breakdown,
