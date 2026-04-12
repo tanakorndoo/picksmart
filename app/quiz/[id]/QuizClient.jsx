@@ -128,6 +128,7 @@ export default function QuizClient({ quizId }) {
         breakdown={resultData.breakdown}
         coinsEarned={coinsEarned}
         newBadge={newBadge}
+        onRetry={handleStart}
       />
     );
   }

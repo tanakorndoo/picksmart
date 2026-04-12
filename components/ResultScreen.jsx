@@ -5,7 +5,7 @@ import ProductCard from "./ProductCard";
 import ShareCard from "./ShareCard";
 import Link from "next/link";
 
-export default function ResultScreen({ quiz, result, breakdown, coinsEarned, newBadge }) {
+export default function ResultScreen({ quiz, result, breakdown, coinsEarned, newBadge, onRetry }) {
   const [showShareCard, setShowShareCard] = useState(false);
 
   const breakdownEntries = Object.entries(breakdown).map(([key, pct]) => {
@@ -146,12 +146,12 @@ export default function ResultScreen({ quiz, result, breakdown, coinsEarned, new
           🤝 ท้าเพื่อนทำ Quiz นี้
         </button>
         <div className="grid grid-cols-2 gap-3">
-          <Link
-            href={`/quiz/${quiz.quiz_id}`}
+          <button
+            onClick={onRetry}
             className="py-3 bg-white border-2 border-border text-text font-semibold text-sm rounded-xl text-center active:scale-[0.97] transition-transform"
           >
             🔄 ทำใหม่
-          </Link>
+          </button>
           <Link
             href="/"
             className="py-3 bg-white border-2 border-border text-text font-semibold text-sm rounded-xl text-center active:scale-[0.97] transition-transform"
