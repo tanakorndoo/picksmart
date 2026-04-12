@@ -1,0 +1,25 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAF9F6"/>
+      <stop offset="100%" style="stop-color:#E8F5F0"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0B6E4F"/>
+      <stop offset="100%" style="stop-color:#10B981"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="0" y="580" width="1200" height="50" fill="url(#accent)"/>
+  <text x="600" y="220" font-family="sans-serif" font-size="72" font-weight="800" fill="#0B6E4F" text-anchor="middle">PickSmart</text>
+  <text x="600" y="290" font-family="sans-serif" font-size="32" font-weight="500" fill="#7A7A7A" text-anchor="middle">คำตอบบอกทุกอย่าง</text>
+  <text x="600" y="390" font-family="sans-serif" font-size="28" fill="#1A1A1A" text-anchor="middle">ทำแบบทดสอบสนุกๆ ค้นพบสิ่งที่ใช่สำหรับคุณ</text>
+  <text x="600" y="440" font-family="sans-serif" font-size="22" fill="#7A7A7A" text-anchor="middle">ตอบ 6 ข้อ รู้ผลทันที</text>
+  <text x="150" y="520" font-size="48">💄</text>
+  <text x="330" y="520" font-size="48">💪</text>
+  <text x="510" y="520" font-size="48">🔮</text>
+  <text x="690" y="520" font-size="48">🐱</text>
+  <text x="870" y="520" font-size="48">🎯</text>
+  <text x="1050" y="520" font-size="48">✨</text>
+  <text x="600" y="610" font-family="sans-serif" font-size="18" font-weight="600" fill="white" text-anchor="middle">picksmart-th.vercel.app</text>
+</svg>

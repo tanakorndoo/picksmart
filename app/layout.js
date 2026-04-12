@@ -1,11 +1,29 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "PickSmart — ค้นหาสิ่งที่ใช่สำหรับคุณ",
-  description: "ทำแบบทดสอบสนุกๆ ค้นหาสินค้าที่เหมาะกับคุณ",
+  title: "PickSmart — คำตอบบอกทุกอย่าง",
+  description: "ทำแบบทดสอบสนุกๆ ค้นพบสิ่งที่ใช่สำหรับคุณ ตอบ 6 ข้อ รู้ผลทันที",
   openGraph: {
-    title: "PickSmart Quiz",
-    description: "ค้นหา Skin Persona ของคุณ — ตอบ 6 คำถาม รู้ผลทันที",
+    title: "PickSmart — คำตอบบอกทุกอย่าง",
+    description: "ทำแบบทดสอบสนุกๆ ค้นพบสิ่งที่ใช่สำหรับคุณ ตอบ 6 ข้อ รู้ผลทันที",
+    url: "https://picksmart-th.vercel.app",
+    siteName: "PickSmart",
+    images: [
+      {
+        url: "/og-image.svg",
+        width: 1200,
+        height: 630,
+        alt: "PickSmart — คำตอบบอกทุกอย่าง",
+      },
+    ],
+    locale: "th_TH",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PickSmart — คำตอบบอกทุกอย่าง",
+    description: "ทำแบบทดสอบสนุกๆ ค้นพบสิ่งที่ใช่สำหรับคุณ",
+    images: ["/og-image.svg"],
   },
 };
 
