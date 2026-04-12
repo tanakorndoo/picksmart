@@ -3,8 +3,9 @@
 export default function GamificationBar({ coins, streak, loggedIn }) {
   return (
     <div className="flex items-center justify-between px-4 py-3 bg-white border-b border-border">
-      <div className="flex items-center gap-1">
+      <div className="flex items-center gap-2">
         <span className="text-lg font-bold text-primary">PickSmart</span>
+        <span className="text-[10px] text-muted font-medium">เล่น Quiz ค้นพบสิ่งที่ใช่</span>
       </div>
       {loggedIn && (
         <div className="flex items-center gap-3 text-sm">
