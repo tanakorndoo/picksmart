@@ -39,6 +39,12 @@ const CATEGORIES = {
     gradient: "from-amber-400 to-orange-500",
     image: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=250&fit=crop&q=80",
   },
+  travel: {
+    name: "ท่องเที่ยว & ไลฟ์สไตล์",
+    emoji: "🗺️",
+    gradient: "from-teal-400 to-cyan-500",
+    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=250&fit=crop&q=80",
+  },
 };
 
 export default function HomeScreen({ quizzes, appSettings }) {

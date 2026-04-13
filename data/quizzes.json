@@ -3812,6 +3812,770 @@
         "one_question_per_screen": true,
         "show_match_score": true
       }
+    },
+    {
+      "quiz_id": "travel-personality-dream-trip-th-001",
+      "version": "2.0.0",
+      "created_at": "2026-04-13T00:00:00+07:00",
+      "metadata": {
+        "title": "ทริปในฝันบอกนิสัยคุณได้!",
+        "subtitle": "วิเคราะห์ Traveler DNA ด้วย Jungian Archetype × Big Five Personality Theory",
+        "category": "travel",
+        "estimated_time": "90 วินาที",
+        "total_questions": 6,
+        "cover_emoji": "🗺️",
+        "share_text": "ฉันคือ {result_title}! คุณล่ะเป็น Traveler สายไหน? ลองเลย!",
+        "total_plays": 0,
+        "trending_badge": null
+      },
+      "scoring": {
+        "method": "weighted_category",
+        "categories": [
+          "explorer",
+          "ruler",
+          "caregiver",
+          "jester"
+        ],
+        "result_logic": "highest_score_wins",
+        "tiebreaker": "last_questions_priority"
+      },
+      "anticipation_screen": {
+        "enabled": true,
+        "duration_ms": 2500,
+        "messages": [
+          "กำลังวิเคราะห์ Traveler DNA ของคุณ...",
+          "จับคู่กับ Jungian Archetype...",
+          "เกือบเสร็จแล้ว! ผลลัพธ์กำลังมา..."
+        ]
+      },
+      "questions": [
+        {
+          "id": "q1",
+          "order": 1,
+          "question": "ถ้าได้เลือกทริปในฝันได้เลย คุณจะเลือกแบบไหน?",
+          "subtitle": "เลือกสิ่งที่ดึงดูดใจคุณมากที่สุดตอนนี้เลย",
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "image_grid",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q1_a",
+              "text": "ป่าลึก น้ำตก ไม่มีในแผนที่",
+              "image_emoji": "🌿",
+              "scores": {
+                "explorer": 3,
+                "ruler": 0,
+                "caregiver": 1,
+                "jester": 1
+              }
+            },
+            {
+              "id": "q1_b",
+              "text": "รีสอร์ทหรู วิวทะเล บริการครบ",
+              "image_emoji": "🏖️",
+              "scores": {
+                "explorer": 0,
+                "ruler": 3,
+                "caregiver": 1,
+                "jester": 1
+              }
+            },
+            {
+              "id": "q1_c",
+              "text": "ทริปกรุ๊ปใหญ่ เฮฮา ปาร์ตี้ริมหาด",
+              "image_emoji": "🎉",
+              "scores": {
+                "explorer": 1,
+                "ruler": 0,
+                "caregiver": 2,
+                "jester": 3
+              }
+            },
+            {
+              "id": "q1_d",
+              "text": "หมู่บ้านเงียบๆ ธรรมชาติ พาครอบครัวไป",
+              "image_emoji": "🏡",
+              "scores": {
+                "explorer": 1,
+                "ruler": 1,
+                "caregiver": 3,
+                "jester": 0
+              }
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "order": 2,
+          "question": "กระเป๋าเดินทางของคุณหน้าตาเป็นแบบไหน?",
+          "subtitle": "ดูกระเป๋าแล้วรู้นิสัยเลย!",
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "image_grid",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q2_a",
+              "text": "เป้ใบเดียว จัดแน่น พร้อมบุกทุกที่",
+              "image_emoji": "🎒",
+              "scores": {
+                "explorer": 3,
+                "ruler": 0,
+                "caregiver": 1,
+                "jester": 1
+              }
+            },
+            {
+              "id": "q2_b",
+              "text": "กระเป๋าล้อลาก จัดระเบียบ มีทุกอย่างครบ",
+              "image_emoji": "🧳",
+              "scores": {
+                "explorer": 0,
+                "ruler": 3,
+                "caregiver": 2,
+                "jester": 0
+              }
+            },
+            {
+              "id": "q2_c",
+              "text": "กระเป๋าใบใหญ่ ของเยอะ เผื่อคนอื่นด้วย",
+              "image_emoji": "👜",
+              "scores": {
+                "explorer": 0,
+                "ruler": 1,
+                "caregiver": 3,
+                "jester": 1
+              }
+            },
+            {
+              "id": "q2_d",
+              "text": "กระเป๋าสะพายเล็ก เบา ของแค่จำเป็น",
+              "image_emoji": "😄",
+              "scores": {
+                "explorer": 1,
+                "ruler": 1,
+                "caregiver": 0,
+                "jester": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q3",
+          "order": 3,
+          "question": "สิ่งที่หนักใจที่สุดตอนเตรียมทริปคืออะไร?",
+          "subtitle": null,
+          "why_we_ask": "คำตอบนี้ช่วยให้เราแนะนำสิ่งที่คุณขาดได้ตรงจุดที่สุด",
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q3_a",
+              "text": "กลัวหลงทาง ไม่รู้เส้นทาง 🗺️",
+              "image_emoji": null,
+              "scores": {
+                "explorer": 3,
+                "ruler": 0,
+                "caregiver": 1,
+                "jester": 0
+              }
+            },
+            {
+              "id": "q3_b",
+              "text": "กลัวแบตหมด สัญญาณหาย ติดต่อไม่ได้ 📵",
+              "image_emoji": null,
+              "scores": {
+                "explorer": 0,
+                "ruler": 3,
+                "caregiver": 2,
+                "jester": 1
+              }
+            },
+            {
+              "id": "q3_c",
+              "text": "กังวลว่าคนอื่นในกรุ๊ปจะไม่สบาย เจ็บป่วย 🤒",
+              "image_emoji": null,
+              "scores": {
+                "explorer": 1,
+                "ruler": 0,
+                "caregiver": 3,
+                "jester": 0
+              }
+            },
+            {
+              "id": "q3_d",
+              "text": "กลัวทริปเงียบ บรรยากาศไม่มา ไม่สนุก 😴",
+              "image_emoji": null,
+              "scores": {
+                "explorer": 0,
+                "ruler": 1,
+                "caregiver": 0,
+                "jester": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q4",
+          "order": 4,
+          "question": "ระหว่างเดินทางไกล คุณต้องมีอะไรติดตัวเสมอ?",
+          "subtitle": null,
+          "why_we_ask": "บอกเราได้เลยว่าคุณเป็นคนแบบไหนในทริป",
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": "78% บอกว่าของชิ้นนี้ช่วยให้ทริปสมบูรณ์ขึ้นมาก",
+          "options": [
+            {
+              "id": "q4_a",
+              "text": "รองเท้าที่ใส่สบาย เดินได้ทั้งวัน 👟",
+              "image_emoji": null,
+              "scores": {
+                "explorer": 3,
+                "ruler": 1,
+                "caregiver": 1,
+                "jester": 0
+              }
+            },
+            {
+              "id": "q4_b",
+              "text": "หมอนพกพา ของใช้ส่วนตัวครบ 😴",
+              "image_emoji": null,
+              "scores": {
+                "explorer": 0,
+                "ruler": 3,
+                "caregiver": 1,
+                "jester": 0
+              }
+            },
+            {
+              "id": "q4_c",
+              "text": "ยา อุปกรณ์ฉุกเฉิน เผื่อทุกสถานการณ์ 🏥",
+              "image_emoji": null,
+              "scores": {
+                "explorer": 1,
+                "ruler": 1,
+                "caregiver": 3,
+                "jester": 0
+              }
+            },
+            {
+              "id": "q4_d",
+              "text": "ลำโพง เพลง ของกิน แชร์กันทั้งกรุ๊ป 🎵",
+              "image_emoji": null,
+              "scores": {
+                "explorer": 0,
+                "ruler": 0,
+                "caregiver": 1,
+                "jester": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q5",
+          "order": 5,
+          "question": "เพื่อนชวนแคมป์ปิ้ง 3 วัน 2 คืน คุณรับผิดชอบอะไร?",
+          "subtitle": null,
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q5_a",
+              "text": "หาเส้นทาง สถานที่ เดินนำหน้า 🧭",
+              "image_emoji": null,
+              "scores": {
+                "explorer": 3,
+                "ruler": 1,
+                "caregiver": 0,
+                "jester": 0
+              }
+            },
+            {
+              "id": "q5_b",
+              "text": "จองที่พัก วางแผน Timeline ทุกอย่าง 📋",
+              "image_emoji": null,
+              "scores": {
+                "explorer": 0,
+                "ruler": 3,
+                "caregiver": 1,
+                "jester": 0
+              }
+            },
+            {
+              "id": "q5_c",
+              "text": "เตรียมของกิน ยา ของใช้ให้ทุกคน 🎒",
+              "image_emoji": null,
+              "scores": {
+                "explorer": 1,
+                "ruler": 0,
+                "caregiver": 3,
+                "jester": 1
+              }
+            },
+            {
+              "id": "q5_d",
+              "text": "ดูแลบรรยากาศ เปิดเพลง จัดเกม 🎮",
+              "image_emoji": null,
+              "scores": {
+                "explorer": 0,
+                "ruler": 0,
+                "caregiver": 1,
+                "jester": 3
+              }
+            }
+          ]
+        },
+        {
+          "id": "q6",
+          "order": 6,
+          "question": "ทริปที่สมบูรณ์แบบสำหรับคุณคือทริปแบบไหน?",
+          "subtitle": "ปิดตาแล้วนึกถึงทริปที่ดีที่สุดในชีวิต...",
+          "why_we_ask": null,
+          "type": "single_choice",
+          "display": "text_list",
+          "social_proof_hint": null,
+          "options": [
+            {
+              "id": "q6_a",
+              "text": "ได้ไปที่ไม่เคยไป เจอสิ่งที่ไม่เคยเห็น ✨",
+              "image_emoji": null,
+              "scores": {
+                "explorer": 3,
+                "ruler": 0,
+                "caregiver": 1,
+                "jester": 1
+              }
+            },
+            {
+              "id": "q6_b",
+              "text": "ทุกอย่างลื่นไหล ไม่มีสะดุด กลับมาชาร์จพลัง 🌟",
+              "image_emoji": null,
+              "scores": {
+                "explorer": 0,
+                "ruler": 3,
+                "caregiver": 1,
+                "jester": 0
+              }
+            },
+            {
+              "id": "q6_c",
+              "text": "ทุกคนในกรุ๊ปปลอดภัย มีความสุข รอยยิ้มเต็มๆ 💛",
+              "image_emoji": null,
+              "scores": {
+                "explorer": 1,
+                "ruler": 1,
+                "caregiver": 3,
+                "jester": 1
+              }
+            },
+            {
+              "id": "q6_d",
+              "text": "มีเรื่องฮาเล่าได้ทั้งปี ความทรงจำดีๆ เต็มกล้อง 📸",
+              "image_emoji": null,
+              "scores": {
+                "explorer": 1,
+                "ruler": 0,
+                "caregiver": 0,
+                "jester": 3
+              }
+            }
+          ]
+        }
+      ],
+      "results": {
+        "explorer": {
+          "id": "explorer",
+          "identity_label": "สายบุกโลก",
+          "identity_label_en": "The Explorer",
+          "emoji": "🧭",
+          "color": "#1B5E20",
+          "bg_color": "#E8F5E9",
+          "headline": "คุณไม่ได้แค่ท่องเที่ยว — คุณสะสมประสบการณ์ที่คนอื่นไม่มี",
+          "description": "เนื่องจากคุณเลือกทริปป่าลึกที่ไม่มีในแผนที่ และแบกเป้ใบเดียวพร้อมบุกทุกที่ — Big Five ของคุณบ่งชี้ว่า Openness สูงมากในระดับ Top 15% ของนักเดินทางทั้งหมด คุณไม่ได้กลัวความไม่แน่นอน แต่กลับรู้สึกมีชีวิตชีวาเมื่อเจอสิ่งใหม่ที่ไม่เคยรู้จัก ปัญหาของคนสายนี้คืออุปกรณ์ไม่พร้อมมักทำให้ประสบการณ์ดีๆ หายไป",
+          "big_five_insight": {
+            "trait": "Openness to Experience",
+            "level": "สูงมาก",
+            "percentile": "Top 15%",
+            "description": "คุณมีความอยากรู้อยากเห็นสูง ชอบสิ่งแปลกใหม่ และเปิดรับประสบการณ์ที่หลากหลาย"
+          },
+          "routine": [
+            {
+              "step": 1,
+              "title": "วางเส้นทางหยาบๆ",
+              "description": "ไม่ต้องละเอียด แค่รู้จุดเริ่ม-จุดสิ้นสุด เหลือที่เหลือให้โชคชะตาจัด"
+            },
+            {
+              "step": 2,
+              "title": "เช็กรองเท้าก่อนออก",
+              "description": "Explorer ตัวจริงรู้ว่า เท้าพัง = ทริปพัง ต้องพร้อมทุกเส้นทาง"
+            },
+            {
+              "step": 3,
+              "title": "เตรียมที่นอน",
+              "description": "ไม่รู้ว่าคืนนี้จะนอนที่ไหน แต่ต้องนอนได้ทุกที่ พับเก็บได้คือคำตอบ"
+            },
+            {
+              "step": 4,
+              "title": "น้ำและของกินฉุกเฉิน",
+              "description": "ป่าลึกไม่มี 7-Eleven เตรียมไว้เสมอดีกว่าหิวกลางทาง"
+            },
+            {
+              "step": 5,
+              "title": "ปล่อยวางสัญญาณ",
+              "description": "ทริปที่ดีที่สุดคือทริปที่ไม่ได้เช็กโซเชียล ให้ตัวเองได้อยู่กับปัจจุบัน"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_explorer_001",
+              "name": "Walkwan รองเท้ากีฬาเดินป่า ลุยน้ำกันลื่น ระบายอากาศ",
+              "price": "฿140",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/qfWnNHxaL",
+              "why_recommended": "เพราะคุณเลือกเส้นทางที่ไม่มีในแผนที่ รองเท้าที่ลุยน้ำกันลื่นได้คือสิ่งที่คุณต้องการมากที่สุด ไม่ว่าเส้นทางจะพาไปที่ไหน",
+              "social_proof": "ขาย 5,000+ | ⭐ 4.9 | 1.8k รีวิว",
+              "match_score": 96,
+              "badge": "Best Seller"
+            },
+            {
+              "id": "prod_explorer_002",
+              "name": "CARP แผ่นปูรองนอนรุ่นตันโจ มีกระเป๋าสะพาย ฟรีหมอนพกพา 70×200 ซม.",
+              "price": "฿190",
+              "original_price": "฿390",
+              "discount_badge": "ลดสูงสุด 51%",
+              "affiliate_link": "https://s.shopee.co.th/2g7Ayrj06k",
+              "why_recommended": "Explorer ตัวจริงไม่รู้ว่าคืนนี้จะนอนที่ไหน แผ่นนี้พับเก็บได้ น้ำหนักเบา แถมหมอนฟรี พร้อมทุกสถานการณ์",
+              "social_proof": "ขาย 1,000+ | ⭐ 4.9 | 332 รีวิว",
+              "match_score": 92,
+              "badge": null
+            }
+          ],
+          "pro_tips": [
+            "🌿 ก่อนไปป่า Google 'Leave No Trace 7 Principles' — Explorer ที่ดีไม่ทิ้งร่องรอย",
+            "📱 ดาวน์โหลดแผนที่ Offline ด้วย Maps.me หรือ AllTrails ก่อนออกเดินทางเสมอ",
+            "🌅 ตื่นก่อนพระอาทิตย์ขึ้น 30 นาที — วิวที่ดีที่สุดมักอยู่ตอนที่คนอื่นยังหลับอยู่"
+          ],
+          "share_card": {
+            "identity_label": "สายบุกโลก",
+            "identity_label_en": "The Explorer",
+            "emoji": "🧭",
+            "subtitle": "Openness: Top 15% | ชอบเส้นทางที่ไม่มีในแผนที่",
+            "breakdown": {
+              "บุกโลก": 72,
+              "มีคลาส": 15,
+              "ดูแลคน": 8,
+              "ปล่อยวาง": 5
+            },
+            "cta_text": "ฉันคือ The Explorer! คุณล่ะเป็น Traveler สายไหน? ลองเลย!"
+          }
+        },
+        "ruler": {
+          "id": "ruler",
+          "identity_label": "สายหรูไม่ยอมลด",
+          "identity_label_en": "The Ruler",
+          "emoji": "👑",
+          "color": "#4A148C",
+          "bg_color": "#F3E5F5",
+          "headline": "คุณรู้ว่าตัวเองคู่ควรกับสิ่งที่ดีที่สุด — และไม่รู้สึกผิดเลยแม้แต่นิด",
+          "description": "เนื่องจากคุณเลือกรีสอร์ทหรูวิวทะเล และกระเป๋าล้อลากจัดระเบียบครบ — Big Five ของคุณแสดงให้เห็นว่า Conscientiousness อยู่ในระดับสูงมาก คุณไม่ได้ขี้เกียจ แต่คุณฉลาดพอที่จะรู้ว่าความสะดวกสบายคือการลงทุน ไม่ใช่การฟุ่มเฟือย ปัญหาของคนสายนี้คือของที่ไม่ได้คุณภาพมักทำให้แผนการที่วางไว้สมบูรณ์แบบพังทลาย",
+          "big_five_insight": {
+            "trait": "Conscientiousness",
+            "level": "สูงมาก",
+            "percentile": "Top 10%",
+            "description": "คุณมีระเบียบวินัย วางแผนรอบคอบ และให้ความสำคัญกับคุณภาพของทุกสิ่งในชีวิต"
+          },
+          "routine": [
+            {
+              "step": 1,
+              "title": "วาง Timeline ทุกอย่างล่วงหน้า",
+              "description": "จองก่อน วางแผนก่อน สบายกว่าเสมอ ไม่มีอะไรเซอร์ไพรส์ที่ไม่ได้วางแผน"
+            },
+            {
+              "step": 2,
+              "title": "เตรียมอุปกรณ์นอน",
+              "description": "นอนดี = วันถัดไปดี ไม่มีทริปไหนสนุกถ้าคอแข็งตั้งแต่เช้า"
+            },
+            {
+              "step": 3,
+              "title": "ชาร์จทุกอุปกรณ์ก่อนออก",
+              "description": "The Ruler ไม่มีวันยอมให้แบตหมดระหว่างทาง ชาร์จไว้เสมอ"
+            },
+            {
+              "step": 4,
+              "title": "เลือกที่พักที่ใช่",
+              "description": "ราคาเพิ่มขึ้น 20% แต่ประสบการณ์ดีขึ้น 100% คุ้มกว่าเสมอ"
+            },
+            {
+              "step": 5,
+              "title": "Pack ให้ครบในครั้งเดียว",
+              "description": "เปิดกระเป๋าซ้ำๆ คือสัญญาณของการวางแผนที่ไม่ดี ทำ Checklist ก่อนปิดกระเป๋า"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_ruler_001",
+              "name": "ILUOLAI หมอนรองคอพกพา Memory Foam แก้เมื่อย แก้ปวดคอ ทรง U",
+              "price": "฿105",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/5fkmYUZUna",
+              "why_recommended": "เพราะคุณบอกว่าต้องสบายทุกที่ Memory Foam แท้ปรับทรงตามคอคุณ ไม่มีอาการคอแข็งให้หงุดหงิดแน่นอน",
+              "social_proof": "ขาย 6,000+ | ⭐ 4.9 | 1.8k รีวิว",
+              "match_score": 95,
+              "badge": "Best Seller"
+            },
+            {
+              "id": "prod_ruler_002",
+              "name": "แท่นชาร์จไร้สาย 15W + ที่วางโทรศัพท์ 2-in-1 Fast Wireless Charger",
+              "price": "฿122",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/2BAuOCCWwP",
+              "why_recommended": "The Ruler ไม่มีวันยอมให้แบตหมดระหว่างทริป ชาร์จเร็ว 15W ไม่ยุ่งสาย วางแล้วชาร์จได้เลย รองรับทุกรุ่น",
+              "social_proof": "ขาย 5,000+ | ⭐ 4.7 | 1.5k รีวิว",
+              "match_score": 91,
+              "badge": null
+            }
+          ],
+          "pro_tips": [
+            "✈️ เช็กอินออนไลน์ก่อนถึงสนามบิน 24 ชั่วโมง — เลือกที่นั่งดีๆ ได้ก่อนใคร",
+            "💳 สมัครบัตรเครดิตที่มีสิทธิ์เข้า Airport Lounge — นั่งสบายก่อนบินฟรี",
+            "🌙 จองโรงแรมวันอาทิตย์-พฤหัสฯ ราคาถูกกว่าวันหยุดเฉลี่ย 30%"
+          ],
+          "share_card": {
+            "identity_label": "สายหรูไม่ยอมลด",
+            "identity_label_en": "The Ruler",
+            "emoji": "👑",
+            "subtitle": "Conscientiousness: Top 10% | วางแผนทุกอย่างสมบูรณ์แบบ",
+            "breakdown": {
+              "มีคลาส": 70,
+              "บุกโลก": 12,
+              "ดูแลคน": 12,
+              "ปล่อยวาง": 6
+            },
+            "cta_text": "ฉันคือ The Ruler! คุณล่ะเป็น Traveler สายไหน? ลองเลย!"
+          }
+        },
+        "caregiver": {
+          "id": "caregiver",
+          "identity_label": "สายหัวใจกรุ๊ป",
+          "identity_label_en": "The Caregiver",
+          "emoji": "💛",
+          "color": "#E65100",
+          "bg_color": "#FFF3E0",
+          "headline": "ทุกคนอาจลืมว่าไปเที่ยวที่ไหน แต่ไม่มีใครลืมว่าคุณดูแลพวกเขาดีแค่ไหน",
+          "description": "เนื่องจากคุณเลือกทริปพาครอบครัว และกระเป๋าใบใหญ่เผื่อของคนอื่น — Big Five ของคุณแสดงค่า Agreeableness สูงมาก ซึ่งหมายความว่าคุณมีความสุขที่สุดเมื่อคนรอบข้างมีความสุข ปัญหาของคนสายนี้คือมักลืมเตรียมของให้ตัวเองเพราะห่วงคนอื่นมากเกินไป",
+          "big_five_insight": {
+            "trait": "Agreeableness",
+            "level": "สูงมาก",
+            "percentile": "Top 8%",
+            "description": "คุณเห็นอกเห็นใจผู้อื่น ให้ความสำคัญกับความสัมพันธ์ และมีความสุขเมื่อได้ดูแลคนที่รัก"
+          },
+          "routine": [
+            {
+              "step": 1,
+              "title": "ทำ Checklist ของทุกคนในกรุ๊ป",
+              "description": "รู้ก่อนว่าใครแพ้อะไร ใครต้องการอะไรพิเศษ ฮีโร่เตรียมพร้อมก่อนเสมอ"
+            },
+            {
+              "step": 2,
+              "title": "เตรียมชุดปฐมพยาบาล",
+              "description": "ฮีโร่ตัวจริงมีพร้อมก่อนที่ใครจะต้องการ ไม่รอให้เกิดเหตุก่อน"
+            },
+            {
+              "step": 3,
+              "title": "เตรียมของรับมืออากาศร้อน",
+              "description": "คนอื่นอาจไม่คิด แต่คุณคิดแทนเขาได้เสมอ ผ้าเย็นติดกระเป๋าไว้เลย"
+            },
+            {
+              "step": 4,
+              "title": "เช็กยาประจำตัวทุกคน",
+              "description": "ถามก่อนออกเดินทาง ดีกว่าต้องหายาตอนดึกในที่ที่ไม่รู้จัก"
+            },
+            {
+              "step": 5,
+              "title": "เซฟเบอร์ฉุกเฉินในพื้นที่",
+              "description": "โรงพยาบาลใกล้เคียง เบอร์ตำรวจท้องที่ เตรียมไว้ก่อนเสมอ"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_caregiver_001",
+              "name": "กระเป๋าฉุกเฉิน First Aid ชุดมาตรฐาน เซ็ตทำแผล + ยาสามัญประจำบ้าน",
+              "price": "฿580",
+              "original_price": null,
+              "discount_badge": null,
+              "affiliate_link": "https://s.shopee.co.th/8KlXjf7xWJ",
+              "why_recommended": "เพราะคุณบอกว่ากังวลเรื่องคนอื่นในกรุ๊ปมากที่สุด ชุดนี้ครบทั้งทำแผล+ยาสามัญ พร้อมรับมือทุกสถานการณ์ฉุกเฉิน",
+              "social_proof": "ขาย 163 ชิ้น | ⭐ 4.9 | 23 รีวิว",
+              "match_score": 97,
+              "badge": null
+            },
+            {
+              "id": "prod_caregiver_002",
+              "name": "AOYUMI Cooling Towel ผ้าเย็นลดไข้ เย็นนาน 2-3 ชม. เปียกน้ำซ้ำได้ กลิ่นมะนาว",
+              "price": "฿40",
+              "original_price": "฿49",
+              "discount_badge": "ลด 18%",
+              "affiliate_link": "https://s.shopee.co.th/9fGvKDMOBW",
+              "why_recommended": "Caregiver ตัวจริงมีติดกระเป๋าไว้แจกทั่วกรุ๊ปเวลาอากาศร้อน เล็ก เบา ราคาถูก แต่คุ้มค่ามาก",
+              "social_proof": "ขาย 91 ชิ้น | ⭐ 4.9 | 38 รีวิว",
+              "match_score": 88,
+              "badge": null
+            }
+          ],
+          "pro_tips": [
+            "🗂️ สร้าง Group Chat แล้วปิน 'ข้อมูลสำคัญทริป' ไว้ — โรงแรม เบอร์ฉุกเฉิน แผนเดินทาง",
+            "💧 เตือนทุกคนดื่มน้ำทุก 2 ชั่วโมง — คนส่วนใหญ่เพลียเพราะขาดน้ำ ไม่ใช่เพราะเดินเยอะ",
+            "🌡️ โหลดแอป 'หมอพร้อม' ไว้ในโทรศัพท์ — ปรึกษาแพทย์ออนไลน์ได้ทุกที่ทุกเวลา"
+          ],
+          "share_card": {
+            "identity_label": "สายหัวใจกรุ๊ป",
+            "identity_label_en": "The Caregiver",
+            "emoji": "💛",
+            "subtitle": "Agreeableness: Top 8% | คนที่ทุกทริปขาดไม่ได้",
+            "breakdown": {
+              "ดูแลคน": 71,
+              "บุกโลก": 14,
+              "มีคลาส": 10,
+              "ปล่อยวาง": 5
+            },
+            "cta_text": "ฉันคือ The Caregiver! คุณล่ะเป็น Traveler สายไหน? ลองเลย!"
+          }
+        },
+        "jester": {
+          "id": "jester",
+          "identity_label": "สายปล่อยวาง สนุกสุด",
+          "identity_label_en": "The Jester",
+          "emoji": "🎉",
+          "color": "#B71C1C",
+          "bg_color": "#FFEBEE",
+          "headline": "ชีวิตสั้นเกินไปสำหรับทริปที่น่าเบื่อ — และคุณรู้เรื่องนี้ดีกว่าใครทั้งนั้น",
+          "description": "เนื่องจากคุณเลือกทริปกรุ๊ปใหญ่เฮฮาปาร์ตี้ริมหาด และรับผิดชอบเปิดเพลงจัดบรรยากาศ — Big Five ของคุณแสดงค่า Extraversion สูงมากในระดับ Top 12% คุณไม่ได้แค่ร่วมทริป แต่คุณคือเหตุผลที่ทุกคนอยากไปทริปนั้น ปัญหาของคนสายนี้คืออุปกรณ์บันเทิงที่ห่วยทำให้บรรยากาศดีๆ หายไปในพริบตา",
+          "big_five_insight": {
+            "trait": "Extraversion",
+            "level": "สูงมาก",
+            "percentile": "Top 12%",
+            "description": "คุณชาร์จพลังจากการอยู่กับผู้คน มีพลังงานสูง และสร้างบรรยากาศให้ทุกคนรอบข้างมีความสุข"
+          },
+          "routine": [
+            {
+              "step": 1,
+              "title": "เตรียม Playlist ก่อนออกเดินทาง",
+              "description": "แบ่งเป็น Road Trip / ถึงที่พัก / ปาร์ตี้กลางคืน เพลงดี = ทริปดี"
+            },
+            {
+              "step": 2,
+              "title": "ชาร์จลำโพงให้เต็ม",
+              "description": "ลำโพงหมดแบตกลางวงคือหายนะ ชาร์จทิ้งไว้ตั้งแต่คืนก่อน"
+            },
+            {
+              "step": 3,
+              "title": "โหลดเกมหรือเตรียม Entertainment สำรอง",
+              "description": "สำหรับช่วงรอหรือนั่งรถนาน ไม่มีวันให้ทริปมีช่วงเงียบ"
+            },
+            {
+              "step": 4,
+              "title": "เตรียมพื้นที่ในโทรศัพท์",
+              "description": "ความทรงจำดีๆ ต้องไม่หลุดเพราะ Storage เต็ม ลบรูปเก่าก่อนออกเดินทาง"
+            },
+            {
+              "step": 5,
+              "title": "วางแผนเซอร์ไพรส์เล็กๆ",
+              "description": "อะไรก็ได้ที่ทำให้ทุกคนตกใจดีใจ Jester ตัวจริงไม่เคยทำให้ทริปธรรมดา"
+            }
+          ],
+          "products": [
+            {
+              "id": "prod_jester_001",
+              "name": "ROBOT RB120 ลำโพงบลูทูธพกพา 5.3 กันน้ำ IPX4 ไฟ RGB ใช้งาน 8 ชม.",
+              "price": "฿179",
+              "original_price": null,
+              "discount_badge": "Flash Sale!",
+              "affiliate_link": "https://s.shopee.co.th/3VgHzmRiEg",
+              "why_recommended": "เพราะคุณคือคนที่ดูแลบรรยากาศทั้งทริป กันน้ำ IPX4 + ไฟ RGB ตามจังหวะเพลง = บรรยากาศมาทันที ทุกที่ทุกเวลา",
+              "social_proof": "ขาย 10,000+ | ⭐ 4.9 | 4.1k รีวิว",
+              "match_score": 98,
+              "badge": "Best Seller"
+            },
+            {
+              "id": "prod_jester_002",
+              "name": "R36H Retro เครื่องเกมพกพา จอ IPS 3.5\" | 21,000+ เกม | แบต 3000mAh",
+              "price": "฿1,375",
+              "original_price": null,
+              "discount_badge": "Flash Sale!",
+              "affiliate_link": "https://s.shopee.co.th/8AS7Xy8EJE",
+              "why_recommended": "Jester ตัวจริงไม่มีคำว่าเบื่อ เกม 21,000+ เกม แบต 6-8 ชม. รองรับ PS1/GBA/N64 เอาอยู่ทุกทริปยาว",
+              "social_proof": "ขาย 501 ชิ้น | ⭐ 4.8 | 191 รีวิว",
+              "match_score": 89,
+              "badge": "Flash Sale"
+            }
+          ],
+          "pro_tips": [
+            "🎲 โหลดแอปเกมกลุ่ม เช่น Houseparty หรือ Jackbox — เล่นด้วยกันได้โดยไม่ต้องซื้ออุปกรณ์เพิ่ม",
+            "🌊 ทริปริมน้ำ/ทะเล ให้เปิดเพลง Lo-fi ตอนเช้า EDM ตอนบ่าย — mood ดีขึ้นทั้งกรุ๊ปจริงๆ",
+            "📹 ทำ Vlog สั้น 60 วินาทีทุกวัน — ดูทีหลังแล้วจะรู้ว่านี่คือความทรงจำที่ดีที่สุดในชีวิต"
+          ],
+          "share_card": {
+            "identity_label": "สายปล่อยวาง สนุกสุด",
+            "identity_label_en": "The Jester",
+            "emoji": "🎉",
+            "subtitle": "Extraversion: Top 12% | เหตุผลที่ทุกทริปมีความสุข",
+            "breakdown": {
+              "ปล่อยวาง": 69,
+              "ดูแลคน": 16,
+              "บุกโลก": 10,
+              "มีคลาส": 5
+            },
+            "cta_text": "ฉันคือ The Jester! คุณล่ะเป็น Traveler สายไหน? ลองเลย!"
+          }
+        }
+      },
+      "viral_mechanics": {
+        "share_button": true,
+        "challenge_friend": true,
+        "share_platforms": [
+          "line",
+          "instagram_story",
+          "facebook",
+          "tiktok"
+        ],
+        "share_incentive": "แชร์แล้วได้ +5 Coins"
+      },
+      "gamification": {
+        "quiz_coins_reward": 10,
+        "share_coins_reward": 5,
+        "streak_bonus": {
+          "3_days": 50,
+          "7_days": 200,
+          "30_days": 1000
+        },
+        "badges": {
+          "first_quiz": {
+            "name": "นักสำรวจมือใหม่",
+            "emoji": "🏅"
+          },
+          "5_quizzes": {
+            "name": "ผู้เชี่ยวชาญตัวตน",
+            "emoji": "🏆"
+          },
+          "share_result": {
+            "name": "นักแชร์ตัวยง",
+            "emoji": "📢"
+          }
+        }
+      },
+      "app_config": {
+        "progress_bar_start_at": 15,
+        "auto_advance_delay_ms": 500,
+        "one_question_per_screen": true,
+        "show_match_score": true
+      }
     }
   ],
   "app_settings": {
