@@ -9,23 +9,32 @@ export default function ShareCard({ shareCardData, quizTitle, quizId, archetype,
   const [copied, setCopied] = useState(false);
 
   const breakdownEntries = Object.entries(shareCardData.breakdown || {});
-  const topEntry = breakdownEntries.length
-    ? [...breakdownEntries].sort((a, b) => b[1] - a[1])[0]
-    : null;
 
-  const handleShare = async () => {
+  function buildUrl() {
     const origin = typeof window !== "undefined" ? window.location.origin : "";
     const path = archetype
       ? `/quiz/${quizId}/result/${archetype}`
       : `/quiz/${quizId}`;
     const qs = userName ? `?from=${encodeURIComponent(userName)}` : "";
-    const url = `${origin}${path}${qs}`;
+    return `${origin}${path}${qs}`;
+  }
 
-    const topLine = topEntry
-      ? `ฉันเป็น ${shareCardData.identity_label} ${shareCardData.emoji} (${topEntry[0]} ${topEntry[1]}%)`
-      : `ฉันเป็น ${shareCardData.identity_label} ${shareCardData.emoji}`;
-    const text = `${topLine}\nคุณล่ะ? เดาว่าอะไร 👉\n(ใช้เวลา 2 นาที รู้ผลเลย)`;
+  function buildText() {
+    const cleanTitle = (quizTitle || "")
+      .replace(/^ค้นหา\s*/, "")
+      .replace(/\s*ของคุณ.*$/, "");
+    const titlePart = cleanTitle ? `Quiz "${cleanTitle}"` : "Quiz นี้";
+    return [
+      `เพิ่งทำ ${titlePart} มา 😮`,
+      `ผลออกว่าฉันเป็น "${shareCardData.identity_label}" ${shareCardData.emoji}`,
+      `ตรงเวอร์... คุณเป็นแบบไหน? ลองดู 👇`,
+      `(ใช้เวลาแค่ 2 นาที)`,
+    ].join("\n");
+  }
 
+  const handleShare = async () => {
+    const url = buildUrl();
+    const text = buildText();
     const result = await shareResult(text, url);
     if (result === "copied") {
       setCopied(true);
@@ -35,6 +44,27 @@ export default function ShareCard({ shareCardData, quizTitle, quizId, archetype,
       recordShare();
       setShared(true);
     }
+  };
+
+  const handleLine = () => {
+    const url = buildUrl();
+    const text = buildText();
+    const lineUrl = `https://line.me/R/msg/text/?${encodeURIComponent(`${text}\n${url}`)}`;
+    window.open(lineUrl, "_blank", "noopener,noreferrer");
+    recordShare();
+    setShared(true);
+  };
+
+  const handleCopy = async () => {
+    const url = buildUrl();
+    const text = buildText();
+    try {
+      await navigator.clipboard.writeText(`${text}\n${url}`);
+      setCopied(true);
+      recordShare();
+      setShared(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {}
   };
 
   return (
@@ -71,16 +101,30 @@ export default function ShareCard({ shareCardData, quizTitle, quizId, archetype,
           <p className="text-xs font-semibold text-primary mt-1">PickSmart</p>
         </div>
 
-        {/* Share Button */}
-        <div className="px-4 pb-4">
+        {/* Share Buttons */}
+        <div className="px-4 pb-4 flex flex-col gap-2">
           <button
-            onClick={handleShare}
-            className="w-full py-3 bg-purple text-white font-bold text-sm rounded-xl active:scale-[0.97] transition-transform"
+            onClick={handleLine}
+            className="w-full py-3 bg-[#06C755] text-white font-bold text-sm rounded-xl active:scale-[0.97] transition-transform flex items-center justify-center gap-2"
           >
-            {copied ? "คัดลอกลิงก์แล้ว! ✅" : shared ? "แชร์แล้ว! 🎉" : "🤳 แชร์เลย"}
+            <span className="text-base">💬</span> แชร์ผ่าน LINE
           </button>
+          <div className="grid grid-cols-2 gap-2">
+            <button
+              onClick={handleShare}
+              className="py-2.5 bg-purple text-white font-semibold text-xs rounded-xl active:scale-[0.97] transition-transform"
+            >
+              {shared && !copied ? "แชร์แล้ว 🎉" : "🤳 แชร์อื่นๆ"}
+            </button>
+            <button
+              onClick={handleCopy}
+              className="py-2.5 bg-white border-2 border-purple text-purple font-semibold text-xs rounded-xl active:scale-[0.97] transition-transform"
+            >
+              {copied ? "คัดลอกแล้ว ✅" : "🔗 คัดลอกลิงก์"}
+            </button>
+          </div>
           {!shared && (
-            <p className="text-xs text-center text-muted mt-2">แชร์แล้วได้ +5 เหรียญ</p>
+            <p className="text-[11px] text-center text-muted mt-1">แชร์แล้วได้ +5 เหรียญ 🪙</p>
           )}
         </div>
       </div>

@@ -132,25 +132,9 @@ export default function ResultScreen({ quiz, result, breakdown, archetype, coins
       <div className="px-4 flex flex-col gap-3 mb-6 animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
         <button
           onClick={() => setShowShareCard(true)}
-          className="w-full py-3.5 bg-purple text-white font-bold text-sm rounded-xl active:scale-[0.97] transition-transform"
+          className="w-full py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-extrabold text-base rounded-xl active:scale-[0.97] transition-transform shadow-lg"
         >
-          🤳 แชร์ผลให้เพื่อน (+5 เหรียญ)
-        </button>
-        <button
-          onClick={() => {
-            const url = typeof window !== "undefined"
-              ? `${window.location.origin}/quiz/${quiz.quiz_id}`
-              : "";
-            const text = `ท้าเพื่อนทำ ${quiz.metadata.title}\n`;
-            if (navigator.share) {
-              navigator.share({ text, url });
-            } else {
-              navigator.clipboard.writeText(`${text}${url}`);
-            }
-          }}
-          className="w-full py-3.5 border-2 border-purple text-purple font-bold text-sm rounded-xl active:scale-[0.97] transition-transform"
-        >
-          🤝 ท้าเพื่อนทำ Quiz นี้
+          🤳 แชร์ผลให้เพื่อน <span className="text-xs opacity-90">(+5 🪙)</span>
         </button>
         <div className="grid grid-cols-2 gap-3">
           <button
