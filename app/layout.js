@@ -1,4 +1,5 @@
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "PickSmart — คำตอบบอกทุกอย่าง",
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
     <html lang="th">
       <body className="font-prompt antialiased min-h-screen">
         {children}
+        <Analytics />
       </body>
     </html>
   );

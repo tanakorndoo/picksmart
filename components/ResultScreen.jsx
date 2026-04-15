@@ -1,12 +1,19 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ProductCard from "./ProductCard";
 import ShareCard from "./ShareCard";
 import Link from "next/link";
+import { getUser } from "@/lib/store";
 
-export default function ResultScreen({ quiz, result, breakdown, coinsEarned, newBadge, onRetry }) {
+export default function ResultScreen({ quiz, result, breakdown, archetype, coinsEarned, newBadge, onRetry }) {
   const [showShareCard, setShowShareCard] = useState(false);
+  const [userName, setUserName] = useState(null);
+
+  useEffect(() => {
+    const u = getUser();
+    if (u?.displayName) setUserName(u.displayName);
+  }, []);
 
   const breakdownEntries = Object.entries(breakdown).map(([key, pct]) => {
     const r = quiz.results[key];
@@ -176,6 +183,8 @@ export default function ResultScreen({ quiz, result, breakdown, coinsEarned, new
           shareCardData={result.share_card}
           quizTitle={quiz.metadata.title}
           quizId={quiz.quiz_id}
+          archetype={archetype}
+          userName={userName}
           onClose={() => setShowShareCard(false)}
         />
       )}

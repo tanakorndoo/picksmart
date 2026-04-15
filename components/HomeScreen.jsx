@@ -48,7 +48,16 @@ const CATEGORIES = {
 };
 
 export default function HomeScreen({ quizzes, appSettings }) {
+  const [fromName, setFromName] = useState(null);
   const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const f = params.get("from");
+      if (f) setFromName(f);
+    } catch {}
+  }, []);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [showShop, setShowShop] = useState(false);
   const [showBadges, setShowBadges] = useState(false);
@@ -108,6 +117,22 @@ export default function HomeScreen({ quizzes, appSettings }) {
 
   const theme = getDailyTheme(appSettings?.daily_themes);
 
+  const totalPlays = useMemo(() => {
+    const sum = (quizzes || []).reduce(
+      (acc, q) => acc + (q.metadata?.total_plays || 0),
+      0
+    );
+    return Math.max(sum, (quizzes?.length || 0) * 42);
+  }, [quizzes]);
+
+  const featuredQuizId = useMemo(() => {
+    if (!quizzes?.length) return null;
+    const sorted = [...quizzes].sort(
+      (a, b) => (b.metadata?.total_plays || 0) - (a.metadata?.total_plays || 0)
+    );
+    return sorted[0]?.quiz_id;
+  }, [quizzes]);
+
   const groupedQuizzes = useMemo(() => {
     const groups = {};
     quizzes.forEach((quiz) => {
@@ -136,18 +161,46 @@ export default function HomeScreen({ quizzes, appSettings }) {
       <GamificationBar coins={user.coins} streak={user.streak} loggedIn={!!authEmail} />
       <DailyThemeBanner theme={theme} />
 
-      {/* Auth Banner */}
-      {!authEmail ? (
+      {/* Guest Hero — visible for non-logged-in users */}
+      {!authEmail && (
         <div className="mx-4 mt-4 mb-3">
-          <button
-            onClick={() => setShowAuth(true)}
-            className="w-full bg-white border-2 border-blue-500 rounded-2xl py-4 px-6 active:scale-[0.97] transition-transform shadow-sm text-center"
-          >
-            <p className="text-base font-extrabold text-blue-600">เข้าสู่ระบบ</p>
-            <p className="text-xs text-blue-400 mt-1">บันทึกความก้าวหน้า & ปลดล็อกฟีเจอร์พิเศษ</p>
-          </button>
+          {fromName && (
+            <div className="mb-3 px-4 py-2.5 rounded-xl bg-purple-50 border border-purple-200 text-center">
+              <p className="text-xs text-purple-700">
+                🎯 <span className="font-bold">{fromName}</span> ชวนคุณมาทำ Quiz!
+              </p>
+            </div>
+          )}
+          <div className="rounded-2xl p-5 text-center bg-gradient-to-br from-violet-500 to-purple-600 shadow-sm">
+            <p className="text-white/90 text-xs font-medium mb-1">
+              🎉 มีคน join แล้ว {formatNumber(totalPlays)}+ คน
+            </p>
+            <h1 className="text-white text-xl font-extrabold mb-1 leading-snug">
+              ค้นพบตัวเอง<br/>ใน 2 นาที
+            </h1>
+            <p className="text-white/80 text-xs mb-4">
+              ตอบ 6 ข้อ รู้ผลทันที • ฟรี ไม่ต้องสมัคร
+            </p>
+            {featuredQuizId ? (
+              <Link
+                href={`/quiz/${featuredQuizId}`}
+                className="block w-full py-3 bg-white text-purple-600 font-extrabold text-sm rounded-xl active:scale-[0.97] transition-transform shadow"
+              >
+                🚀 เริ่มเลย
+              </Link>
+            ) : null}
+            <button
+              onClick={() => setShowAuth(true)}
+              className="mt-2 text-[11px] text-white/80 underline"
+            >
+              เข้าสู่ระบบเพื่อสะสมเหรียญ
+            </button>
+          </div>
         </div>
-      ) : (
+      )}
+
+      {/* Auth Banner */}
+      {!authEmail ? null : (
         <div className="mx-4 mt-4 mb-3 bg-white rounded-2xl p-4 border border-border">
           <div className="flex items-center gap-3">
             {/* Avatar with frame */}

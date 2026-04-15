@@ -4,17 +4,27 @@ import { useState } from "react";
 import { shareResult } from "@/lib/utils";
 import { recordShare } from "@/lib/store";
 
-export default function ShareCard({ shareCardData, quizTitle, quizId, onClose }) {
+export default function ShareCard({ shareCardData, quizTitle, quizId, archetype, userName, onClose }) {
   const [shared, setShared] = useState(false);
   const [copied, setCopied] = useState(false);
 
   const breakdownEntries = Object.entries(shareCardData.breakdown || {});
+  const topEntry = breakdownEntries.length
+    ? [...breakdownEntries].sort((a, b) => b[1] - a[1])[0]
+    : null;
 
   const handleShare = async () => {
-    const url = typeof window !== "undefined"
-      ? `${window.location.origin}/quiz/${quizId}`
-      : "";
-    const text = `${shareCardData.identity_label} ${shareCardData.emoji}\n${shareCardData.subtitle}\n\n${shareCardData.cta_text}`;
+    const origin = typeof window !== "undefined" ? window.location.origin : "";
+    const path = archetype
+      ? `/quiz/${quizId}/result/${archetype}`
+      : `/quiz/${quizId}`;
+    const qs = userName ? `?from=${encodeURIComponent(userName)}` : "";
+    const url = `${origin}${path}${qs}`;
+
+    const topLine = topEntry
+      ? `ฉันเป็น ${shareCardData.identity_label} ${shareCardData.emoji} (${topEntry[0]} ${topEntry[1]}%)`
+      : `ฉันเป็น ${shareCardData.identity_label} ${shareCardData.emoji}`;
+    const text = `${topLine}\nคุณล่ะ? เดาว่าอะไร 👉\n(ใช้เวลา 2 นาที รู้ผลเลย)`;
 
     const result = await shareResult(text, url);
     if (result === "copied") {

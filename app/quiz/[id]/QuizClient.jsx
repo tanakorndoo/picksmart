@@ -86,6 +86,7 @@ export default function QuizClient({ quizId }) {
     setResultData({
       result: quiz.results[result.winner],
       breakdown: result.breakdown,
+      archetype: result.winner,
     });
     setScreen("result");
   };
@@ -126,6 +127,7 @@ export default function QuizClient({ quizId }) {
         quiz={quiz}
         result={resultData.result}
         breakdown={resultData.breakdown}
+        archetype={resultData.archetype}
         coinsEarned={coinsEarned}
         newBadge={newBadge}
         onRetry={handleStart}
