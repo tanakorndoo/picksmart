@@ -178,9 +178,20 @@ export default function HomeScreen({ quizzes, appSettings }) {
             <h1 className="text-white text-xl font-extrabold mb-1 leading-snug">
               ค้นพบตัวเอง<br/>ใน 2 นาที
             </h1>
-            <p className="text-white/80 text-xs mb-4">
-              ตอบ 6 ข้อ รู้ผลทันที • ฟรี ไม่ต้องสมัคร
+            <p className="text-white/80 text-xs mb-3">
+              ตอบ 6 ข้อ รู้ผลทันที
             </p>
+            <div className="flex justify-center gap-1.5 mb-4 flex-wrap">
+              <span className="bg-white/15 backdrop-blur-sm text-white text-[10px] font-semibold px-2.5 py-1 rounded-full">
+                ⚡ 2 นาที
+              </span>
+              <span className="bg-white/15 backdrop-blur-sm text-white text-[10px] font-semibold px-2.5 py-1 rounded-full">
+                🆓 ฟรี
+              </span>
+              <span className="bg-white/15 backdrop-blur-sm text-white text-[10px] font-semibold px-2.5 py-1 rounded-full">
+                🔒 ไม่เก็บข้อมูล
+              </span>
+            </div>
             <button
               onClick={() => {
                 const el = document.getElementById("quiz-grid");
@@ -454,6 +465,9 @@ export default function HomeScreen({ quizzes, appSettings }) {
             <div className="flex flex-col gap-2.5">
               {(groupedQuizzes[selectedCategory] || []).map((quiz) => {
                 const done = hasCompletedQuiz(quiz.quiz_id);
+                const archetypeEmojis = Object.values(quiz.results || {})
+                  .map((r) => r?.emoji)
+                  .filter(Boolean);
                 return (
                   <Link key={quiz.quiz_id} href={`/quiz/${quiz.quiz_id}`}>
                     <div className={`rounded-2xl p-3.5 border active:scale-[0.97] transition-transform cursor-pointer shadow-sm ${
@@ -481,6 +495,22 @@ export default function HomeScreen({ quizzes, appSettings }) {
                       <p className="text-[11px] text-muted mb-2 line-clamp-1 pl-9">
                         {quiz.metadata.subtitle}
                       </p>
+                      {archetypeEmojis.length > 0 && (
+                        <div className="flex items-center gap-1.5 mb-2 pl-9">
+                          <span className="text-[10px] text-muted">คุณจะเป็นแบบไหน?</span>
+                          <div className="flex -space-x-1">
+                            {archetypeEmojis.slice(0, 5).map((emo, i) => (
+                              <span
+                                key={i}
+                                className="w-6 h-6 flex items-center justify-center text-sm bg-white border border-border rounded-full shadow-sm"
+                                style={{ zIndex: archetypeEmojis.length - i }}
+                              >
+                                {emo}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                       <div className="flex items-center gap-3 text-[11px] text-muted pl-9">
                         <span>⏱ {quiz.metadata.estimated_time}</span>
                         <span>👥 {formatNumber(quiz.metadata.total_plays)} คน</span>
