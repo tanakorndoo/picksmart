@@ -181,14 +181,15 @@ export default function HomeScreen({ quizzes, appSettings }) {
             <p className="text-white/80 text-xs mb-4">
               ตอบ 6 ข้อ รู้ผลทันที • ฟรี ไม่ต้องสมัคร
             </p>
-            {featuredQuizId ? (
-              <Link
-                href={`/quiz/${featuredQuizId}`}
-                className="block w-full py-3 bg-white text-purple-600 font-extrabold text-sm rounded-xl active:scale-[0.97] transition-transform shadow"
-              >
-                🚀 เริ่มเลย
-              </Link>
-            ) : null}
+            <button
+              onClick={() => {
+                const el = document.getElementById("quiz-grid");
+                if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
+              className="block w-full py-3 bg-white text-purple-600 font-extrabold text-sm rounded-xl active:scale-[0.97] transition-transform shadow"
+            >
+              🚀 เลือก Quiz ที่ใช่
+            </button>
             <button
               onClick={() => setShowAuth(true)}
               className="mt-2 text-[11px] text-white/80 underline"
@@ -352,7 +353,7 @@ export default function HomeScreen({ quizzes, appSettings }) {
       )}
 
       {/* Category Cards */}
-      <div className="px-4 pb-8">
+      <div id="quiz-grid" className="px-4 pb-8 scroll-mt-4">
         <h2 className="text-base font-bold mb-3">🎯 เลือกหมวด Quiz</h2>
 
         {!selectedCategory ? (
